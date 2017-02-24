@@ -8,7 +8,6 @@
 
 #import "LGHYHDRegisterViewController.h"
 #import "LGHYHDRegisterView.h"
-#import "LGHYHDLoginView.h"
 #import "LGHYHDRealNameViewController.h"
 
 @interface LGHYHDRegisterViewController ()
@@ -85,24 +84,24 @@
     [self presentViewController:alertController animated:YES completion:nil];
 }
 
-- (IBAction)showText {
+- (void)showText {
     [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeBlack];
     [SVProgressHUD showWithStatus:@"加载中，请稍后。。。"];
     [self performSelector:@selector(dismiss:) withObject:nil afterDelay:3];
 }
 
-- (IBAction)showSecondText {
+- (void)showSecondText {
     [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeBlack];
     [SVProgressHUD showWithStatus:@"加载中，请稍后。。。"];
     [self performSelector:@selector(showOkayCancelAlert) withObject:nil afterDelay:3];
 }
 
-- (IBAction)dismiss:(id)sender {
+- (void)dismiss:(id)sender {
     [SVProgressHUD dismiss];
     [self registerClicked];
 }
 
-NSInteger secondsCoundDown;
+static NSInteger secondsCoundDown;
 
 - (void)registerClicked
 

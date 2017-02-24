@@ -9,10 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @class LGHYHDRegisterView;
-@class LGHYHDLoginView;
 @interface LGHYHDRegisterViewController : UIViewController
 
 @property (nonatomic, strong) LGHYHDRegisterView *registerView;
-@property (nonatomic, strong) LGHYHDLoginView *loginView;
 
 @end

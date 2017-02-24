@@ -30,6 +30,7 @@
 		3D98E7841E5F106500F2CDF9 /* LGHYHDRealNameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D98E7831E5F106500F2CDF9 /* LGHYHDRealNameViewController.m */; };
 		3D98E7871E5F16F700F2CDF9 /* LGHYHDRealNameView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D98E7861E5F16F700F2CDF9 /* LGHYHDRealNameView.m */; };
 		3D98E78A1E5F18E200F2CDF9 /* LGHYHDForgetPasswordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D98E7891E5F18E200F2CDF9 /* LGHYHDForgetPasswordView.m */; };
+		3DE28EDF1E6061DB00E3C8AF /* LGHYHDIdentifyingCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DE28EDE1E6061DB00E3C8AF /* LGHYHDIdentifyingCodeViewController.m */; };
 		3DF41B0D1E6051AE009B3099 /* AVAudioPlayer+PCM.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DF41AFF1E6051AE009B3099 /* AVAudioPlayer+PCM.m */; };
 		3DF41B0E1E6051AE009B3099 /* MCAudioInputQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DF41B011E6051AE009B3099 /* MCAudioInputQueue.m */; };
 		3DF41B0F1E6051AE009B3099 /* UIView+MJAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DF41B041E6051AE009B3099 /* UIView+MJAlertView.m */; };
@@ -107,6 +108,8 @@
 		3D98E7861E5F16F700F2CDF9 /* LGHYHDRealNameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGHYHDRealNameView.m; sourceTree = "<group>"; };
 		3D98E7881E5F18E200F2CDF9 /* LGHYHDForgetPasswordView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGHYHDForgetPasswordView.h; sourceTree = "<group>"; };
 		3D98E7891E5F18E200F2CDF9 /* LGHYHDForgetPasswordView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGHYHDForgetPasswordView.m; sourceTree = "<group>"; };
+		3DE28EDD1E6061DB00E3C8AF /* LGHYHDIdentifyingCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGHYHDIdentifyingCodeViewController.h; sourceTree = "<group>"; };
+		3DE28EDE1E6061DB00E3C8AF /* LGHYHDIdentifyingCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGHYHDIdentifyingCodeViewController.m; sourceTree = "<group>"; };
 		3DF41AFE1E6051AE009B3099 /* AVAudioPlayer+PCM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AVAudioPlayer+PCM.h"; sourceTree = "<group>"; };
 		3DF41AFF1E6051AE009B3099 /* AVAudioPlayer+PCM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AVAudioPlayer+PCM.m"; sourceTree = "<group>"; };
 		3DF41B001E6051AE009B3099 /* MCAudioInputQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCAudioInputQueue.h; sourceTree = "<group>"; };
@@ -255,6 +258,8 @@
 				3D98E7531E5EB59D00F2CDF9 /* LGHYHDLoginViewController.m */,
 				3D98E7791E5ED91C00F2CDF9 /* LGHYHDForgetPasswordViewController.h */,
 				3D98E77A1E5ED91C00F2CDF9 /* LGHYHDForgetPasswordViewController.m */,
+				3DE28EDD1E6061DB00E3C8AF /* LGHYHDIdentifyingCodeViewController.h */,
+				3DE28EDE1E6061DB00E3C8AF /* LGHYHDIdentifyingCodeViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -826,6 +831,7 @@
 				3D98E7601E5EBE4100F2CDF9 /* LGHYHDLoginView.m in Sources */,
 				3D98E7631E5EC09D00F2CDF9 /* LGHYHDTextField.m in Sources */,
 				3D98E77B1E5ED91C00F2CDF9 /* LGHYHDForgetPasswordViewController.m in Sources */,
+				3DE28EDF1E6061DB00E3C8AF /* LGHYHDIdentifyingCodeViewController.m in Sources */,
 				3D98E74C1E5E8AA900F2CDF9 /* LGHYHDFirstView.m in Sources */,
 				3D98E75D1E5EBAE100F2CDF9 /* LGHYHDVisitorsViewController.m in Sources */,
 				3DF41B101E6051AE009B3099 /* QRCameraSwitchButton.m in Sources */,
@@ -979,7 +985,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = W4EC2R383Y;
-				GCC_PREFIX_HEADER = "/Users/wanghongda/Desktop/工程文件夹/龙广会员/龙广会员/Other/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "/Users/wanghongda/Desktop/longguanghuiyuan/龙广会员/龙广会员/Other/PrefixHeader.pch";
 				INFOPLIST_FILE = "龙广会员/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "uormi.----";
@@ -994,7 +1000,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = W4EC2R383Y;
-				GCC_PREFIX_HEADER = "/Users/wanghongda/Desktop/工程文件夹/龙广会员/龙广会员/Other/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "/Users/wanghongda/Desktop/longguanghuiyuan/龙广会员/龙广会员/Other/PrefixHeader.pch";
 				INFOPLIST_FILE = "龙广会员/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "uormi.----";

@@ -9,13 +9,13 @@
 #import <UIKit/UIKit.h>
 
 @class LGHYHDTextField;
-typedef void(^ButtonBlock)(UIButton *button);
+typedef void(^ButtonBlock_)(UIButton *button);
 @interface LGHYHDForgetPasswordView : UIView
 
 @property (nonatomic, strong) LGHYHDTextField *phoneTextField ,*numberTextField;
 @property (nonatomic, strong) UIButton                         *registerBtn;
 @property (nonatomic, strong) UIButton                         *numberBtn;
 
-- (void)addRegisterButtonAction:(ButtonBlock)block;
-- (void)addShowTextButtonAction:(ButtonBlock)block;
+- (void)addRegisterButtonAction_:(ButtonBlock_)block;
+- (void)addShowTextButtonAction_:(ButtonBlock_)block;
 @end

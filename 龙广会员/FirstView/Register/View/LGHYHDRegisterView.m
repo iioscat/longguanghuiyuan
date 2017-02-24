@@ -130,6 +130,7 @@
 - (void)showOkayCancelAlert:(UIButton *)button {
     if (self.registerButtonBlock) {
         self.registerButtonBlock(button);
+        NSLog(@"%s", __func__);
     }
 }
 - (void)addShowTextButtonAction:(ButtonBlock)block {

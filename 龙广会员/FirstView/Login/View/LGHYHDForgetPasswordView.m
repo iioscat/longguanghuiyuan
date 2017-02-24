@@ -11,8 +11,8 @@
 
 @interface LGHYHDForgetPasswordView ()<UITextFieldDelegate, UIActionSheetDelegate>
 
-@property (nonatomic ,copy) ButtonBlock registerButtonBlock;
-@property (nonatomic, copy) ButtonBlock showTextButtonBlock;
+@property (nonatomic ,copy) ButtonBlock_ registerButtonBlock_;
+@property (nonatomic, copy) ButtonBlock_ showTextButtonBlock_;
 
 @end
 
@@ -51,7 +51,7 @@
 - (UIButton *)registerBtn {
     if (!_registerBtn) {
         _registerBtn = [LGHYHDButton buttonWithImage:@"BtnImage.jpg" title:@"下一步" textFont:17];
-        [_registerBtn addTarget:self action:@selector(showOkayCancelAlert:) forControlEvents:UIControlEventTouchUpInside];
+        [_registerBtn addTarget:self action:@selector(showOkayCancelAlert_:) forControlEvents:UIControlEventTouchUpInside];
         _registerBtn.enabled = NO;
         
     }
@@ -61,7 +61,7 @@
 - (UIButton *)numberBtn {
     if (!_numberBtn) {
         _numberBtn = [LGHYHDButton buttonWithImage:@"BtnImage.jpg" title:@"获取验证码" textFont:17];
-        [_numberBtn addTarget:self action:@selector(showText:) forControlEvents:UIControlEventTouchUpInside];
+        [_numberBtn addTarget:self action:@selector(showText_:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _numberBtn;
 }
@@ -124,20 +124,23 @@
 }
 
 #pragma mark - 添加点击事件
-- (void)addRegisterButtonAction:(ButtonBlock)block {
-    self.registerButtonBlock = block;
+- (void)addRegisterButtonAction_:(ButtonBlock_)block {
+    self.registerButtonBlock_ = block;
 }
-- (void)showOkayCancelAlert:(UIButton *)button {
-    if (self.registerButtonBlock) {
-        self.registerButtonBlock(button);
+- (void)showOkayCancelAlert_:(UIButton *)button {
+    if (self.registerButtonBlock_) {
+        self.registerButtonBlock_(button);
+        NSLog(@"test");
     }
 }
-- (void)addShowTextButtonAction:(ButtonBlock)block {
-    self.showTextButtonBlock = block;
+- (void)addShowTextButtonAction_:(ButtonBlock_)block {
+    self.showTextButtonBlock_ = block;
 }
-- (void)showText:(UIButton *)button {
-    if (self.showTextButtonBlock) {
-        self.showTextButtonBlock(button);
+- (void)showText_:(UIButton *)button {
+    NSLog(@"test");
+    if (self.showTextButtonBlock_) {
+        NSLog(@"test1");
+        self.showTextButtonBlock_(button);
     }
 }
 
