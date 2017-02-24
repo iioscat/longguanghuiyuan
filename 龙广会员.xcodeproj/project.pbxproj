@@ -1,0 +1,1098 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D31C7F21E5E6846005E97BF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D31C7F11E5E6846005E97BF /* main.m */; };
+		3D31C7FD1E5E6848005E97BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D31C7FC1E5E6848005E97BF /* Assets.xcassets */; };
+		3D31C8001E5E6848005E97BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D31C7FE1E5E6848005E97BF /* LaunchScreen.storyboard */; };
+		3D31C80B1E5E6849005E97BF /* ____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D31C80A1E5E6849005E97BF /* ____Tests.m */; };
+		3D31C8161E5E6849005E97BF /* ____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D31C8151E5E6849005E97BF /* ____UITests.m */; };
+		3D98E73B1E5E77E300F2CDF9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D98E7351E5E77E300F2CDF9 /* AppDelegate.m */; };
+		3D98E7421E5E790A00F2CDF9 /* LGHYHDFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D98E7411E5E790A00F2CDF9 /* LGHYHDFirstViewController.m */; };
+		3D98E7491E5E7EE300F2CDF9 /* LGHYHDButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D98E7481E5E7EE300F2CDF9 /* LGHYHDButton.m */; };
+		3D98E74C1E5E8AA900F2CDF9 /* LGHYHDFirstView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D98E74B1E5E8AA900F2CDF9 /* LGHYHDFirstView.m */; };
+		3D98E74F1E5E8B5A00F2CDF9 /* LGHYHDFirstViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D98E74E1E5E8B5A00F2CDF9 /* LGHYHDFirstViewModel.m */; };
+		3D98E7511E5E8CD000F2CDF9 /* FirstViewList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3D98E7501E5E8CD000F2CDF9 /* FirstViewList.plist */; };
+		3D98E7541E5EB59D00F2CDF9 /* LGHYHDLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D98E7531E5EB59D00F2CDF9 /* LGHYHDLoginViewController.m */; };
+		3D98E7571E5EB69200F2CDF9 /* LGHYHDNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D98E7561E5EB69200F2CDF9 /* LGHYHDNavigationViewController.m */; };
+		3D98E75A1E5EB90200F2CDF9 /* LGHYHDRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D98E7591E5EB90200F2CDF9 /* LGHYHDRegisterViewController.m */; };
+		3D98E75D1E5EBAE100F2CDF9 /* LGHYHDVisitorsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D98E75C1E5EBAE100F2CDF9 /* LGHYHDVisitorsViewController.m */; };
+		3D98E7601E5EBE4100F2CDF9 /* LGHYHDLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D98E75F1E5EBE4100F2CDF9 /* LGHYHDLoginView.m */; };
+		3D98E7631E5EC09D00F2CDF9 /* LGHYHDTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D98E7621E5EC09D00F2CDF9 /* LGHYHDTextField.m */; };
+		3D98E77B1E5ED91C00F2CDF9 /* LGHYHDForgetPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D98E77A1E5ED91C00F2CDF9 /* LGHYHDForgetPasswordViewController.m */; };
+		3D98E77E1E5EF62900F2CDF9 /* LGHYHDRegisterViewMakeFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D98E77D1E5EF62900F2CDF9 /* LGHYHDRegisterViewMakeFrame.m */; };
+		3D98E7811E5EF89F00F2CDF9 /* LGHYHDRegisterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D98E7801E5EF89F00F2CDF9 /* LGHYHDRegisterView.m */; };
+		3D98E7841E5F106500F2CDF9 /* LGHYHDRealNameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D98E7831E5F106500F2CDF9 /* LGHYHDRealNameViewController.m */; };
+		3D98E7871E5F16F700F2CDF9 /* LGHYHDRealNameView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D98E7861E5F16F700F2CDF9 /* LGHYHDRealNameView.m */; };
+		3D98E78A1E5F18E200F2CDF9 /* LGHYHDForgetPasswordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D98E7891E5F18E200F2CDF9 /* LGHYHDForgetPasswordView.m */; };
+		3DF41B0D1E6051AE009B3099 /* AVAudioPlayer+PCM.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DF41AFF1E6051AE009B3099 /* AVAudioPlayer+PCM.m */; };
+		3DF41B0E1E6051AE009B3099 /* MCAudioInputQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DF41B011E6051AE009B3099 /* MCAudioInputQueue.m */; };
+		3DF41B0F1E6051AE009B3099 /* UIView+MJAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DF41B041E6051AE009B3099 /* UIView+MJAlertView.m */; };
+		3DF41B101E6051AE009B3099 /* QRCameraSwitchButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DF41B071E6051AE009B3099 /* QRCameraSwitchButton.m */; };
+		3DF41B111E6051AE009B3099 /* QRCodeReaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DF41B0A1E6051AE009B3099 /* QRCodeReaderView.m */; };
+		3DF41B121E6051AE009B3099 /* QRCodeReaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DF41B0C1E6051AE009B3099 /* QRCodeReaderViewController.m */; };
+		6689919D67B772FA3D1FA741 /* libPods-龙广会员.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A4AD8A06C5EC385D8378B45 /* libPods-龙广会员.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3D31C8071E5E6849005E97BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D31C7E51E5E6845005E97BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D31C7EC1E5E6845005E97BF;
+			remoteInfo = "龙广会员";
+		};
+		3D31C8121E5E6849005E97BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D31C7E51E5E6845005E97BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D31C7EC1E5E6845005E97BF;
+			remoteInfo = "龙广会员";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0128DB683ABB9DD8BEFF8138 /* Pods-龙广会员.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-龙广会员.release.xcconfig"; path = "Pods/Target Support Files/Pods-龙广会员/Pods-龙广会员.release.xcconfig"; sourceTree = "<group>"; };
+		0A4AD8A06C5EC385D8378B45 /* libPods-龙广会员.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-龙广会员.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		17B0E7770FE7BCCECD312052 /* Pods-龙广会员.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-龙广会员.debug.xcconfig"; path = "Pods/Target Support Files/Pods-龙广会员/Pods-龙广会员.debug.xcconfig"; sourceTree = "<group>"; };
+		3D31C7ED1E5E6845005E97BF /* 龙广会员.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "龙广会员.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D31C7F11E5E6846005E97BF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3D31C7FC1E5E6848005E97BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3D31C7FF1E5E6848005E97BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3D31C8011E5E6849005E97BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D31C8061E5E6849005E97BF /* 龙广会员Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "龙广会员Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D31C80A1E5E6849005E97BF /* ____Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "____Tests.m"; sourceTree = "<group>"; };
+		3D31C80C1E5E6849005E97BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D31C8111E5E6849005E97BF /* 龙广会员UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "龙广会员UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D31C8151E5E6849005E97BF /* ____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "____UITests.m"; sourceTree = "<group>"; };
+		3D31C8171E5E6849005E97BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D98E7341E5E77E300F2CDF9 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3D98E7351E5E77E300F2CDF9 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3D98E7401E5E790A00F2CDF9 /* LGHYHDFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGHYHDFirstViewController.h; sourceTree = "<group>"; };
+		3D98E7411E5E790A00F2CDF9 /* LGHYHDFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGHYHDFirstViewController.m; sourceTree = "<group>"; };
+		3D98E7431E5E7B2100F2CDF9 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		3D98E7471E5E7EE300F2CDF9 /* LGHYHDButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGHYHDButton.h; sourceTree = "<group>"; };
+		3D98E7481E5E7EE300F2CDF9 /* LGHYHDButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGHYHDButton.m; sourceTree = "<group>"; };
+		3D98E74A1E5E8AA900F2CDF9 /* LGHYHDFirstView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGHYHDFirstView.h; sourceTree = "<group>"; };
+		3D98E74B1E5E8AA900F2CDF9 /* LGHYHDFirstView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGHYHDFirstView.m; sourceTree = "<group>"; };
+		3D98E74D1E5E8B5A00F2CDF9 /* LGHYHDFirstViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGHYHDFirstViewModel.h; sourceTree = "<group>"; };
+		3D98E74E1E5E8B5A00F2CDF9 /* LGHYHDFirstViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGHYHDFirstViewModel.m; sourceTree = "<group>"; };
+		3D98E7501E5E8CD000F2CDF9 /* FirstViewList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = FirstViewList.plist; sourceTree = "<group>"; };
+		3D98E7521E5EB59D00F2CDF9 /* LGHYHDLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGHYHDLoginViewController.h; sourceTree = "<group>"; };
+		3D98E7531E5EB59D00F2CDF9 /* LGHYHDLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGHYHDLoginViewController.m; sourceTree = "<group>"; };
+		3D98E7551E5EB69200F2CDF9 /* LGHYHDNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGHYHDNavigationViewController.h; sourceTree = "<group>"; };
+		3D98E7561E5EB69200F2CDF9 /* LGHYHDNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGHYHDNavigationViewController.m; sourceTree = "<group>"; };
+		3D98E7581E5EB90200F2CDF9 /* LGHYHDRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGHYHDRegisterViewController.h; sourceTree = "<group>"; };
+		3D98E7591E5EB90200F2CDF9 /* LGHYHDRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGHYHDRegisterViewController.m; sourceTree = "<group>"; };
+		3D98E75B1E5EBAE100F2CDF9 /* LGHYHDVisitorsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGHYHDVisitorsViewController.h; sourceTree = "<group>"; };
+		3D98E75C1E5EBAE100F2CDF9 /* LGHYHDVisitorsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGHYHDVisitorsViewController.m; sourceTree = "<group>"; };
+		3D98E75E1E5EBE4100F2CDF9 /* LGHYHDLoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGHYHDLoginView.h; sourceTree = "<group>"; };
+		3D98E75F1E5EBE4100F2CDF9 /* LGHYHDLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGHYHDLoginView.m; sourceTree = "<group>"; };
+		3D98E7611E5EC09D00F2CDF9 /* LGHYHDTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LGHYHDTextField.h; path = ../View/LGHYHDTextField.h; sourceTree = "<group>"; };
+		3D98E7621E5EC09D00F2CDF9 /* LGHYHDTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LGHYHDTextField.m; path = ../View/LGHYHDTextField.m; sourceTree = "<group>"; };
+		3D98E7791E5ED91C00F2CDF9 /* LGHYHDForgetPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGHYHDForgetPasswordViewController.h; sourceTree = "<group>"; };
+		3D98E77A1E5ED91C00F2CDF9 /* LGHYHDForgetPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGHYHDForgetPasswordViewController.m; sourceTree = "<group>"; };
+		3D98E77C1E5EF62900F2CDF9 /* LGHYHDRegisterViewMakeFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGHYHDRegisterViewMakeFrame.h; sourceTree = "<group>"; };
+		3D98E77D1E5EF62900F2CDF9 /* LGHYHDRegisterViewMakeFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGHYHDRegisterViewMakeFrame.m; sourceTree = "<group>"; };
+		3D98E77F1E5EF89F00F2CDF9 /* LGHYHDRegisterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGHYHDRegisterView.h; sourceTree = "<group>"; };
+		3D98E7801E5EF89F00F2CDF9 /* LGHYHDRegisterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGHYHDRegisterView.m; sourceTree = "<group>"; };
+		3D98E7821E5F106500F2CDF9 /* LGHYHDRealNameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGHYHDRealNameViewController.h; sourceTree = "<group>"; };
+		3D98E7831E5F106500F2CDF9 /* LGHYHDRealNameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGHYHDRealNameViewController.m; sourceTree = "<group>"; };
+		3D98E7851E5F16F700F2CDF9 /* LGHYHDRealNameView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGHYHDRealNameView.h; sourceTree = "<group>"; };
+		3D98E7861E5F16F700F2CDF9 /* LGHYHDRealNameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGHYHDRealNameView.m; sourceTree = "<group>"; };
+		3D98E7881E5F18E200F2CDF9 /* LGHYHDForgetPasswordView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGHYHDForgetPasswordView.h; sourceTree = "<group>"; };
+		3D98E7891E5F18E200F2CDF9 /* LGHYHDForgetPasswordView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGHYHDForgetPasswordView.m; sourceTree = "<group>"; };
+		3DF41AFE1E6051AE009B3099 /* AVAudioPlayer+PCM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AVAudioPlayer+PCM.h"; sourceTree = "<group>"; };
+		3DF41AFF1E6051AE009B3099 /* AVAudioPlayer+PCM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AVAudioPlayer+PCM.m"; sourceTree = "<group>"; };
+		3DF41B001E6051AE009B3099 /* MCAudioInputQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCAudioInputQueue.h; sourceTree = "<group>"; };
+		3DF41B011E6051AE009B3099 /* MCAudioInputQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCAudioInputQueue.m; sourceTree = "<group>"; };
+		3DF41B031E6051AE009B3099 /* UIView+MJAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MJAlertView.h"; sourceTree = "<group>"; };
+		3DF41B041E6051AE009B3099 /* UIView+MJAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MJAlertView.m"; sourceTree = "<group>"; };
+		3DF41B061E6051AE009B3099 /* QRCameraSwitchButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCameraSwitchButton.h; sourceTree = "<group>"; };
+		3DF41B071E6051AE009B3099 /* QRCameraSwitchButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCameraSwitchButton.m; sourceTree = "<group>"; };
+		3DF41B081E6051AE009B3099 /* QRCodeReaderDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeReaderDelegate.h; sourceTree = "<group>"; };
+		3DF41B091E6051AE009B3099 /* QRCodeReaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeReaderView.h; sourceTree = "<group>"; };
+		3DF41B0A1E6051AE009B3099 /* QRCodeReaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeReaderView.m; sourceTree = "<group>"; };
+		3DF41B0B1E6051AE009B3099 /* QRCodeReaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeReaderViewController.h; sourceTree = "<group>"; };
+		3DF41B0C1E6051AE009B3099 /* QRCodeReaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeReaderViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3D31C7EA1E5E6845005E97BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6689919D67B772FA3D1FA741 /* libPods-龙广会员.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D31C8031E5E6849005E97BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D31C80E1E5E6849005E97BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		24DE386A33F37D45F2C0DAD3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A4AD8A06C5EC385D8378B45 /* libPods-龙广会员.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3D31C7E41E5E6845005E97BF = {
+			isa = PBXGroup;
+			children = (
+				3D31C7EF1E5E6846005E97BF /* 龙广会员 */,
+				3D31C8091E5E6849005E97BF /* 龙广会员Tests */,
+				3D31C8141E5E6849005E97BF /* 龙广会员UITests */,
+				3D31C7EE1E5E6845005E97BF /* Products */,
+				EC27CF8CAFCF7949F629426D /* Pods */,
+				24DE386A33F37D45F2C0DAD3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3D31C7EE1E5E6845005E97BF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D31C7ED1E5E6845005E97BF /* 龙广会员.app */,
+				3D31C8061E5E6849005E97BF /* 龙广会员Tests.xctest */,
+				3D31C8111E5E6849005E97BF /* 龙广会员UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3D31C7EF1E5E6846005E97BF /* 龙广会员 */ = {
+			isa = PBXGroup;
+			children = (
+				3DF41AFD1E6051AE009B3099 /* 三方 */,
+				3D98E7141E5E77E300F2CDF9 /* FirstView */,
+				3D98E7291E5E77E300F2CDF9 /* Menu */,
+				3D98E7241E5E77E300F2CDF9 /* MainView */,
+				3D98E72E1E5E77E300F2CDF9 /* Message */,
+				3D98E7361E5E77E300F2CDF9 /* SignIn */,
+				3D98E7331E5E77E300F2CDF9 /* Other */,
+				3D31C7F01E5E6846005E97BF /* Supporting Files */,
+			);
+			path = "龙广会员";
+			sourceTree = "<group>";
+		};
+		3D31C7F01E5E6846005E97BF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3D31C7FC1E5E6848005E97BF /* Assets.xcassets */,
+				3D31C7FE1E5E6848005E97BF /* LaunchScreen.storyboard */,
+				3D31C8011E5E6849005E97BF /* Info.plist */,
+				3D31C7F11E5E6846005E97BF /* main.m */,
+				3D98E7501E5E8CD000F2CDF9 /* FirstViewList.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3D31C8091E5E6849005E97BF /* 龙广会员Tests */ = {
+			isa = PBXGroup;
+			children = (
+				3D31C80A1E5E6849005E97BF /* ____Tests.m */,
+				3D31C80C1E5E6849005E97BF /* Info.plist */,
+			);
+			path = "龙广会员Tests";
+			sourceTree = "<group>";
+		};
+		3D31C8141E5E6849005E97BF /* 龙广会员UITests */ = {
+			isa = PBXGroup;
+			children = (
+				3D31C8151E5E6849005E97BF /* ____UITests.m */,
+				3D31C8171E5E6849005E97BF /* Info.plist */,
+			);
+			path = "龙广会员UITests";
+			sourceTree = "<group>";
+		};
+		3D98E7141E5E77E300F2CDF9 /* FirstView */ = {
+			isa = PBXGroup;
+			children = (
+				3D98E73D1E5E786500F2CDF9 /* Model */,
+				3D98E73F1E5E786500F2CDF9 /* View */,
+				3D98E73C1E5E786500F2CDF9 /* Controller */,
+				3D98E73E1E5E786500F2CDF9 /* Other */,
+				3D98E7151E5E77E300F2CDF9 /* Login */,
+				3D98E71A1E5E77E300F2CDF9 /* Register */,
+				3D98E71F1E5E77E300F2CDF9 /* Visitors */,
+			);
+			path = FirstView;
+			sourceTree = "<group>";
+		};
+		3D98E7151E5E77E300F2CDF9 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				3D98E7171E5E77E300F2CDF9 /* Model */,
+				3D98E7191E5E77E300F2CDF9 /* View */,
+				3D98E7161E5E77E300F2CDF9 /* Controller */,
+				3D98E7181E5E77E300F2CDF9 /* Other */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		3D98E7161E5E77E300F2CDF9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3D98E7521E5EB59D00F2CDF9 /* LGHYHDLoginViewController.h */,
+				3D98E7531E5EB59D00F2CDF9 /* LGHYHDLoginViewController.m */,
+				3D98E7791E5ED91C00F2CDF9 /* LGHYHDForgetPasswordViewController.h */,
+				3D98E77A1E5ED91C00F2CDF9 /* LGHYHDForgetPasswordViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3D98E7171E5E77E300F2CDF9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3D98E7181E5E77E300F2CDF9 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				3D98E7611E5EC09D00F2CDF9 /* LGHYHDTextField.h */,
+				3D98E7621E5EC09D00F2CDF9 /* LGHYHDTextField.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		3D98E7191E5E77E300F2CDF9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3D98E75E1E5EBE4100F2CDF9 /* LGHYHDLoginView.h */,
+				3D98E75F1E5EBE4100F2CDF9 /* LGHYHDLoginView.m */,
+				3D98E7881E5F18E200F2CDF9 /* LGHYHDForgetPasswordView.h */,
+				3D98E7891E5F18E200F2CDF9 /* LGHYHDForgetPasswordView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3D98E71A1E5E77E300F2CDF9 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				3D98E71C1E5E77E300F2CDF9 /* Model */,
+				3D98E71E1E5E77E300F2CDF9 /* View */,
+				3D98E71B1E5E77E300F2CDF9 /* Controller */,
+				3D98E71D1E5E77E300F2CDF9 /* Other */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		3D98E71B1E5E77E300F2CDF9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3D98E7581E5EB90200F2CDF9 /* LGHYHDRegisterViewController.h */,
+				3D98E7591E5EB90200F2CDF9 /* LGHYHDRegisterViewController.m */,
+				3D98E7821E5F106500F2CDF9 /* LGHYHDRealNameViewController.h */,
+				3D98E7831E5F106500F2CDF9 /* LGHYHDRealNameViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3D98E71C1E5E77E300F2CDF9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3D98E77C1E5EF62900F2CDF9 /* LGHYHDRegisterViewMakeFrame.h */,
+				3D98E77D1E5EF62900F2CDF9 /* LGHYHDRegisterViewMakeFrame.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3D98E71D1E5E77E300F2CDF9 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		3D98E71E1E5E77E300F2CDF9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3D98E77F1E5EF89F00F2CDF9 /* LGHYHDRegisterView.h */,
+				3D98E7801E5EF89F00F2CDF9 /* LGHYHDRegisterView.m */,
+				3D98E7851E5F16F700F2CDF9 /* LGHYHDRealNameView.h */,
+				3D98E7861E5F16F700F2CDF9 /* LGHYHDRealNameView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3D98E71F1E5E77E300F2CDF9 /* Visitors */ = {
+			isa = PBXGroup;
+			children = (
+				3D98E7211E5E77E300F2CDF9 /* Model */,
+				3D98E7231E5E77E300F2CDF9 /* View */,
+				3D98E7201E5E77E300F2CDF9 /* Controller */,
+				3D98E7221E5E77E300F2CDF9 /* Other */,
+			);
+			path = Visitors;
+			sourceTree = "<group>";
+		};
+		3D98E7201E5E77E300F2CDF9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3D98E75B1E5EBAE100F2CDF9 /* LGHYHDVisitorsViewController.h */,
+				3D98E75C1E5EBAE100F2CDF9 /* LGHYHDVisitorsViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3D98E7211E5E77E300F2CDF9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3D98E7221E5E77E300F2CDF9 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		3D98E7231E5E77E300F2CDF9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3D98E7241E5E77E300F2CDF9 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				3D98E7261E5E77E300F2CDF9 /* Model */,
+				3D98E7281E5E77E300F2CDF9 /* View */,
+				3D98E7251E5E77E300F2CDF9 /* Controller */,
+				3D98E7271E5E77E300F2CDF9 /* Other */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
+		3D98E7251E5E77E300F2CDF9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3D98E7261E5E77E300F2CDF9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3D98E7271E5E77E300F2CDF9 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		3D98E7281E5E77E300F2CDF9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3D98E7291E5E77E300F2CDF9 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				3D98E72B1E5E77E300F2CDF9 /* Model */,
+				3D98E72D1E5E77E300F2CDF9 /* View */,
+				3D98E72A1E5E77E300F2CDF9 /* Controller */,
+				3D98E72C1E5E77E300F2CDF9 /* Other */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		3D98E72A1E5E77E300F2CDF9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3D98E72B1E5E77E300F2CDF9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3D98E72C1E5E77E300F2CDF9 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		3D98E72D1E5E77E300F2CDF9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3D98E72E1E5E77E300F2CDF9 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				3D98E7301E5E77E300F2CDF9 /* Model */,
+				3D98E7321E5E77E300F2CDF9 /* View */,
+				3D98E72F1E5E77E300F2CDF9 /* Controller */,
+				3D98E7311E5E77E300F2CDF9 /* Other */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		3D98E72F1E5E77E300F2CDF9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3D98E7301E5E77E300F2CDF9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3D98E7311E5E77E300F2CDF9 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		3D98E7321E5E77E300F2CDF9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3D98E7331E5E77E300F2CDF9 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				3D98E7431E5E7B2100F2CDF9 /* PrefixHeader.pch */,
+				3D98E7341E5E77E300F2CDF9 /* AppDelegate.h */,
+				3D98E7351E5E77E300F2CDF9 /* AppDelegate.m */,
+				3D98E7471E5E7EE300F2CDF9 /* LGHYHDButton.h */,
+				3D98E7481E5E7EE300F2CDF9 /* LGHYHDButton.m */,
+				3D98E7551E5EB69200F2CDF9 /* LGHYHDNavigationViewController.h */,
+				3D98E7561E5EB69200F2CDF9 /* LGHYHDNavigationViewController.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		3D98E7361E5E77E300F2CDF9 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				3D98E7381E5E77E300F2CDF9 /* Model */,
+				3D98E73A1E5E77E300F2CDF9 /* View */,
+				3D98E7371E5E77E300F2CDF9 /* Controller */,
+				3D98E7391E5E77E300F2CDF9 /* Other */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		3D98E7371E5E77E300F2CDF9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3D98E7381E5E77E300F2CDF9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3D98E7391E5E77E300F2CDF9 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		3D98E73A1E5E77E300F2CDF9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3D98E73C1E5E786500F2CDF9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3D98E7401E5E790A00F2CDF9 /* LGHYHDFirstViewController.h */,
+				3D98E7411E5E790A00F2CDF9 /* LGHYHDFirstViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3D98E73D1E5E786500F2CDF9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3D98E74D1E5E8B5A00F2CDF9 /* LGHYHDFirstViewModel.h */,
+				3D98E74E1E5E8B5A00F2CDF9 /* LGHYHDFirstViewModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3D98E73E1E5E786500F2CDF9 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		3D98E73F1E5E786500F2CDF9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3D98E74A1E5E8AA900F2CDF9 /* LGHYHDFirstView.h */,
+				3D98E74B1E5E8AA900F2CDF9 /* LGHYHDFirstView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3DF41AFD1E6051AE009B3099 /* 三方 */ = {
+			isa = PBXGroup;
+			children = (
+				3DF41AFE1E6051AE009B3099 /* AVAudioPlayer+PCM.h */,
+				3DF41AFF1E6051AE009B3099 /* AVAudioPlayer+PCM.m */,
+				3DF41B001E6051AE009B3099 /* MCAudioInputQueue.h */,
+				3DF41B011E6051AE009B3099 /* MCAudioInputQueue.m */,
+				3DF41B021E6051AE009B3099 /* MJAlertView */,
+				3DF41B051E6051AE009B3099 /* QRCodeReaderViewController */,
+			);
+			path = "三方";
+			sourceTree = "<group>";
+		};
+		3DF41B021E6051AE009B3099 /* MJAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				3DF41B031E6051AE009B3099 /* UIView+MJAlertView.h */,
+				3DF41B041E6051AE009B3099 /* UIView+MJAlertView.m */,
+			);
+			path = MJAlertView;
+			sourceTree = "<group>";
+		};
+		3DF41B051E6051AE009B3099 /* QRCodeReaderViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3DF41B061E6051AE009B3099 /* QRCameraSwitchButton.h */,
+				3DF41B071E6051AE009B3099 /* QRCameraSwitchButton.m */,
+				3DF41B081E6051AE009B3099 /* QRCodeReaderDelegate.h */,
+				3DF41B091E6051AE009B3099 /* QRCodeReaderView.h */,
+				3DF41B0A1E6051AE009B3099 /* QRCodeReaderView.m */,
+				3DF41B0B1E6051AE009B3099 /* QRCodeReaderViewController.h */,
+				3DF41B0C1E6051AE009B3099 /* QRCodeReaderViewController.m */,
+			);
+			path = QRCodeReaderViewController;
+			sourceTree = "<group>";
+		};
+		EC27CF8CAFCF7949F629426D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				17B0E7770FE7BCCECD312052 /* Pods-龙广会员.debug.xcconfig */,
+				0128DB683ABB9DD8BEFF8138 /* Pods-龙广会员.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3D31C7EC1E5E6845005E97BF /* 龙广会员 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D31C81A1E5E6849005E97BF /* Build configuration list for PBXNativeTarget "龙广会员" */;
+			buildPhases = (
+				87A61780CDD648EE68DCAE91 /* [CP] Check Pods Manifest.lock */,
+				3D31C7E91E5E6845005E97BF /* Sources */,
+				3D31C7EA1E5E6845005E97BF /* Frameworks */,
+				3D31C7EB1E5E6845005E97BF /* Resources */,
+				D6A077A439109200068BCEE5 /* [CP] Embed Pods Frameworks */,
+				C8CD2A28225514F2B3A3976A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "龙广会员";
+			productName = "龙广会员";
+			productReference = 3D31C7ED1E5E6845005E97BF /* 龙广会员.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3D31C8051E5E6849005E97BF /* 龙广会员Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D31C81D1E5E6849005E97BF /* Build configuration list for PBXNativeTarget "龙广会员Tests" */;
+			buildPhases = (
+				3D31C8021E5E6849005E97BF /* Sources */,
+				3D31C8031E5E6849005E97BF /* Frameworks */,
+				3D31C8041E5E6849005E97BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D31C8081E5E6849005E97BF /* PBXTargetDependency */,
+			);
+			name = "龙广会员Tests";
+			productName = "龙广会员Tests";
+			productReference = 3D31C8061E5E6849005E97BF /* 龙广会员Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3D31C8101E5E6849005E97BF /* 龙广会员UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D31C8201E5E6849005E97BF /* Build configuration list for PBXNativeTarget "龙广会员UITests" */;
+			buildPhases = (
+				3D31C80D1E5E6849005E97BF /* Sources */,
+				3D31C80E1E5E6849005E97BF /* Frameworks */,
+				3D31C80F1E5E6849005E97BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D31C8131E5E6849005E97BF /* PBXTargetDependency */,
+			);
+			name = "龙广会员UITests";
+			productName = "龙广会员UITests";
+			productReference = 3D31C8111E5E6849005E97BF /* 龙广会员UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3D31C7E51E5E6845005E97BF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = LGHYHD;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "王宏达";
+				TargetAttributes = {
+					3D31C7EC1E5E6845005E97BF = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = W4EC2R383Y;
+						ProvisioningStyle = Automatic;
+					};
+					3D31C8051E5E6849005E97BF = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = W4EC2R383Y;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3D31C7EC1E5E6845005E97BF;
+					};
+					3D31C8101E5E6849005E97BF = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = W4EC2R383Y;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3D31C7EC1E5E6845005E97BF;
+					};
+				};
+			};
+			buildConfigurationList = 3D31C7E81E5E6845005E97BF /* Build configuration list for PBXProject "龙广会员" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3D31C7E41E5E6845005E97BF;
+			productRefGroup = 3D31C7EE1E5E6845005E97BF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3D31C7EC1E5E6845005E97BF /* 龙广会员 */,
+				3D31C8051E5E6849005E97BF /* 龙广会员Tests */,
+				3D31C8101E5E6849005E97BF /* 龙广会员UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3D31C7EB1E5E6845005E97BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D98E7511E5E8CD000F2CDF9 /* FirstViewList.plist in Resources */,
+				3D31C8001E5E6848005E97BF /* LaunchScreen.storyboard in Resources */,
+				3D31C7FD1E5E6848005E97BF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D31C8041E5E6849005E97BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D31C80F1E5E6849005E97BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		87A61780CDD648EE68DCAE91 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C8CD2A28225514F2B3A3976A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-龙广会员/Pods-龙广会员-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D6A077A439109200068BCEE5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-龙广会员/Pods-龙广会员-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3D31C7E91E5E6845005E97BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D98E75A1E5EB90200F2CDF9 /* LGHYHDRegisterViewController.m in Sources */,
+				3DF41B111E6051AE009B3099 /* QRCodeReaderView.m in Sources */,
+				3D31C7F21E5E6846005E97BF /* main.m in Sources */,
+				3DF41B0F1E6051AE009B3099 /* UIView+MJAlertView.m in Sources */,
+				3DF41B0D1E6051AE009B3099 /* AVAudioPlayer+PCM.m in Sources */,
+				3D98E7841E5F106500F2CDF9 /* LGHYHDRealNameViewController.m in Sources */,
+				3D98E74F1E5E8B5A00F2CDF9 /* LGHYHDFirstViewModel.m in Sources */,
+				3DF41B121E6051AE009B3099 /* QRCodeReaderViewController.m in Sources */,
+				3DF41B0E1E6051AE009B3099 /* MCAudioInputQueue.m in Sources */,
+				3D98E7491E5E7EE300F2CDF9 /* LGHYHDButton.m in Sources */,
+				3D98E7601E5EBE4100F2CDF9 /* LGHYHDLoginView.m in Sources */,
+				3D98E7631E5EC09D00F2CDF9 /* LGHYHDTextField.m in Sources */,
+				3D98E77B1E5ED91C00F2CDF9 /* LGHYHDForgetPasswordViewController.m in Sources */,
+				3D98E74C1E5E8AA900F2CDF9 /* LGHYHDFirstView.m in Sources */,
+				3D98E75D1E5EBAE100F2CDF9 /* LGHYHDVisitorsViewController.m in Sources */,
+				3DF41B101E6051AE009B3099 /* QRCameraSwitchButton.m in Sources */,
+				3D98E7571E5EB69200F2CDF9 /* LGHYHDNavigationViewController.m in Sources */,
+				3D98E77E1E5EF62900F2CDF9 /* LGHYHDRegisterViewMakeFrame.m in Sources */,
+				3D98E7811E5EF89F00F2CDF9 /* LGHYHDRegisterView.m in Sources */,
+				3D98E78A1E5F18E200F2CDF9 /* LGHYHDForgetPasswordView.m in Sources */,
+				3D98E7541E5EB59D00F2CDF9 /* LGHYHDLoginViewController.m in Sources */,
+				3D98E73B1E5E77E300F2CDF9 /* AppDelegate.m in Sources */,
+				3D98E7421E5E790A00F2CDF9 /* LGHYHDFirstViewController.m in Sources */,
+				3D98E7871E5F16F700F2CDF9 /* LGHYHDRealNameView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D31C8021E5E6849005E97BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D31C80B1E5E6849005E97BF /* ____Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D31C80D1E5E6849005E97BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D31C8161E5E6849005E97BF /* ____UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3D31C8081E5E6849005E97BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3D31C7EC1E5E6845005E97BF /* 龙广会员 */;
+			targetProxy = 3D31C8071E5E6849005E97BF /* PBXContainerItemProxy */;
+		};
+		3D31C8131E5E6849005E97BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3D31C7EC1E5E6845005E97BF /* 龙广会员 */;
+			targetProxy = 3D31C8121E5E6849005E97BF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3D31C7FE1E5E6848005E97BF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D31C7FF1E5E6848005E97BF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3D31C8181E5E6849005E97BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
+			};
+			name = Debug;
+		};
+		3D31C8191E5E6849005E97BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3D31C81B1E5E6849005E97BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17B0E7770FE7BCCECD312052 /* Pods-龙广会员.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = W4EC2R383Y;
+				GCC_PREFIX_HEADER = "/Users/wanghongda/Desktop/工程文件夹/龙广会员/龙广会员/Other/PrefixHeader.pch";
+				INFOPLIST_FILE = "龙广会员/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "uormi.----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3D31C81C1E5E6849005E97BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0128DB683ABB9DD8BEFF8138 /* Pods-龙广会员.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = W4EC2R383Y;
+				GCC_PREFIX_HEADER = "/Users/wanghongda/Desktop/工程文件夹/龙广会员/龙广会员/Other/PrefixHeader.pch";
+				INFOPLIST_FILE = "龙广会员/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "uormi.----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3D31C81E1E5E6849005E97BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = W4EC2R383Y;
+				INFOPLIST_FILE = "龙广会员Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.---.----Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/龙广会员.app/龙广会员";
+			};
+			name = Debug;
+		};
+		3D31C81F1E5E6849005E97BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = W4EC2R383Y;
+				INFOPLIST_FILE = "龙广会员Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.---.----Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/龙广会员.app/龙广会员";
+			};
+			name = Release;
+		};
+		3D31C8211E5E6849005E97BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = W4EC2R383Y;
+				INFOPLIST_FILE = "龙广会员UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.---.----UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "龙广会员";
+			};
+			name = Debug;
+		};
+		3D31C8221E5E6849005E97BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = W4EC2R383Y;
+				INFOPLIST_FILE = "龙广会员UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.---.----UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "龙广会员";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3D31C7E81E5E6845005E97BF /* Build configuration list for PBXProject "龙广会员" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D31C8181E5E6849005E97BF /* Debug */,
+				3D31C8191E5E6849005E97BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D31C81A1E5E6849005E97BF /* Build configuration list for PBXNativeTarget "龙广会员" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D31C81B1E5E6849005E97BF /* Debug */,
+				3D31C81C1E5E6849005E97BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D31C81D1E5E6849005E97BF /* Build configuration list for PBXNativeTarget "龙广会员Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D31C81E1E5E6849005E97BF /* Debug */,
+				3D31C81F1E5E6849005E97BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D31C8201E5E6849005E97BF /* Build configuration list for PBXNativeTarget "龙广会员UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D31C8211E5E6849005E97BF /* Debug */,
+				3D31C8221E5E6849005E97BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3D31C7E51E5E6845005E97BF /* Project object */;
+}

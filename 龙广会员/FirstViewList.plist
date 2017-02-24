@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>imageName</key>
+	<string>03.jpg</string>
+	<key>labelText</key>
+	<string>欢迎使用龙广会员APP，登录享受更多权益：方便快捷管理您的积分、订单，实时的信息管理，完善的会员管理！</string>
+	<key>loginButtonName</key>
+	<string>会员登录</string>
+	<key>registerButtonName</key>
+	<string>注册会员</string>
+	<key>visitorsButtonName</key>
+	<string>游客身份</string>
+</dict>
+</plist>
