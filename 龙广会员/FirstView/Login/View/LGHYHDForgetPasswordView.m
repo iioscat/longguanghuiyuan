@@ -73,14 +73,14 @@
         make.top.equalTo(self).with.offset(100);
         make.left.equalTo(self).with.offset(HDMargin);
         make.width.mas_equalTo(HDTextFieldWidth - 140);
-        make.height.mas_equalTo(35);
+        make.height.mas_equalTo(44);
     }];
     [self addSubview:self.numberTextField];
     [self.numberTextField mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.phoneTextField.mas_bottom).with.offset(HDMargin);
         make.left.equalTo(self).with.offset(HDMargin);
         make.width.mas_equalTo(HDTextFieldWidth);
-        make.height.mas_equalTo(35);
+        make.height.mas_equalTo(44);
     }];
     [self addSubview:self.registerBtn];
     [self.registerBtn mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -94,7 +94,7 @@
         make.top.equalTo(self).with.offset(100);
         make.left.equalTo(self.phoneTextField.mas_right).with.offset(HDMargin);
         make.right.equalTo(self).with.offset(-20);
-        make.height.mas_equalTo(35);
+        make.height.mas_equalTo(44);
     }];
     
 }

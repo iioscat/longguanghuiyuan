@@ -14,7 +14,7 @@
 #import "LGHYHDForgetPasswordViewController.h"
 #import "SVProgressHUD.h"
 
-@interface LGHYHDLoginViewController ()<UITextFieldDelegate>
+@interface LGHYHDLoginViewController ()
 
 @end
 
