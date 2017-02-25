@@ -9,7 +9,7 @@
 #import "LGHYHDLoginViewController.h"
 #import "LGHYHDLoginView.h"
 #import "UIView+MJAlertView.h"
-#import "LGHYHDVisitorsViewController.h"
+#import "LGHYHDMainViewController.h"
 #import "LGHYHDRegisterViewController.h"
 #import "LGHYHDForgetPasswordViewController.h"
 #import "SVProgressHUD.h"
@@ -49,7 +49,7 @@
 {
     //NSLog(@"userName:%@ password:%@", _userNameTextField.text, _passwordTextField.text);
     //[self dismissViewControllerAnimated:YES completion:nil];
-    LGHYHDVisitorsViewController *vc = [[LGHYHDVisitorsViewController alloc] init];
+    LGHYHDMainViewController *vc = [[LGHYHDMainViewController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
 }
 #pragma mark - showText

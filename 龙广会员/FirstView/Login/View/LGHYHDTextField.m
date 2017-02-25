@@ -38,7 +38,6 @@
         self.returnKeyType = UIReturnKeyDone;
         
         // 设置背景图片
-        self.background = [UIImage imageNamed:@"background"];
         
         // 设置左边view
         self.leftView = self.leftImageView;

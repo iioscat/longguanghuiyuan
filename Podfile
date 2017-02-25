@@ -8,5 +8,6 @@ pod 'Masonry'
 pod 'MJRefresh'
 pod 'LGAlertView'
 pod 'JDStatusBarNotification'
+pod 'MJExtension'
 
 end

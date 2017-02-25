@@ -11,7 +11,7 @@
 #import "LGHYHDLoginViewController.h"
 #import "LGHYHDRegisterViewController.h"
 #import "LGHYHDRegisterViewController.h"
-#import "LGHYHDVisitorsViewController.h"
+#import "LGHYHDMainViewController.h"
 
 @interface LGHYHDFirstViewController ()
 
@@ -59,7 +59,7 @@
         [weakSelf.navigationController pushViewController:vc1 animated:YES];
     }];
     [self.fistView addVisitorsButtonAction:^(UIButton *button) {
-        LGHYHDVisitorsViewController *vc2 = [[LGHYHDVisitorsViewController alloc] init];
+        LGHYHDMainViewController *vc2 = [[LGHYHDMainViewController alloc] init];
         [weakSelf.navigationController pushViewController:vc2 animated:YES];
     }];
 }

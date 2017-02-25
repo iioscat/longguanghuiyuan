@@ -31,7 +31,7 @@
         _userNameTextField.keyboardType = UIKeyboardTypeNumberPad;
         _userNameTextField.layer.borderColor = [UIColor grayColor].CGColor;
         _userNameTextField.layer.borderWidth = 2.0;
-        _userNameTextField.layer.cornerRadius = 4.0f;
+        _userNameTextField.layer.cornerRadius = 2.0f;
         _userNameTextField.tintColor = [UIColor grayColor];
     }
     return _userNameTextField;

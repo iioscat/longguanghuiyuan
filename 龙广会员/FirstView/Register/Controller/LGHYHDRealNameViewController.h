@@ -8,9 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@class LGHYHDRegisterView;
+@class LGHYHDUpLoadingImage;
 @interface LGHYHDRealNameViewController : UIViewController
 
-@property (nonatomic, strong) LGHYHDRegisterView *forgetPasswordView;
+@property (nonatomic, strong) LGHYHDUpLoadingImage *upImage;
 
 @end

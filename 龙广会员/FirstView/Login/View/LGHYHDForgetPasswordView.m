@@ -28,7 +28,7 @@
         _phoneTextField.keyboardType = UIKeyboardTypeNumberPad;
         _phoneTextField.layer.borderColor = [UIColor grayColor].CGColor;
         _phoneTextField.layer.borderWidth = 2.0;
-        _phoneTextField.layer.cornerRadius = 4.0f;
+        _phoneTextField.layer.cornerRadius = 2.0f;
     }
     return _phoneTextField;
 }
@@ -42,7 +42,7 @@
         _numberTextField.keyboardType = UIKeyboardTypeNumberPad;
         _numberTextField.layer.borderColor = [UIColor grayColor].CGColor;
         _numberTextField.layer.borderWidth = 2.0;
-        _numberTextField.layer.cornerRadius = 4.0f;
+        _numberTextField.layer.cornerRadius = 2.0f;
     }
     return _numberTextField;
 }
