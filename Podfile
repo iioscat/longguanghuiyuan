@@ -9,5 +9,6 @@ pod 'MJRefresh'
 pod 'LGAlertView'
 pod 'JDStatusBarNotification'
 pod 'MJExtension'
+pod 'SDCycleScrollView'
 
 end

@@ -15,6 +15,7 @@
 #import "Masonry.h"
 #import "LGHYHDButton.h"
 #import "SVProgressHUD.h"
+#import "LGHYButton.h"
 
 //背景颜色
 #define backColor [UIColor colorWithRed:223/255.0 green:223/255.0 blue:223/255.0 alpha:1]
