@@ -10,6 +10,8 @@
 #import "LGHYHDRealName.h"
 #import "LGHYHDUpLoadingImage.h"
 
+static NSString *identifier = @"cellID";
+
 @interface LGHYHDRealNameViewController ()<UITableViewDelegate, UITableViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
 @property (nonatomic, strong) UITableView *realNameTableView;
@@ -57,7 +59,7 @@
         [upLoadingImage changeIconAction];
         [upLoadingImage createData];
     }else {
-    NSString *vcName = self.viewControllers[indexPath.section];
+    NSString *vcName = self.viewControllers[indexPath.row];
     NSLog(@"%li", indexPath.section);
     UIViewController * vc = [[NSClassFromString(vcName) alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
@@ -79,21 +81,16 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    NSLog(@"%li", [self.dataList[section] count]);
-    return [self.dataList[section] count];
-}
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     NSLog(@"%li", self.dataList.count);
     return self.dataList.count;
 }
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    NSString *identifier = @"cellID";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:identifier];
     }
-    LGHYHDRealName *realName = self.dataList[indexPath.section][indexPath.row];
+    LGHYHDRealName *realName = self.dataList[indexPath.row];
     cell.textLabel.text = realName.title;
     cell.detailTextLabel.text = realName.data;
     cell.detailTextLabel.font = [UIFont boldSystemFontOfSize:15];

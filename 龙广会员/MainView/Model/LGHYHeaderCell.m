@@ -67,10 +67,30 @@
 - (void)layoutSubviews {
     [super layoutSubviews];
     
-    self.btn1.frame = CGRectMake(10, 10, wid, 40);
-    self.iconView.frame = CGRectMake(30 + wid, 10, wid, 40);
-    self.btn2.frame = CGRectMake(2 * wid + 50, 10, wid, 40);
-    self.btn3.frame = CGRectMake(3 * wid + 70, 10, wid, 40);
+    [self.btn1 mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_equalTo(10);
+        make.left.mas_equalTo(10);
+        make.height.mas_equalTo(40);
+        make.width.mas_equalTo(wid);
+    }];
+    [self.iconView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(self.btn1.mas_right).with.offset(20);
+        make.width.mas_equalTo(wid);
+        make.top.mas_equalTo(10);
+        make.height.mas_equalTo(40);
+    }];
+    [self.btn2 mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(self.iconView.mas_right).with.offset(20);
+        make.width.mas_equalTo(wid);
+        make.top.mas_equalTo(10);
+        make.height.mas_equalTo(40);
+    }];
+    [self.btn3 mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(self.btn2.mas_right).with.offset(20);
+        make.width.mas_equalTo(wid);
+        make.top.mas_equalTo(10);
+        make.height.mas_equalTo(40);
+    }];
 }
 - (void)awakeFromNib {
     // Initialization code

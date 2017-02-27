@@ -15,14 +15,10 @@
     NSArray *rowLists = [NSArray arrayWithContentsOfFile:path];
     NSMutableArray *itemsArray = [NSMutableArray array];
     
-    for (NSArray *rowList in rowLists) {
-        NSMutableArray *itemList = [NSMutableArray array];
-        for (NSDictionary *dict in rowList) {
-            LGHYHDRealName *realname = [[LGHYHDRealName alloc] init];
-            [realname setValuesForKeysWithDictionary:dict];
-            [itemList addObject:realname];
-        }
-        [itemsArray addObject:itemList];
+    for (NSDictionary *dict in rowLists) {
+        LGHYHDRealName *realName = [[LGHYHDRealName alloc] init];
+        [realName setValuesForKeysWithDictionary:dict];
+        [itemsArray addObject:realName];
     }
     return itemsArray;
 }

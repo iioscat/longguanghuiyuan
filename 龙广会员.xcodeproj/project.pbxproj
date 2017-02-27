@@ -80,6 +80,7 @@
 		3D98E7841E5F106500F2CDF9 /* LGHYHDRealNameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D98E7831E5F106500F2CDF9 /* LGHYHDRealNameViewController.m */; };
 		3D98E7871E5F16F700F2CDF9 /* LGHYHDRealNameView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D98E7861E5F16F700F2CDF9 /* LGHYHDRealNameView.m */; };
 		3D98E78A1E5F18E200F2CDF9 /* LGHYHDForgetPasswordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D98E7891E5F18E200F2CDF9 /* LGHYHDForgetPasswordView.m */; };
+		3DCF3E291E63B312008B8900 /* LGHYHDRegisterModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DCF3E281E63B312008B8900 /* LGHYHDRegisterModel.m */; };
 		3DE28EDF1E6061DB00E3C8AF /* LGHYHDIdentifyingCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DE28EDE1E6061DB00E3C8AF /* LGHYHDIdentifyingCodeViewController.m */; };
 		3DF41B0D1E6051AE009B3099 /* AVAudioPlayer+PCM.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DF41AFF1E6051AE009B3099 /* AVAudioPlayer+PCM.m */; };
 		3DF41B0E1E6051AE009B3099 /* MCAudioInputQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DF41B011E6051AE009B3099 /* MCAudioInputQueue.m */; };
@@ -253,6 +254,8 @@
 		3D98E7861E5F16F700F2CDF9 /* LGHYHDRealNameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGHYHDRealNameView.m; sourceTree = "<group>"; };
 		3D98E7881E5F18E200F2CDF9 /* LGHYHDForgetPasswordView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGHYHDForgetPasswordView.h; sourceTree = "<group>"; };
 		3D98E7891E5F18E200F2CDF9 /* LGHYHDForgetPasswordView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGHYHDForgetPasswordView.m; sourceTree = "<group>"; };
+		3DCF3E271E63B312008B8900 /* LGHYHDRegisterModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGHYHDRegisterModel.h; sourceTree = "<group>"; };
+		3DCF3E281E63B312008B8900 /* LGHYHDRegisterModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGHYHDRegisterModel.m; sourceTree = "<group>"; };
 		3DE28EDD1E6061DB00E3C8AF /* LGHYHDIdentifyingCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGHYHDIdentifyingCodeViewController.h; sourceTree = "<group>"; };
 		3DE28EDE1E6061DB00E3C8AF /* LGHYHDIdentifyingCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGHYHDIdentifyingCodeViewController.m; sourceTree = "<group>"; };
 		3DF41AFE1E6051AE009B3099 /* AVAudioPlayer+PCM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AVAudioPlayer+PCM.h"; sourceTree = "<group>"; };
@@ -515,6 +518,8 @@
 			children = (
 				3D0FF6A51E6159F9008DD77A /* LGHYHDRealName.h */,
 				3D0FF6A61E6159F9008DD77A /* LGHYHDRealName.m */,
+				3DCF3E271E63B312008B8900 /* LGHYHDRegisterModel.h */,
+				3DCF3E281E63B312008B8900 /* LGHYHDRegisterModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1146,6 +1151,7 @@
 				3D98E75D1E5EBAE100F2CDF9 /* LGHYHDVisitorsViewController.m in Sources */,
 				3DF41B101E6051AE009B3099 /* QRCameraSwitchButton.m in Sources */,
 				3D0FF6FD1E61B8A8008DD77A /* LGHYHDMainView.m in Sources */,
+				3DCF3E291E63B312008B8900 /* LGHYHDRegisterModel.m in Sources */,
 				3D0FF6A11E61275A008DD77A /* LGHYHDMainViewController.m in Sources */,
 				3D48CCB91E62703A005E9FB8 /* ZFSettingViewController.m in Sources */,
 				3D48CCB11E627018005E9FB8 /* ZFBaseSettingViewController.m in Sources */,
