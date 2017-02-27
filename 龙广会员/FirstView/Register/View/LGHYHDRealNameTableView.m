@@ -29,20 +29,17 @@
     return [self.dataList[section] count];
 }
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return self.dataList.count;
-}
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     NSString *identifier = @"cellID";
     UITableViewCell *cell = [self dequeueReusableCellWithIdentifier:identifier];
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:identifier];
-        LGHYHDRealName *realName = self.dataList[indexPath.section][indexPath.row];
-        cell.textLabel.text = realName.title;
-        cell.detailTextLabel.text = realName.data;
-        cell.detailTextLabel.font = [UIFont boldSystemFontOfSize:15];
-        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     }
+    LGHYHDRealName *realName = self.dataList[indexPath.section][indexPath.row];
+    cell.textLabel.text = realName.title;
+    cell.detailTextLabel.text = realName.data;
+    cell.detailTextLabel.font = [UIFont boldSystemFontOfSize:15];
+    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     return cell;
 }
 

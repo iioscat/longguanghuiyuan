@@ -43,6 +43,7 @@
         _realNameTableView.dataSource = self;
         _realNameTableView.allowsSelection = YES;
         _realNameTableView.backgroundColor = backColor;
+        _realNameTableView.tableFooterView.backgroundColor = [UIColor orangeColor];
     }
     return  _realNameTableView;
 }
@@ -88,15 +89,15 @@
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     NSString *identifier = @"cellID";
-    UITableViewCell *cell = [self.realNameTableView dequeueReusableCellWithIdentifier:identifier];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:identifier];
-        LGHYHDRealName *realName = self.dataList[indexPath.section][indexPath.row];
-        cell.textLabel.text = realName.title;
-        cell.detailTextLabel.text = realName.data;
-        cell.detailTextLabel.font = [UIFont boldSystemFontOfSize:15];
-        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     }
+    LGHYHDRealName *realName = self.dataList[indexPath.section][indexPath.row];
+    cell.textLabel.text = realName.title;
+    cell.detailTextLabel.text = realName.data;
+    cell.detailTextLabel.font = [UIFont boldSystemFontOfSize:15];
+    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     return cell;
 }
 
