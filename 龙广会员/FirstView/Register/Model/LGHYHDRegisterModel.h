@@ -29,7 +29,7 @@
 @property (nonatomic, assign)NSInteger *source;
 
 
-
++ (instancetype)registerWithDic:(NSDictionary *)dict;
 
 
 @end

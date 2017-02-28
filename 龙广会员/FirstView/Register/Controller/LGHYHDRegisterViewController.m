@@ -9,11 +9,15 @@
 #import "LGHYHDRegisterViewController.h"
 #import "LGHYHDRegisterView.h"
 #import "LGHYHDRealNameViewController.h"
+#import "UITextField+LGHYHDMobileNumber.h"
+#import "LGHYHDLoginViewController.h"
 
+static NSInteger sms_token;
 @interface LGHYHDRegisterViewController ()
 
 @property (nonatomic, assign)NSTimer *countDownTimer;
 @property (nonatomic, copy)NSString *time;
+@property (nonatomic, copy)NSString *token;
 
 @end
 
@@ -60,8 +64,8 @@
     //[self.numberTextField resignFirstResponder];
     [SVProgressHUD dismiss];
     NSString *title = NSLocalizedString(@"自助实名认证", nil);
-    NSString *message = NSLocalizedString(@"您已通过注册成为龙广会员，通过“实名认证”即可享受龙广会员俱乐部的贴心服务", nil);
-    NSString *cancelButtonTitle = NSLocalizedString(@"取消", nil);
+    NSString *message = NSLocalizedString(@"您已通过注册成为龙广会员，默认初始密码为手机号，通过“实名认证”即可享受龙广会员俱乐部的贴心服务", nil);
+    NSString *cancelButtonTitle = NSLocalizedString(@"暂不认证", nil);
     NSString *otherButtonTitle = NSLocalizedString(@"实名认证", nil);
     
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert];
@@ -69,6 +73,9 @@
     // Create the actions.
     UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:cancelButtonTitle style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
         NSLog(@"The \"Okay/Cancel\" alert's cancel action occured.");
+        LGHYHDLoginViewController *vc = [[LGHYHDLoginViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+        
     }];
     
     UIAlertAction *otherAction = [UIAlertAction actionWithTitle:otherButtonTitle style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
@@ -85,15 +92,74 @@
 }
 
 - (void)showText {
+    if (![self.registerView.phoneTextField isMobileNumber:self.registerView.phoneTextField.text]) {
+        [JDStatusBarNotification showWithStatus:@"请输入正确的手机号" dismissAfter:3];
+    }else {
     [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeBlack];
     [SVProgressHUD showWithStatus:@"加载中，请稍后。。。"];
-    [self performSelector:@selector(dismiss:) withObject:nil afterDelay:3];
+    AFHTTPSessionManager *session = [AFHTTPSessionManager manager];
+    session.requestSerializer = [AFJSONRequestSerializer serializer];
+    session.responseSerializer = [AFHTTPResponseSerializer serializer];
+    NSString *phoneNumberString = self.registerView.phoneStr;
+    NSString *url = [NSString stringWithFormat:@"http://221.212.177.245/sms-capt?mobile=%@", phoneNumberString];
+    __weak __typeof__(self) weakself = self;
+    [session GET:url parameters:nil progress:^(NSProgress * _Nonnull downloadProgress) {
+        
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        NSLog(@"请求成功:%@", responseObject);
+        NSDictionary *JSON = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingMutableContainers error:nil];
+        self.token = JSON[@"token"];
+        NSLog(@"%@", _token);
+        NSLog(@"请求成功JSON:%@", JSON);
+        [weakself performSelector:@selector(dismiss:) withObject:nil];
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        NSLog(@"请求失败:%@", error.description);
+    }];
+    }
 }
 
 - (void)showSecondText {
     [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeBlack];
     [SVProgressHUD showWithStatus:@"加载中，请稍后。。。"];
-    [self performSelector:@selector(showOkayCancelAlert) withObject:nil afterDelay:3];
+    
+    AFHTTPSessionManager *session = [AFHTTPSessionManager manager];
+    session.requestSerializer = [AFJSONRequestSerializer serializer];
+    session.responseSerializer = [AFHTTPResponseSerializer serializer];
+    NSString *numberString = self.registerView.numberTextField.text;
+    NSString *phoneNumberString = self.registerView.phoneTextField.text;
+    NSString *sms_capt_token = _token;
+    //NSLog(@"%@, %@, %@", numberString, phoneNumberString, sms_capt_token);
+    NSString *url = @"http://221.212.177.245/mobile-reg";
+    NSDictionary *dict = @{
+                           @"mobile":phoneNumberString,
+                           @"capt":numberString,
+                           @"sms_capt_token":@"1e77c6d6-8745-493b-9d5d-ff193679bdab"
+                          };
+    NSLog(@"%@", dict);
+    
+    __weak __typeof__(self) weakself = self;
+    [session POST:url parameters:dict progress:^(NSProgress * _Nonnull uploadProgress) {
+        
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        NSLog(@"请求成功:%@", responseObject);
+        //[self performSelector:@selector(showOkayCancelAlert) withObject:nil];
+        NSDictionary *JSON = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingMutableContainers error:nil];
+        NSLog(@"请求成功JSON:%@", JSON);
+        sms_token = [JSON[@"code"] integerValue];
+        NSLog(@"%li", sms_token);
+        switch (sms_token) {
+            case 7:
+                [weakself performSelector:@selector(showOkayCancelAlert) withObject:nil];
+                break;
+                
+            default:
+                [weakself performSelector:@selector(dismiss_) withObject:nil];
+                break;
+        }
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        NSLog(@"请求失败:%@", error.description);
+
+    }];
 }
 
 - (void)dismiss:(id)sender {
@@ -101,6 +167,9 @@
     [self registerClicked];
 }
 
+- (void)dismiss_ {
+    [SVProgressHUD dismiss];
+}
 static NSInteger secondsCoundDown;
 
 - (void)registerClicked

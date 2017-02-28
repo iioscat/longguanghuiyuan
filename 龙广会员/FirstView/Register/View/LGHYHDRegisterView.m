@@ -8,6 +8,8 @@
 
 #import "LGHYHDRegisterView.h"
 #import "LGHYHDTextField.h"
+#import "LGHYHDRegisterModel.h"
+#import "UITextField+LGHYHDMobileNumber.h"
 
 @interface LGHYHDRegisterView ()<UITextFieldDelegate, UIActionSheetDelegate>
 
@@ -19,11 +21,11 @@
 @implementation LGHYHDRegisterView
 
 #pragma mark - 懒加载
-- (LGHYHDTextField *)phoneTextField {
+- (UITextField *)phoneTextField {
     if (!_phoneTextField) {
         _phoneTextField = [[LGHYHDTextField alloc] init];
         _phoneTextField.delegate = self;
-        _phoneTextField.leftImgName = @"userName";
+        //_phoneTextField.leftImgName = @"userName";
         _phoneTextField.placeholder = @"请输入手机号...";
         _phoneTextField.keyboardType = UIKeyboardTypeNumberPad;
         _phoneTextField.layer.borderColor = [UIColor grayColor].CGColor;
@@ -33,11 +35,11 @@
     return _phoneTextField;
 }
 
-- (LGHYHDTextField *)numberTextField {
+- (UITextField *)numberTextField {
     if (!_numberTextField) {
         _numberTextField = [[LGHYHDTextField alloc] init];
         _numberTextField.delegate = self;
-        _numberTextField.leftImgName = @"userName";
+        //_numberTextField.leftImgName = @"userName";
         _numberTextField.placeholder = @"请输入验证码...";
         _numberTextField.keyboardType = UIKeyboardTypeNumberPad;
         _numberTextField.layer.borderColor = [UIColor grayColor].CGColor;
@@ -103,6 +105,9 @@
 - (void)layoutSubviews {
     [super layoutSubviews];
     [self makeFrame];
+    self.numberStr = self.numberTextField.text;
+    self.phoneStr = self.phoneTextField.text;
+    NSLog(@"%@ %@", self.numberStr, self.phoneStr);
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textDidChangeNotification:) name:UITextFieldTextDidChangeNotification object:nil];
 }
 
@@ -116,10 +121,10 @@
 #pragma mark - textDidChangeNotification
 - (void)textDidChangeNotification:(NSNotification *)notifi {
     
-    if ([self.numberTextField.text isEqualToString:@""] || [self.phoneTextField.text isEqualToString:@""]) {
-        self.registerBtn.enabled = NO;
-    }else{
+    if (self.numberTextField.text.length != 0 && [self.phoneTextField isMobileNumber:self.phoneTextField.text]) {
         self.registerBtn.enabled = YES;
+    }else{
+        self.registerBtn.enabled = NO;
     }
 }
 
@@ -140,6 +145,33 @@
     if (self.showTextButtonBlock) {
         self.showTextButtonBlock(button);
     }
+}
+
+- (void)setRegisterModel:(LGHYHDRegisterModel *)registerModel {
+    _registerModel = registerModel;
+    AFHTTPSessionManager *session = [AFHTTPSessionManager manager];
+    session.requestSerializer = [AFJSONRequestSerializer serializer];
+    session.responseSerializer = [AFHTTPResponseSerializer serializer];
+    NSString *url = @"http://221.212.177.245/mobile-reg";
+    NSString *mobile = _phoneTextField.text;
+    NSString *capt = _numberTextField.text;
+    NSDictionary *dict = @{
+                           @"mobile":mobile,
+                           @"capt":capt,
+                           @"sms_capt_token":@"1e77c6d6-8745-493b-9d5d-ff193679bdab"
+                           };
+
+    [session POST:url parameters:dict progress:^(NSProgress * _Nonnull uploadProgress) {
+        
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        NSLog(@"请求成功:%@", responseObject);
+        NSDictionary *JSON = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingMutableContainers error:nil];
+        NSLog(@"请求成功JSON:%@", JSON);
+        self.registerModel.mobile = JSON[@"mobile"];
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        NSLog(@"请求失败:%@", error.description);
+
+    }];
 }
 
 @end

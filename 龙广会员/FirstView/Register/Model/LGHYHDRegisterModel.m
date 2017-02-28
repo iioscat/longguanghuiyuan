@@ -10,4 +10,10 @@
 
 @implementation LGHYHDRegisterModel
 
++ (instancetype)registerWithDic:(NSDictionary *)dict {
+    LGHYHDRegisterModel *model = [[self alloc] init];
+    [model setValuesForKeysWithDictionary:dict];
+    return model;
+}
+
 @end

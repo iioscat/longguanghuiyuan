@@ -10,4 +10,6 @@
 
 @interface LGHYSecond : NSObject
 
+@property(assign,nonatomic)CGFloat cellHeight;
+
 @end
