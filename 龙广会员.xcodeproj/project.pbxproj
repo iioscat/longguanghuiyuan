@@ -47,6 +47,7 @@
 		3D0FF7541E61CB2C008DD77A /* LGHYScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D0FF7531E61CB2C008DD77A /* LGHYScrollViewController.m */; };
 		3D19C9B11E657D9700DD4CDD /* UITextField+LGHYHDMobileNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D19C9B01E657D9700DD4CDD /* UITextField+LGHYHDMobileNumber.m */; };
 		3D19C9B41E658D4A00DD4CDD /* LGHYHDScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D19C9B31E658D4A00DD4CDD /* LGHYHDScrollView.m */; };
+		3D19C9B71E65A4E900DD4CDD /* LGHYHDActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D19C9B61E65A4E900DD4CDD /* LGHYHDActivityViewController.m */; };
 		3D31C7F21E5E6846005E97BF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D31C7F11E5E6846005E97BF /* main.m */; };
 		3D31C7FD1E5E6848005E97BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D31C7FC1E5E6848005E97BF /* Assets.xcassets */; };
 		3D31C8001E5E6848005E97BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D31C7FE1E5E6848005E97BF /* LaunchScreen.storyboard */; };
@@ -183,6 +184,8 @@
 		3D19C9B01E657D9700DD4CDD /* UITextField+LGHYHDMobileNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+LGHYHDMobileNumber.m"; sourceTree = "<group>"; };
 		3D19C9B21E658D4A00DD4CDD /* LGHYHDScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGHYHDScrollView.h; sourceTree = "<group>"; };
 		3D19C9B31E658D4A00DD4CDD /* LGHYHDScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGHYHDScrollView.m; sourceTree = "<group>"; };
+		3D19C9B51E65A4E900DD4CDD /* LGHYHDActivityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGHYHDActivityViewController.h; sourceTree = "<group>"; };
+		3D19C9B61E65A4E900DD4CDD /* LGHYHDActivityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGHYHDActivityViewController.m; sourceTree = "<group>"; };
 		3D31C7ED1E5E6845005E97BF /* 龙广会员.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "龙广会员.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D31C7F11E5E6846005E97BF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3D31C7FC1E5E6848005E97BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -600,6 +603,8 @@
 				3D0FF7351E61C4FB008DD77A /* LGHYCompileViewController.m */,
 				3D0FF69F1E61275A008DD77A /* LGHYHDMainViewController.h */,
 				3D0FF6A01E61275A008DD77A /* LGHYHDMainViewController.m */,
+				3D19C9B51E65A4E900DD4CDD /* LGHYHDActivityViewController.h */,
+				3D19C9B61E65A4E900DD4CDD /* LGHYHDActivityViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1129,6 +1134,7 @@
 				3D48CCB11E627018005E9FB8 /* ZFBaseSettingViewController.m in Sources */,
 				3D0FF7151E61C3B8008DD77A /* LGHYForth.m in Sources */,
 				3D0FF7361E61C4FB008DD77A /* LGHYCompileViewController.m in Sources */,
+				3D19C9B71E65A4E900DD4CDD /* LGHYHDActivityViewController.m in Sources */,
 				3D98E7571E5EB69200F2CDF9 /* LGHYHDNavigationViewController.m in Sources */,
 				3D98E7811E5EF89F00F2CDF9 /* LGHYHDRegisterView.m in Sources */,
 				3D0FF72D1E61C3FA008DD77A /* WeChat.m in Sources */,
