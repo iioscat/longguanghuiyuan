@@ -9,6 +9,6 @@ pod 'MJRefresh'
 pod 'LGAlertView'
 pod 'JDStatusBarNotification'
 pod 'MJExtension'
-pod 'SDCycleScrollView'
+pod 'SDCycleScrollView', '1.65'
 
 end

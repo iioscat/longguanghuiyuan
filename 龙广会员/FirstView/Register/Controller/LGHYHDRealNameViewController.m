@@ -38,13 +38,14 @@ static NSString *identifier = @"cellID";
 
 - (UITableView *)realNameTableView {
     if (!_realNameTableView) {
-        _realNameTableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
+        _realNameTableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
         //_realNameTableView.sectionHeaderHeight = 10;
-        _realNameTableView.contentInset = UIEdgeInsetsMake(20, 0, 0, 0);
+        _realNameTableView.contentInset = UIEdgeInsetsMake(-20, 0, 0, 0);
         _realNameTableView.delegate = self;
         _realNameTableView.dataSource = self;
         _realNameTableView.allowsSelection = YES;
         _realNameTableView.backgroundColor = backColor;
+        _realNameTableView.tableFooterView.frame = CGRectZero;
         _realNameTableView.tableFooterView.backgroundColor = [UIColor orangeColor];
     }
     return  _realNameTableView;

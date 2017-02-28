@@ -114,6 +114,7 @@ static NSInteger sms_token;
         [weakself performSelector:@selector(dismiss:) withObject:nil];
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         NSLog(@"请求失败:%@", error.description);
+        [JDStatusBarNotification showWithStatus:@"请稍后再试" dismissAfter:3];
     }];
     }
 }

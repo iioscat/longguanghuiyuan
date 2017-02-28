@@ -42,15 +42,11 @@
 		3D0FF73E1E61C5A4008DD77A /* LGHYCarsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D0FF73B1E61C5A4008DD77A /* LGHYCarsViewController.m */; };
 		3D0FF73F1E61C5A4008DD77A /* LGHYQianDaoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D0FF73D1E61C5A4008DD77A /* LGHYQianDaoViewController.m */; };
 		3D0FF7421E61C5D5008DD77A /* LGHYPersonalInformationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D0FF7411E61C5D5008DD77A /* LGHYPersonalInformationController.m */; };
-		3D0FF7451E61C6A0008DD77A /* SXTNewsHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D0FF7441E61C6A0008DD77A /* SXTNewsHeader.m */; };
-		3D0FF7481E61C6E7008DD77A /* LGHYHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D0FF7471E61C6E7008DD77A /* LGHYHeadView.m */; };
-		3D0FF74B1E61C720008DD77A /* SXTCycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D0FF74A1E61C720008DD77A /* SXTCycleScrollView.m */; };
 		3D0FF74E1E61C78F008DD77A /* LGHYPersonalInformaticaView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D0FF74D1E61C78F008DD77A /* LGHYPersonalInformaticaView.m */; };
 		3D0FF7511E61C892008DD77A /* LGHYButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D0FF7501E61C892008DD77A /* LGHYButton.m */; };
 		3D0FF7541E61CB2C008DD77A /* LGHYScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D0FF7531E61CB2C008DD77A /* LGHYScrollViewController.m */; };
-		3D0FF75B1E61CCBD008DD77A /* UIBarButtonItem+XMGExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D0FF7561E61CCBD008DD77A /* UIBarButtonItem+XMGExtension.m */; };
-		3D0FF75C1E61CCBD008DD77A /* UIView+XMGExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D0FF7581E61CCBD008DD77A /* UIView+XMGExtension.m */; };
-		3D0FF75D1E61CCBD008DD77A /* UIViewController+XMGExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D0FF75A1E61CCBD008DD77A /* UIViewController+XMGExtension.m */; };
+		3D19C9B11E657D9700DD4CDD /* UITextField+LGHYHDMobileNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D19C9B01E657D9700DD4CDD /* UITextField+LGHYHDMobileNumber.m */; };
+		3D19C9B41E658D4A00DD4CDD /* LGHYHDScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D19C9B31E658D4A00DD4CDD /* LGHYHDScrollView.m */; };
 		3D31C7F21E5E6846005E97BF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D31C7F11E5E6846005E97BF /* main.m */; };
 		3D31C7FD1E5E6848005E97BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D31C7FC1E5E6848005E97BF /* Assets.xcassets */; };
 		3D31C8001E5E6848005E97BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D31C7FE1E5E6848005E97BF /* LaunchScreen.storyboard */; };
@@ -62,7 +58,6 @@
 		3D48CCB41E627018005E9FB8 /* ZFSettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D48CCB01E627018005E9FB8 /* ZFSettingCell.m */; };
 		3D48CCB91E62703A005E9FB8 /* ZFSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D48CCB51E62703A005E9FB8 /* ZFSettingViewController.m */; };
 		3D48CCBA1E62703A005E9FB8 /* ZFPushNoticeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D48CCB71E62703A005E9FB8 /* ZFPushNoticeViewController.m */; };
-		3D48CCBC1E628DE6005E9FB8 /* news.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3D48CCBB1E628DE6005E9FB8 /* news.plist */; };
 		3D98E73B1E5E77E300F2CDF9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D98E7351E5E77E300F2CDF9 /* AppDelegate.m */; };
 		3D98E7421E5E790A00F2CDF9 /* LGHYHDFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D98E7411E5E790A00F2CDF9 /* LGHYHDFirstViewController.m */; };
 		3D98E7491E5E7EE300F2CDF9 /* LGHYHDButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D98E7481E5E7EE300F2CDF9 /* LGHYHDButton.m */; };
@@ -178,24 +173,16 @@
 		3D0FF73D1E61C5A4008DD77A /* LGHYQianDaoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGHYQianDaoViewController.m; sourceTree = "<group>"; };
 		3D0FF7401E61C5D5008DD77A /* LGHYPersonalInformationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGHYPersonalInformationController.h; sourceTree = "<group>"; };
 		3D0FF7411E61C5D5008DD77A /* LGHYPersonalInformationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGHYPersonalInformationController.m; sourceTree = "<group>"; };
-		3D0FF7431E61C6A0008DD77A /* SXTNewsHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXTNewsHeader.h; sourceTree = "<group>"; };
-		3D0FF7441E61C6A0008DD77A /* SXTNewsHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXTNewsHeader.m; sourceTree = "<group>"; };
-		3D0FF7461E61C6E7008DD77A /* LGHYHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGHYHeadView.h; sourceTree = "<group>"; };
-		3D0FF7471E61C6E7008DD77A /* LGHYHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGHYHeadView.m; sourceTree = "<group>"; };
-		3D0FF7491E61C720008DD77A /* SXTCycleScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXTCycleScrollView.h; sourceTree = "<group>"; };
-		3D0FF74A1E61C720008DD77A /* SXTCycleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXTCycleScrollView.m; sourceTree = "<group>"; };
 		3D0FF74C1E61C78F008DD77A /* LGHYPersonalInformaticaView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGHYPersonalInformaticaView.h; sourceTree = "<group>"; };
 		3D0FF74D1E61C78F008DD77A /* LGHYPersonalInformaticaView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGHYPersonalInformaticaView.m; sourceTree = "<group>"; };
 		3D0FF74F1E61C892008DD77A /* LGHYButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGHYButton.h; sourceTree = "<group>"; };
 		3D0FF7501E61C892008DD77A /* LGHYButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGHYButton.m; sourceTree = "<group>"; };
 		3D0FF7521E61CB2C008DD77A /* LGHYScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGHYScrollViewController.h; sourceTree = "<group>"; };
 		3D0FF7531E61CB2C008DD77A /* LGHYScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGHYScrollViewController.m; sourceTree = "<group>"; };
-		3D0FF7551E61CCBD008DD77A /* UIBarButtonItem+XMGExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+XMGExtension.h"; sourceTree = "<group>"; };
-		3D0FF7561E61CCBD008DD77A /* UIBarButtonItem+XMGExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+XMGExtension.m"; sourceTree = "<group>"; };
-		3D0FF7571E61CCBD008DD77A /* UIView+XMGExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+XMGExtension.h"; sourceTree = "<group>"; };
-		3D0FF7581E61CCBD008DD77A /* UIView+XMGExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+XMGExtension.m"; sourceTree = "<group>"; };
-		3D0FF7591E61CCBD008DD77A /* UIViewController+XMGExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+XMGExtension.h"; sourceTree = "<group>"; };
-		3D0FF75A1E61CCBD008DD77A /* UIViewController+XMGExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+XMGExtension.m"; sourceTree = "<group>"; };
+		3D19C9AF1E657D9700DD4CDD /* UITextField+LGHYHDMobileNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+LGHYHDMobileNumber.h"; sourceTree = "<group>"; };
+		3D19C9B01E657D9700DD4CDD /* UITextField+LGHYHDMobileNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+LGHYHDMobileNumber.m"; sourceTree = "<group>"; };
+		3D19C9B21E658D4A00DD4CDD /* LGHYHDScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGHYHDScrollView.h; sourceTree = "<group>"; };
+		3D19C9B31E658D4A00DD4CDD /* LGHYHDScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGHYHDScrollView.m; sourceTree = "<group>"; };
 		3D31C7ED1E5E6845005E97BF /* 龙广会员.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "龙广会员.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D31C7F11E5E6846005E97BF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3D31C7FC1E5E6848005E97BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -219,7 +206,6 @@
 		3D48CCB61E62703A005E9FB8 /* ZFPushNoticeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFPushNoticeViewController.h; sourceTree = "<group>"; };
 		3D48CCB71E62703A005E9FB8 /* ZFPushNoticeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFPushNoticeViewController.m; sourceTree = "<group>"; };
 		3D48CCB81E62703A005E9FB8 /* ZFSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFSettingViewController.h; sourceTree = "<group>"; };
-		3D48CCBB1E628DE6005E9FB8 /* news.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = news.plist; sourceTree = "<group>"; };
 		3D98E7341E5E77E300F2CDF9 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3D98E7351E5E77E300F2CDF9 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		3D98E7401E5E790A00F2CDF9 /* LGHYHDFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGHYHDFirstViewController.h; sourceTree = "<group>"; };
@@ -348,7 +334,6 @@
 			isa = PBXGroup;
 			children = (
 				3D0FF7321E61C41D008DD77A /* beep.wav */,
-				3D48CCBB1E628DE6005E9FB8 /* news.plist */,
 				3D0FF7301E61C416008DD77A /* industry.plist */,
 				3D0FF72E1E61C40D008DD77A /* weixin.plist */,
 				3D31C7FC1E5E6848005E97BF /* Assets.xcassets */,
@@ -622,8 +607,6 @@
 		3D98E7261E5E77E300F2CDF9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				3D0FF7431E61C6A0008DD77A /* SXTNewsHeader.h */,
-				3D0FF7441E61C6A0008DD77A /* SXTNewsHeader.m */,
 				3D0FF72B1E61C3FA008DD77A /* WeChat.h */,
 				3D0FF72C1E61C3FA008DD77A /* WeChat.m */,
 				3D0FF70A1E61C3B8008DD77A /* LGHYFifth.h */,
@@ -638,12 +621,6 @@
 				3D0FF7131E61C3B8008DD77A /* LGHYThird.m */,
 				3D0FF7071E61C204008DD77A /* LGHYMessage.h */,
 				3D0FF7081E61C204008DD77A /* LGHYMessage.m */,
-				3D0FF7551E61CCBD008DD77A /* UIBarButtonItem+XMGExtension.h */,
-				3D0FF7561E61CCBD008DD77A /* UIBarButtonItem+XMGExtension.m */,
-				3D0FF7571E61CCBD008DD77A /* UIView+XMGExtension.h */,
-				3D0FF7581E61CCBD008DD77A /* UIView+XMGExtension.m */,
-				3D0FF7591E61CCBD008DD77A /* UIViewController+XMGExtension.h */,
-				3D0FF75A1E61CCBD008DD77A /* UIViewController+XMGExtension.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -662,10 +639,6 @@
 				3D0FF6FF1E61BED6008DD77A /* LGHYHeaderCell.m */,
 				3D0FF74C1E61C78F008DD77A /* LGHYPersonalInformaticaView.h */,
 				3D0FF74D1E61C78F008DD77A /* LGHYPersonalInformaticaView.m */,
-				3D0FF7491E61C720008DD77A /* SXTCycleScrollView.h */,
-				3D0FF74A1E61C720008DD77A /* SXTCycleScrollView.m */,
-				3D0FF7461E61C6E7008DD77A /* LGHYHeadView.h */,
-				3D0FF7471E61C6E7008DD77A /* LGHYHeadView.m */,
 				3D0FF7191E61C3D4008DD77A /* Industry.h */,
 				3D0FF7291E61C3E1008DD77A /* Industry.m */,
 				3D0FF71A1E61C3D4008DD77A /* LGHYFifthCell.h */,
@@ -680,6 +653,8 @@
 				3D0FF7231E61C3D4008DD77A /* LGHYThirdCell.m */,
 				3D0FF6FB1E61B8A8008DD77A /* LGHYHDMainView.h */,
 				3D0FF6FC1E61B8A8008DD77A /* LGHYHDMainView.m */,
+				3D19C9B21E658D4A00DD4CDD /* LGHYHDScrollView.h */,
+				3D19C9B31E658D4A00DD4CDD /* LGHYHDScrollView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -784,6 +759,8 @@
 				3D98E7481E5E7EE300F2CDF9 /* LGHYHDButton.m */,
 				3D98E7551E5EB69200F2CDF9 /* LGHYHDNavigationViewController.h */,
 				3D98E7561E5EB69200F2CDF9 /* LGHYHDNavigationViewController.m */,
+				3D19C9AF1E657D9700DD4CDD /* UITextField+LGHYHDMobileNumber.h */,
+				3D19C9B01E657D9700DD4CDD /* UITextField+LGHYHDMobileNumber.m */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -1021,7 +998,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D0FF7311E61C416008DD77A /* industry.plist in Resources */,
-				3D48CCBC1E628DE6005E9FB8 /* news.plist in Resources */,
 				3D98E7511E5E8CD000F2CDF9 /* FirstViewList.plist in Resources */,
 				3D0FF6A91E615AC2008DD77A /* RealNameList.plist in Resources */,
 				3D31C8001E5E6848005E97BF /* LaunchScreen.storyboard in Resources */,
@@ -1109,7 +1085,6 @@
 				3D0FF6BB1E618848008DD77A /* LGHYHDUpLoadingImage.m in Sources */,
 				3DF41B0D1E6051AE009B3099 /* AVAudioPlayer+PCM.m in Sources */,
 				3D0FF7271E61C3D4008DD77A /* LGHYSecondCell.m in Sources */,
-				3D0FF74B1E61C720008DD77A /* SXTCycleScrollView.m in Sources */,
 				3D98E7841E5F106500F2CDF9 /* LGHYHDRealNameViewController.m in Sources */,
 				3D98E74F1E5E8B5A00F2CDF9 /* LGHYHDFirstViewModel.m in Sources */,
 				3D0FF73F1E61C5A4008DD77A /* LGHYQianDaoViewController.m in Sources */,
@@ -1118,10 +1093,10 @@
 				3D0FF7251E61C3D4008DD77A /* LGHYForthCell.m in Sources */,
 				3D0FF7091E61C204008DD77A /* LGHYMessage.m in Sources */,
 				3D48CCB41E627018005E9FB8 /* ZFSettingCell.m in Sources */,
-				3D0FF7451E61C6A0008DD77A /* SXTNewsHeader.m in Sources */,
 				3D0FF7141E61C3B8008DD77A /* LGHYFifth.m in Sources */,
 				3DF41B121E6051AE009B3099 /* QRCodeReaderViewController.m in Sources */,
 				3D0FF7161E61C3B8008DD77A /* LGHYHeader.m in Sources */,
+				3D19C9B41E658D4A00DD4CDD /* LGHYHDScrollView.m in Sources */,
 				3D0FF7241E61C3D4008DD77A /* LGHYFifthCell.m in Sources */,
 				3D0FF6AC1E616805008DD77A /* LGHYHDNameOfRealViewController.m in Sources */,
 				3DF41B0E1E6051AE009B3099 /* MCAudioInputQueue.m in Sources */,
@@ -1134,19 +1109,16 @@
 				3D0FF7051E61C198008DD77A /* LGHYBackView.m in Sources */,
 				3D48CCB31E627018005E9FB8 /* ZFSettingItem.m in Sources */,
 				3D0FF73E1E61C5A4008DD77A /* LGHYCarsViewController.m in Sources */,
-				3D0FF75B1E61CCBD008DD77A /* UIBarButtonItem+XMGExtension.m in Sources */,
 				3D0FF7171E61C3B8008DD77A /* LGHYSecond.m in Sources */,
 				3D0FF7281E61C3D4008DD77A /* LGHYThirdCell.m in Sources */,
 				3D0FF72A1E61C3E1008DD77A /* Industry.m in Sources */,
 				3D0FF7181E61C3B8008DD77A /* LGHYThird.m in Sources */,
 				3D0FF7261E61C3D4008DD77A /* LGHYMessageCell.m in Sources */,
 				3D98E7601E5EBE4100F2CDF9 /* LGHYHDLoginView.m in Sources */,
-				3D0FF7481E61C6E7008DD77A /* LGHYHeadView.m in Sources */,
 				3D98E7631E5EC09D00F2CDF9 /* LGHYHDTextField.m in Sources */,
 				3D98E77B1E5ED91C00F2CDF9 /* LGHYHDForgetPasswordViewController.m in Sources */,
 				3DE28EDF1E6061DB00E3C8AF /* LGHYHDIdentifyingCodeViewController.m in Sources */,
 				3D98E74C1E5E8AA900F2CDF9 /* LGHYHDFirstView.m in Sources */,
-				3D0FF75D1E61CCBD008DD77A /* UIViewController+XMGExtension.m in Sources */,
 				3D48CCB21E627018005E9FB8 /* ZFSettingGroup.m in Sources */,
 				3D98E75D1E5EBAE100F2CDF9 /* LGHYHDVisitorsViewController.m in Sources */,
 				3DF41B101E6051AE009B3099 /* QRCameraSwitchButton.m in Sources */,
@@ -1160,7 +1132,6 @@
 				3D98E7571E5EB69200F2CDF9 /* LGHYHDNavigationViewController.m in Sources */,
 				3D98E7811E5EF89F00F2CDF9 /* LGHYHDRegisterView.m in Sources */,
 				3D0FF72D1E61C3FA008DD77A /* WeChat.m in Sources */,
-				3D0FF75C1E61CCBD008DD77A /* UIView+XMGExtension.m in Sources */,
 				3D0FF7061E61C198008DD77A /* LGHYListView.m in Sources */,
 				3D98E78A1E5F18E200F2CDF9 /* LGHYHDForgetPasswordView.m in Sources */,
 				3D0FF6B21E616837008DD77A /* LGHYHDCountryOfRealViewController.m in Sources */,
@@ -1168,6 +1139,7 @@
 				3D98E73B1E5E77E300F2CDF9 /* AppDelegate.m in Sources */,
 				3D0FF7511E61C892008DD77A /* LGHYButton.m in Sources */,
 				3D98E7421E5E790A00F2CDF9 /* LGHYHDFirstViewController.m in Sources */,
+				3D19C9B11E657D9700DD4CDD /* UITextField+LGHYHDMobileNumber.m in Sources */,
 				3D98E7871E5F16F700F2CDF9 /* LGHYHDRealNameView.m in Sources */,
 				3D0FF7421E61C5D5008DD77A /* LGHYPersonalInformationController.m in Sources */,
 				3D0FF6A71E6159F9008DD77A /* LGHYHDRealName.m in Sources */,
