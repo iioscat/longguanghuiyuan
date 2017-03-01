@@ -21,12 +21,12 @@
 @implementation LGHYHDLoginView
 
 #pragma mark - 懒加载
-- (LGHYHDTextField *)userNameTextField
+- (UITextField *)userNameTextField
 {
     if (!_userNameTextField) {
         _userNameTextField = [[LGHYHDTextField alloc] init];
         _userNameTextField.delegate = self;
-        _userNameTextField.leftImgName = @"userName";
+        //_userNameTextField.leftImgName = @"userName";
         _userNameTextField.placeholder = @"会员卡号/身份证号/注册手机号";
         _userNameTextField.keyboardType = UIKeyboardTypeNumberPad;
         _userNameTextField.layer.borderColor = [UIColor grayColor].CGColor;
@@ -37,11 +37,11 @@
     return _userNameTextField;
 }
 
-- (LGHYHDTextField *)passwordTextField
+- (UITextField *)passwordTextField
 {
     if (!_passwordTextField) {
         _passwordTextField = [[LGHYHDTextField alloc] init];
-        _passwordTextField.leftImgName = @"password";
+        //_passwordTextField.leftImgName = @"password";
         _passwordTextField.delegate = self;
         // 密码模式
         _passwordTextField.secureTextEntry = YES;

@@ -13,8 +13,14 @@
 #import "LGHYHDRegisterViewController.h"
 #import "LGHYHDForgetPasswordViewController.h"
 #import "SVProgressHUD.h"
+#import "LGHYHDPost.h"
 
-@interface LGHYHDLoginViewController ()
+
+@interface LGHYHDLoginViewController ()<postDelegate>
+
+@property (nonatomic, copy) NSString *nameStr, *pwdStr;
+@property (nonatomic, strong) NSDictionary *jsonData;
+@property (nonatomic, strong) LGHYHDPost *post;
 
 @end
 
@@ -54,15 +60,34 @@
 }
 #pragma mark - showText
 - (void)showText {
-    //键盘隐藏
+    
+    //LGHYHDPost *post = [[LGHYHDPost alloc] init];
+    _post = [[LGHYHDPost alloc] init];
+    _post.postDelegate = self;
     //[_loginView.userNameTextField resignFirstResponder];
     NSLog(@"show");
     [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeBlack];
     
     [SVProgressHUD showWithStatus:@"加载中，请稍后。。。"];
+    
+    NSString *url = @"http://221.212.177.245/login";
+    self.nameStr = self.loginView.userNameTextField.text;
+    self.pwdStr = self.loginView.passwordTextField.text;
+    NSDictionary *dict = @{
+                           @"name":self.nameStr,
+                           @"pwd":self.pwdStr
+                           };
+    NSLog(@"%@", dict);
+    [_post postWithUrl:url andDictionary:dict];
     [self performSelector:@selector(dismiss) withObject:nil afterDelay:3];
 }
 
+- (void)getJsonWithString:(NSString *)string {
+    NSLog(@"接收到传值%@", string);
+    NSData *data = [string dataUsingEncoding:NSUTF8StringEncoding];
+    _jsonData = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
+    NSLog(@"服务器返回的数据%@", _jsonData);
+}
 - (void)dismiss {
     [SVProgressHUD dismiss];
     [self loginAction];

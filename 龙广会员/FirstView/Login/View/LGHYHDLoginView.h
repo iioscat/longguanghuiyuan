@@ -13,7 +13,7 @@
 typedef void(^ButtonBlock)(UIButton *button);
 @interface LGHYHDLoginView : UIView
 
-@property (nonatomic, strong) LGHYHDTextField *userNameTextField, *passwordTextField;
+@property (nonatomic, strong) UITextField *userNameTextField, *passwordTextField;
 @property (nonatomic, strong) UIButton *loginBtn, *registerBtn, *forgetPasswordBtn;
 
 - (void)addLoginButtonAction:(ButtonBlock)block;

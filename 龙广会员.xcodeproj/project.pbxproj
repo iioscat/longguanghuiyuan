@@ -59,6 +59,7 @@
 		3D48CCB41E627018005E9FB8 /* ZFSettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D48CCB01E627018005E9FB8 /* ZFSettingCell.m */; };
 		3D48CCB91E62703A005E9FB8 /* ZFSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D48CCB51E62703A005E9FB8 /* ZFSettingViewController.m */; };
 		3D48CCBA1E62703A005E9FB8 /* ZFPushNoticeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D48CCB71E62703A005E9FB8 /* ZFPushNoticeViewController.m */; };
+		3D613AE91E6658B400453FB2 /* LGHYHDPost.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D613AE81E6658B400453FB2 /* LGHYHDPost.m */; };
 		3D98E73B1E5E77E300F2CDF9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D98E7351E5E77E300F2CDF9 /* AppDelegate.m */; };
 		3D98E7421E5E790A00F2CDF9 /* LGHYHDFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D98E7411E5E790A00F2CDF9 /* LGHYHDFirstViewController.m */; };
 		3D98E7491E5E7EE300F2CDF9 /* LGHYHDButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D98E7481E5E7EE300F2CDF9 /* LGHYHDButton.m */; };
@@ -209,6 +210,8 @@
 		3D48CCB61E62703A005E9FB8 /* ZFPushNoticeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFPushNoticeViewController.h; sourceTree = "<group>"; };
 		3D48CCB71E62703A005E9FB8 /* ZFPushNoticeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFPushNoticeViewController.m; sourceTree = "<group>"; };
 		3D48CCB81E62703A005E9FB8 /* ZFSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFSettingViewController.h; sourceTree = "<group>"; };
+		3D613AE71E6658B400453FB2 /* LGHYHDPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGHYHDPost.h; sourceTree = "<group>"; };
+		3D613AE81E6658B400453FB2 /* LGHYHDPost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGHYHDPost.m; sourceTree = "<group>"; };
 		3D98E7341E5E77E300F2CDF9 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3D98E7351E5E77E300F2CDF9 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		3D98E7401E5E790A00F2CDF9 /* LGHYHDFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGHYHDFirstViewController.h; sourceTree = "<group>"; };
@@ -454,6 +457,8 @@
 		3D98E7181E5E77E300F2CDF9 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				3D613AE71E6658B400453FB2 /* LGHYHDPost.h */,
+				3D613AE81E6658B400453FB2 /* LGHYHDPost.m */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -1138,6 +1143,7 @@
 				3D98E7571E5EB69200F2CDF9 /* LGHYHDNavigationViewController.m in Sources */,
 				3D98E7811E5EF89F00F2CDF9 /* LGHYHDRegisterView.m in Sources */,
 				3D0FF72D1E61C3FA008DD77A /* WeChat.m in Sources */,
+				3D613AE91E6658B400453FB2 /* LGHYHDPost.m in Sources */,
 				3D0FF7061E61C198008DD77A /* LGHYListView.m in Sources */,
 				3D98E78A1E5F18E200F2CDF9 /* LGHYHDForgetPasswordView.m in Sources */,
 				3D0FF6B21E616837008DD77A /* LGHYHDCountryOfRealViewController.m in Sources */,

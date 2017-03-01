@@ -64,7 +64,7 @@
         _scrollView = [SDCycleScrollView cycleScrollViewWithFrame:CGRectMake(0, 0, wid - 20, 161) imageNamesGroup:@[@"06news",@"07news",@"08news",@"09news"]];
         _scrollView.pageControlAliment = SDCycleScrollViewPageContolAlimentRight;
         _scrollView.autoScrollTimeInterval = 3;
-        _scrollView.titleLabelTextColor = [[UIColor blackColor] colorWithAlphaComponent:0.4];
+        _scrollView.titleLabelTextColor = [UIColor whiteColor];
         _scrollView.titlesGroup = @[@"11111111",@"2222222",@"3333333333",@"444444444",@"555555555"];
     }
     return _scrollView;

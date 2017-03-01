@@ -65,8 +65,9 @@
         _cycView.pageControlAliment = SDCycleScrollViewPageContolAlimentRight;
         _cycView.autoScrollTimeInterval = 2;
         _cycView.delegate = self;
-        _cycView.titleLabelTextColor = [[UIColor blackColor] colorWithAlphaComponent:0.4];
-        _cycView.titlesGroup = @[@"11111111",@"2222222",@"3333333333",@"444444444",@"555555555"];    }
+        _cycView.titleLabelTextColor = [UIColor whiteColor];
+        _cycView.titlesGroup = @[@"11111111",@"2222222",@"3333333333",@"444444444",@"555555555"];
+    }
     return _cycView;
 }
 
