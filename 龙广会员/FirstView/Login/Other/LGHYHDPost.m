@@ -15,8 +15,6 @@
 @implementation LGHYHDPost
 
 - (void)postWithUrl:(NSString *)url andDictionary:(NSDictionary *)dict {
-    __block NSDictionary *JSON = [NSDictionary dictionary];
-    __block NSDictionary *Json = [NSDictionary dictionary];
     __block NSString *string = [NSString string];
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
     AFHTTPSessionManager *sesson = [AFHTTPSessionManager manager];
@@ -31,10 +29,9 @@
             NSLog(@"string = %@", string);
 //            JSON = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingMutableContainers error:nil];
 //            NSLog(@"请求成功：%@", JSON);
-            if([_postDelegate respondsToSelector:@selector(getJsonWithString:)]){
-                [_postDelegate getJsonWithString:string];
+            if([_postDelegate respondsToSelector:@selector(postJsonWithString:)]){
+                [_postDelegate postJsonWithString:string];
             }
-            
         });
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         NSLog(@"请求失败：%@", error.description);

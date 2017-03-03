@@ -10,7 +10,7 @@
 
 @protocol postDelegate <NSObject>
 
-- (void)getJsonWithString:(NSString *)string;
+- (void)postJsonWithString:(NSString *)string;
 
 @end
 
