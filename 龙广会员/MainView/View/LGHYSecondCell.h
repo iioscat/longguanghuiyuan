@@ -22,5 +22,6 @@
 
 @property(assign,nonatomic)id<myTabVdelegate>delegate;
 @property(assign,nonatomic)id<myTabVdelegate>secondCellBtn1Delegate;
+@property(assign,nonatomic)CGFloat cellHeight;
 
 @end

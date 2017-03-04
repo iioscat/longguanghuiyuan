@@ -56,42 +56,42 @@
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
         [self.contentView addSubview:self.btn1];
-        //[self.contentView addSubview:self.iconView];
+        [self.btn1 mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.mas_equalTo(10);
+            make.left.mas_equalTo(10);
+            make.height.mas_equalTo(40);
+            make.width.mas_equalTo(wid);
+        }];
+
         [self.contentView addSubview:self.iconView];
+        [self.iconView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.equalTo(self.btn1.mas_right).with.offset(20);
+            make.width.mas_equalTo(wid);
+            make.top.mas_equalTo(10);
+            make.height.mas_equalTo(40);
+        }];
+        
         [self.contentView addSubview:self.btn2];
+        [self.btn2 mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.equalTo(self.iconView.mas_right).with.offset(20);
+            make.width.mas_equalTo(wid);
+            make.top.mas_equalTo(10);
+            make.height.mas_equalTo(40);
+        }];
+        
         [self.contentView addSubview:self.btn3];
+        [self.btn3 mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.equalTo(self.btn2.mas_right).with.offset(20);
+            make.width.mas_equalTo(wid);
+            make.top.mas_equalTo(10);
+            make.height.mas_equalTo(40);
+        }];
+        [self layoutIfNeeded];
+        _cellHeight = CGRectGetMaxY(self.btn1.frame) + 10;
     }
     return self;
 }
 
-- (void)layoutSubviews {
-    [super layoutSubviews];
-    
-    [self.btn1 mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_equalTo(10);
-        make.left.mas_equalTo(10);
-        make.height.mas_equalTo(40);
-        make.width.mas_equalTo(wid);
-    }];
-    [self.iconView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(self.btn1.mas_right).with.offset(20);
-        make.width.mas_equalTo(wid);
-        make.top.mas_equalTo(10);
-        make.height.mas_equalTo(40);
-    }];
-    [self.btn2 mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(self.iconView.mas_right).with.offset(20);
-        make.width.mas_equalTo(wid);
-        make.top.mas_equalTo(10);
-        make.height.mas_equalTo(40);
-    }];
-    [self.btn3 mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(self.btn2.mas_right).with.offset(20);
-        make.width.mas_equalTo(wid);
-        make.top.mas_equalTo(10);
-        make.height.mas_equalTo(40);
-    }];
-}
 - (void)awakeFromNib {
     // Initialization code
     [super awakeFromNib];

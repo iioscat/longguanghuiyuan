@@ -40,7 +40,7 @@
         _label = [[UILabel alloc] init];
         _label.text = @"即将参与的活动";
         _label.textColor = [UIColor grayColor];
-        _label.font = [UIFont boldSystemFontOfSize:16];
+        _label.font = [UIFont boldSystemFontOfSize:18];
         _label.textAlignment = NSTextAlignmentCenter;
         //_label.backgroundColor = [UIColor redColor];
     }
@@ -58,10 +58,11 @@
     }
     return _btn;
 }
-
+//CGRectMake(0, 0, wid - 20, 161)
 - (SDCycleScrollView *)cycView {
     if (!_cycView) {
-        _cycView = [SDCycleScrollView cycleScrollViewWithFrame:CGRectMake(0, 0, wid - 20, 161) imageNamesGroup:@[@"01news",@"02news",@"03news",@"04news",@"05news"]];
+        [SDCycleScrollView clearImagesCache];
+        _cycView = [SDCycleScrollView cycleScrollViewWithFrame:CGRectZero imageNamesGroup:@[@"01news",@"02news",@"03news",@"04news",@"05news"]];
         _cycView.pageControlAliment = SDCycleScrollViewPageContolAlimentRight;
         _cycView.autoScrollTimeInterval = 2;
         _cycView.delegate = self;
@@ -74,33 +75,31 @@
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
         [self.contentView addSubview:self.label];
-        [self.contentView addSubview:self.btn];
+        [self.label mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.equalTo(@2);
+            make.width.equalTo(@(wid - 240));
+            make.left.equalTo(@120);
+            make.height.equalTo(@20);
+        }];
         [self.contentView addSubview:self.cycView];
+        [self.cycView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.mas_equalTo(10);
+            make.right.mas_equalTo(-10);
+            make.top.equalTo(self.label.mas_bottom).with.offset(2);
+            make.height.mas_equalTo(200);
+        }];
+        [self.contentView addSubview:self.btn];
+        [self.btn mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.equalTo(self.cycView.mas_bottom).with.offset(5);
+            make.right.equalTo(@0);
+            make.width.equalTo(@90);
+            make.height.equalTo(@16);
+        }];
+    
+        [self layoutIfNeeded];
+        _cellHeight = CGRectGetMaxY(self.btn.frame);
     }
     return self;
-}
-
-- (void)layoutSubviews {
-    [super layoutSubviews];
-    [self.label mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(@2);
-        make.width.equalTo(@(wid - 240));
-        make.left.equalTo(@120);
-        make.height.equalTo(@16);
-    }];
-    [self.btn mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.bottom.equalTo(@0);
-        make.right.equalTo(@0);
-        make.width.equalTo(@90);
-        make.height.equalTo(@16);
-    }];
-    [self.cycView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.mas_equalTo(10);
-        make.right.mas_equalTo(-10);
-        make.top.equalTo(self.label.mas_bottom).with.offset(2);
-        make.bottom.equalTo(self.btn.mas_top).with.offset(-2);
-    }];
-    
 }
 - (void)doAction:(UIButton *)btn {
     NSLog(@"更多活动>>");

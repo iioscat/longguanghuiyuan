@@ -17,4 +17,5 @@
 @interface LGHYForthCell : UITableViewCell
 
 @property(assign,nonatomic)id<forthCellDelegate>forthCellBtnDelegate;
+@property(assign,nonatomic)CGFloat cellHeight;
 @end

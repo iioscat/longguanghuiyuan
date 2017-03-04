@@ -103,60 +103,58 @@
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
         [self.contentView addSubview:self.iconView];
+        [self.iconView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.equalTo(@0);
+            make.width.equalTo(@80);
+            make.height.equalTo(@80);
+            make.top.equalTo(@20);
+        }];
+
         [self.contentView addSubview:self.label1];
+        [self.label1 mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.equalTo(@15);
+            make.left.equalTo(self.iconView.mas_right).with.offset(20);
+            make.right.equalTo(@20);
+        }];
         [self.contentView addSubview:self.label2];
+        [self.label2 mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.equalTo(self.label1.mas_bottom).with.offset(5);
+            make.left.equalTo(self.iconView.mas_right).with.offset(20);
+            make.right.equalTo(@20);
+        }];
         [self.contentView addSubview:self.label3];
+        [self.label3 mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.equalTo(self.label2.mas_bottom).with.offset(5);
+            make.left.equalTo(self.iconView.mas_right).with.offset(20);
+            make.right.equalTo(@20);
+        }];
         [self.contentView addSubview:self.label4];
+        [self.label4 mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.equalTo(self.label3.mas_bottom).with.offset(5);
+            make.left.equalTo(self.iconView.mas_right).with.offset(20);
+            make.right.equalTo(@20);
+        }];
         [self.contentView addSubview:self.btn1];
+        [self.btn1 mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.mas_equalTo(self.label4.mas_bottom).with.offset(10);
+            make.left.equalTo(self.iconView.mas_right).with.offset(50);
+            make.height.equalTo(@30);
+            make.width.equalTo(@80);
+        }];
+
         [self.contentView addSubview:self.btn2];
+        [self.btn2 mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.right.equalTo(@(-40));
+            make.height.equalTo(@20);
+            make.width.equalTo(@40);
+            make.bottom.equalTo(@(-5));
+        }];
+        [self layoutIfNeeded];
+        _cellHeight = CGRectGetMaxY(self.btn1.frame) + 15;
     }
     return self;
 }
 
-- (void)layoutSubviews {
-    [super layoutSubviews];
-    
-    [self.iconView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(@0);
-        make.width.equalTo(@80);
-        make.height.equalTo(@80);
-        make.top.equalTo(@20);
-    }];
-    [self.label1 mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(@15);
-        make.left.equalTo(self.iconView.mas_right).with.offset(20);
-        make.right.equalTo(@20);
-    }];
-    [self.label2 mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.label1.mas_bottom).with.offset(5);
-        make.left.equalTo(self.iconView.mas_right).with.offset(20);
-        make.right.equalTo(@20);
-    }];
-    [self.label3 mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.label2.mas_bottom).with.offset(5);
-        make.left.equalTo(self.iconView.mas_right).with.offset(20);
-        make.right.equalTo(@20);
-    }];
-    [self.label4 mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.label3.mas_bottom).with.offset(5);
-        make.left.equalTo(self.iconView.mas_right).with.offset(20);
-        make.right.equalTo(@20);
-    }];
-    [self.btn1 mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.bottom.equalTo(@(-20));
-        make.left.equalTo(self.iconView.mas_right).with.offset(50);
-        make.height.equalTo(@30);
-        make.width.equalTo(@80);
-    }];
-    [self.btn2 mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.right.equalTo(@(-40));
-        make.height.equalTo(@20);
-        make.width.equalTo(@40);
-        make.bottom.equalTo(@0);
-    }];
-    _second.cellHeight = CGRectGetMaxY(self.btn2.frame) + 5;
-    
-}
 - (void)awakeFromNib {
     // Initialization code
     [super awakeFromNib];

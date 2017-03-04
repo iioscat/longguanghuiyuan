@@ -22,5 +22,6 @@
 @property(assign,nonatomic)id<headerCellDelegate>headerCellBtn1Delegate;
 @property(assign,nonatomic)id<headerCellDelegate>headerCellBtn2Delegate;
 @property(assign,nonatomic)id<headerCellDelegate>headerCellBtn3Delegate;
+@property(assign,nonatomic)CGFloat cellHeight;
 
 @end

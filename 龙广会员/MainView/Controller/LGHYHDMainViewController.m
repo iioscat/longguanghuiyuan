@@ -84,7 +84,7 @@ static NSString * identifier = @"cellID";
         _tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
         _tableView.backgroundColor = [UIColor colorWithRed:223/255.0 green:223/255.0 blue:223/255.0 alpha:1];
         
-        [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:identifier];
+        //[_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:identifier];
         _tableView.separatorInset = UIEdgeInsetsMake(0, 0, 0, 0);
         //        _tableView.contentInset = UIEdgeInsetsMake(-20, 0, 0, 0);
     }
@@ -140,7 +140,7 @@ static NSString * identifier = @"cellID";
             cellTest.headerCellBtn3Delegate = self;
             cell = cellTest;
             cell.selectionStyle = UITableViewCellSelectionStyleNone;
-            tableView.rowHeight = 60;
+            tableView.rowHeight = cellTest.cellHeight;
             //cell.contentView.backgroundColor = [UIColor colorWithRed:223/255.0 green:223/255.0 blue:223/255.0 alpha:1];
         }else {
             LGHYSecondCell *cellTest = [tableView dequeueReusableCellWithIdentifier:identifier];
@@ -149,7 +149,7 @@ static NSString * identifier = @"cellID";
             cellTest.secondCellBtn1Delegate = self;
             cell = cellTest;
             cell.selectionStyle = UITableViewCellSelectionStyleNone;
-            tableView.rowHeight = 170;
+            tableView.rowHeight = cellTest.cellHeight;
             //cell.contentView.backgroundColor = [UIColor colorWithRed:223/255.0 green:223/255.0 blue:223/255.0 alpha:1];
             
         }
@@ -161,7 +161,7 @@ static NSString * identifier = @"cellID";
             cellTest.thirdCellClickDelegate = self;
             cell = cellTest;
             cell.selectionStyle = UITableViewCellSelectionStyleNone;
-            tableView.rowHeight = 200;
+            tableView.rowHeight = cellTest.cellHeight;
             //cell.contentView.backgroundColor = [UIColor colorWithRed:223/255.0 green:223/255.0 blue:223/255.0 alpha:1];
             
         }else {
@@ -170,7 +170,7 @@ static NSString * identifier = @"cellID";
             cellTest.forthCellBtnDelegate = self;
             cell = cellTest;
             cell.selectionStyle = UITableViewCellSelectionStyleNone;
-            tableView.rowHeight = 200;
+            tableView.rowHeight = cellTest.cellHeight;
             //cell.contentView.backgroundColor = [UIColor colorWithRed:223/255.0 green:223/255.0 blue:223/255.0 alpha:1];
             
         }
@@ -206,6 +206,10 @@ static NSString * identifier = @"cellID";
     }
     return cell;
 }
+
+//- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath {
+//    return 200;
+//}
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];

@@ -19,5 +19,6 @@
 
 @property(assign,nonatomic)id<thirdCellDelegate>thirdCellBtnDelegate;
 @property(assign,nonatomic)id<thirdCellDelegate>thirdCellClickDelegate;
+@property(assign,nonatomic)CGFloat cellHeight;
 
 @end
