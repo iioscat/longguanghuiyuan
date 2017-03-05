@@ -81,6 +81,7 @@
 		3D98E7841E5F106500F2CDF9 /* LGHYHDRealNameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D98E7831E5F106500F2CDF9 /* LGHYHDRealNameViewController.m */; };
 		3D98E7871E5F16F700F2CDF9 /* LGHYHDRealNameView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D98E7861E5F16F700F2CDF9 /* LGHYHDRealNameView.m */; };
 		3D98E78A1E5F18E200F2CDF9 /* LGHYHDForgetPasswordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D98E7891E5F18E200F2CDF9 /* LGHYHDForgetPasswordView.m */; };
+		3DAB25F21E6BF3640010ADC0 /* LGHYHDViewForSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DAB25F11E6BF3640010ADC0 /* LGHYHDViewForSection.m */; };
 		3DCF3E291E63B312008B8900 /* LGHYHDRegisterModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DCF3E281E63B312008B8900 /* LGHYHDRegisterModel.m */; };
 		3DE28EDF1E6061DB00E3C8AF /* LGHYHDIdentifyingCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DE28EDE1E6061DB00E3C8AF /* LGHYHDIdentifyingCodeViewController.m */; };
 		3DF41B0D1E6051AE009B3099 /* AVAudioPlayer+PCM.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DF41AFF1E6051AE009B3099 /* AVAudioPlayer+PCM.m */; };
@@ -258,6 +259,8 @@
 		3D98E7861E5F16F700F2CDF9 /* LGHYHDRealNameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGHYHDRealNameView.m; sourceTree = "<group>"; };
 		3D98E7881E5F18E200F2CDF9 /* LGHYHDForgetPasswordView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGHYHDForgetPasswordView.h; sourceTree = "<group>"; };
 		3D98E7891E5F18E200F2CDF9 /* LGHYHDForgetPasswordView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGHYHDForgetPasswordView.m; sourceTree = "<group>"; };
+		3DAB25F01E6BF3640010ADC0 /* LGHYHDViewForSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGHYHDViewForSection.h; sourceTree = "<group>"; };
+		3DAB25F11E6BF3640010ADC0 /* LGHYHDViewForSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGHYHDViewForSection.m; sourceTree = "<group>"; };
 		3DCF3E271E63B312008B8900 /* LGHYHDRegisterModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGHYHDRegisterModel.h; sourceTree = "<group>"; };
 		3DCF3E281E63B312008B8900 /* LGHYHDRegisterModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGHYHDRegisterModel.m; sourceTree = "<group>"; };
 		3DE28EDD1E6061DB00E3C8AF /* LGHYHDIdentifyingCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGHYHDIdentifyingCodeViewController.h; sourceTree = "<group>"; };
@@ -685,6 +688,8 @@
 				3D0FF6FC1E61B8A8008DD77A /* LGHYHDMainView.m */,
 				3D19C9B21E658D4A00DD4CDD /* LGHYHDScrollView.h */,
 				3D19C9B31E658D4A00DD4CDD /* LGHYHDScrollView.m */,
+				3DAB25F01E6BF3640010ADC0 /* LGHYHDViewForSection.h */,
+				3DAB25F11E6BF3640010ADC0 /* LGHYHDViewForSection.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1138,6 +1143,7 @@
 				3D0FF7541E61CB2C008DD77A /* LGHYScrollViewController.m in Sources */,
 				3D0FF6A41E614EE1008DD77A /* LGHYHDRealNameTableView.m in Sources */,
 				3D0FF74E1E61C78F008DD77A /* LGHYPersonalInformaticaView.m in Sources */,
+				3DAB25F21E6BF3640010ADC0 /* LGHYHDViewForSection.m in Sources */,
 				3D0FF7051E61C198008DD77A /* LGHYBackView.m in Sources */,
 				3D48CCB31E627018005E9FB8 /* ZFSettingItem.m in Sources */,
 				3D0FF73E1E61C5A4008DD77A /* LGHYCarsViewController.m in Sources */,

@@ -33,7 +33,7 @@ DEPENDENCIES:
   - Masonry
   - MJExtension
   - MJRefresh
-  - SDCycleScrollView
+  - SDCycleScrollView (= 1.65)
   - SDWebImage
   - SVProgressHUD
 

@@ -61,7 +61,6 @@
 //CGRectMake(0, 0, wid - 20, 161)
 - (SDCycleScrollView *)cycView {
     if (!_cycView) {
-        [SDCycleScrollView clearImagesCache];
         _cycView = [SDCycleScrollView cycleScrollViewWithFrame:CGRectZero imageNamesGroup:@[@"01news",@"02news",@"03news",@"04news",@"05news"]];
         _cycView.pageControlAliment = SDCycleScrollViewPageContolAlimentRight;
         _cycView.autoScrollTimeInterval = 2;

@@ -23,5 +23,7 @@
 @property(assign,nonatomic)id<myTabVdelegate>delegate;
 @property(assign,nonatomic)id<myTabVdelegate>secondCellBtn1Delegate;
 @property(assign,nonatomic)CGFloat cellHeight;
+@property(assign,nonatomic,getter=isClicked)BOOL clicked;
+@property (nonatomic, strong)UIButton *btn1;
 
 @end

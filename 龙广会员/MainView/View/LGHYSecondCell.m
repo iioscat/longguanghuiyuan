@@ -11,6 +11,7 @@
 #import "LGHYCompileViewController.h"
 #import "LGHYSecond.h"
 
+
 @interface LGHYSecondCell()
 
 @property (nonatomic, strong)UIImageView *iconView;
@@ -18,7 +19,6 @@
 @property (nonatomic, strong)UILabel *label2;
 @property (nonatomic, strong)UILabel *label3;
 @property (nonatomic, strong)UILabel *label4;
-@property (nonatomic, strong)UIButton *btn1;
 @property (nonatomic, strong)UIButton *btn2;
 @property (nonatomic, strong)LGHYSecond *second;
 
@@ -102,57 +102,53 @@
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
-        [self.contentView addSubview:self.iconView];
-        [self.iconView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.left.equalTo(@0);
-            make.width.equalTo(@80);
-            make.height.equalTo(@80);
-            make.top.equalTo(@20);
-        }];
-
-        [self.contentView addSubview:self.label1];
-        [self.label1 mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.equalTo(@15);
-            make.left.equalTo(self.iconView.mas_right).with.offset(20);
-            make.right.equalTo(@20);
-        }];
-        [self.contentView addSubview:self.label2];
-        [self.label2 mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.equalTo(self.label1.mas_bottom).with.offset(5);
-            make.left.equalTo(self.iconView.mas_right).with.offset(20);
-            make.right.equalTo(@20);
-        }];
-        [self.contentView addSubview:self.label3];
-        [self.label3 mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.equalTo(self.label2.mas_bottom).with.offset(5);
-            make.left.equalTo(self.iconView.mas_right).with.offset(20);
-            make.right.equalTo(@20);
-        }];
-        [self.contentView addSubview:self.label4];
-        [self.label4 mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.equalTo(self.label3.mas_bottom).with.offset(5);
-            make.left.equalTo(self.iconView.mas_right).with.offset(20);
-            make.right.equalTo(@20);
-        }];
-        [self.contentView addSubview:self.btn1];
-        [self.btn1 mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.mas_equalTo(self.label4.mas_bottom).with.offset(10);
-            make.left.equalTo(self.iconView.mas_right).with.offset(50);
-            make.height.equalTo(@30);
-            make.width.equalTo(@80);
-        }];
-
-        [self.contentView addSubview:self.btn2];
-        [self.btn2 mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.right.equalTo(@(-40));
-            make.height.equalTo(@20);
-            make.width.equalTo(@40);
-            make.bottom.equalTo(@(-5));
-        }];
+        [self createUI];
         [self layoutIfNeeded];
         _cellHeight = CGRectGetMaxY(self.btn1.frame) + 15;
     }
     return self;
+}
+
+- (void)createUI {
+    [self.contentView addSubview:self.iconView];
+    [self.iconView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(@0);
+        make.width.equalTo(@80);
+        make.height.equalTo(@80);
+        make.top.equalTo(@20);
+    }];
+    
+    [self.contentView addSubview:self.label1];
+    [self.label1 mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(@15);
+        make.left.equalTo(self.iconView.mas_right).with.offset(20);
+        make.right.equalTo(@20);
+    }];
+    [self.contentView addSubview:self.label2];
+    [self.label2 mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.label1.mas_bottom).with.offset(5);
+        make.left.equalTo(self.iconView.mas_right).with.offset(20);
+        make.right.equalTo(@20);
+    }];
+    [self.contentView addSubview:self.btn1];
+    [self.btn1 mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_equalTo(self.label2.mas_bottom).with.offset(10);
+        make.left.equalTo(self.iconView.mas_right).with.offset(50);
+        make.height.equalTo(@30);
+        make.width.equalTo(@80);
+    }];
+    
+    [self.contentView addSubview:self.btn2];
+    [self.btn2 mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.right.equalTo(@(-40));
+        make.height.equalTo(@20);
+        make.width.equalTo(@40);
+        make.bottom.equalTo(@(-5));
+    }];
+    
+    self.label3.hidden = YES;
+    self.label4.hidden = YES;
+
 }
 
 - (void)awakeFromNib {
@@ -167,7 +163,31 @@
 }
 
 - (void)btn1Action:(UIButton *)btn {
-    NSLog(@"secndcell button1-------");
+//    if (_clicked) {
+//        self.label3.hidden = YES;
+//        self.label4.hidden = YES;
+//        _cellHeight = CGRectGetMaxY(self.btn1.frame) + 55;
+//        _clicked = NO;
+//    }else {
+//        self.label3.hidden = NO;
+//        self.label4.hidden = NO;
+//        [self.contentView addSubview:self.label3];
+//        [self.label3 mas_makeConstraints:^(MASConstraintMaker *make) {
+//            make.top.equalTo(self.label2.mas_bottom).with.offset(5);
+//            make.left.equalTo(self.iconView.mas_right).with.offset(20);
+//            make.right.equalTo(@20);
+//        }];
+//        [self.contentView addSubview:self.label4];
+//        [self.label4 mas_makeConstraints:^(MASConstraintMaker *make) {
+//            make.top.equalTo(self.label3.mas_bottom).with.offset(5);
+//            make.left.equalTo(self.iconView.mas_right).with.offset(20);
+//            make.right.equalTo(@20);
+//        }];
+//        _cellHeight = CGRectGetMaxY(self.btn1.frame) + 15;
+//        _clicked = YES;
+//    }
+    //[self layoutIfNeeded];
+    //_cellHeight = 200;
     [self.delegate secondCellBtn1Click:self];
 }
 

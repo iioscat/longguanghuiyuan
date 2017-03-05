@@ -80,6 +80,7 @@
     //键盘隐藏
     [self.loginView.passwordTextField resignFirstResponder];
     [LGHYHDReponseCode actionWithCode:string];
+    [self loginAction];
 }
 
 #pragma buttonAction

@@ -227,6 +227,7 @@
     self.view.backgroundColor = [UIColor colorWithRed:223/255.0 green:223/255.0 blue:223/255.0 alpha:1];
     self.title = @"个人中心";
     //self.navigationController.navigationBarHidden = YES;
+    [JDStatusBarNotification showWithStatus:@"根据资料的完善程度，会赠送您相应的积分" dismissAfter:3];
     [self show];
 }
 

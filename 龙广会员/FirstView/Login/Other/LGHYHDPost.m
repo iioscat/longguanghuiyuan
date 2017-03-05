@@ -39,4 +39,24 @@
     });
 }
 
++ (NSString *)cookieValueWithKey:(NSString *)key
+{
+    NSHTTPCookieStorage *sharedHTTPCookieStorage = [NSHTTPCookieStorage sharedHTTPCookieStorage];
+    
+    if ([sharedHTTPCookieStorage cookieAcceptPolicy] != NSHTTPCookieAcceptPolicyAlways) {
+        [[NSHTTPCookieStorage sharedHTTPCookieStorage] setCookieAcceptPolicy:NSHTTPCookieAcceptPolicyAlways];
+    }
+    
+    NSArray         *cookies = [sharedHTTPCookieStorage cookiesForURL:[NSURL URLWithString:@"http://192...."]];
+    NSEnumerator    *enumerator = [cookies objectEnumerator];
+    NSHTTPCookie    *cookie;
+    while (cookie = [enumerator nextObject]) {
+        if ([[cookie name] isEqualToString:key]) {
+            return [NSString stringWithString:[[cookie value] stringByRemovingPercentEncoding]];
+        }
+    }
+    
+    return nil;
+}
+
 @end
