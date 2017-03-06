@@ -80,7 +80,12 @@
     //键盘隐藏
     [self.loginView.passwordTextField resignFirstResponder];
     [LGHYHDReponseCode actionWithCode:string];
-    [self loginAction];
+    int code = [[string substringWithRange:NSMakeRange(8, 1)] intValue];
+    self.labelName = [string substringWithRange:NSMakeRange(18, 11)];
+    NSLog(@"%@", self.labelName);
+    if (code == 0) {
+        [self loginAction];
+    }
 }
 
 #pragma buttonAction

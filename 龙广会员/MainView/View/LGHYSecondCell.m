@@ -95,7 +95,6 @@
         [_btn2 setTitle:@"编辑" forState:UIControlStateNormal];
         [_btn2 setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
         [_btn2 addTarget:self action:@selector(checkAction:) forControlEvents:UIControlEventTouchUpInside];
-        //_btn1.backgroundColor = [UIColor redColor];
     }
     return _btn2;
 }
@@ -104,7 +103,7 @@
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
         [self createUI];
         [self layoutIfNeeded];
-        _cellHeight = CGRectGetMaxY(self.btn1.frame) + 15;
+        _cellHeight = CGRectGetMaxY(self.label2.frame) + 55;
     }
     return self;
 }
@@ -115,7 +114,7 @@
         make.left.equalTo(@0);
         make.width.equalTo(@80);
         make.height.equalTo(@80);
-        make.top.equalTo(@20);
+        make.top.mas_equalTo(20);
     }];
     
     [self.contentView addSubview:self.label1];
@@ -130,14 +129,14 @@
         make.left.equalTo(self.iconView.mas_right).with.offset(20);
         make.right.equalTo(@20);
     }];
+    
     [self.contentView addSubview:self.btn1];
     [self.btn1 mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_equalTo(self.label2.mas_bottom).with.offset(10);
+        make.bottom.mas_equalTo(-15);
         make.left.equalTo(self.iconView.mas_right).with.offset(50);
         make.height.equalTo(@30);
         make.width.equalTo(@80);
     }];
-    
     [self.contentView addSubview:self.btn2];
     [self.btn2 mas_makeConstraints:^(MASConstraintMaker *make) {
         make.right.equalTo(@(-40));
@@ -145,10 +144,6 @@
         make.width.equalTo(@40);
         make.bottom.equalTo(@(-5));
     }];
-    
-    self.label3.hidden = YES;
-    self.label4.hidden = YES;
-
 }
 
 - (void)awakeFromNib {
@@ -163,36 +158,36 @@
 }
 
 - (void)btn1Action:(UIButton *)btn {
-//    if (_clicked) {
-//        self.label3.hidden = YES;
-//        self.label4.hidden = YES;
-//        _cellHeight = CGRectGetMaxY(self.btn1.frame) + 55;
-//        _clicked = NO;
-//    }else {
-//        self.label3.hidden = NO;
-//        self.label4.hidden = NO;
-//        [self.contentView addSubview:self.label3];
-//        [self.label3 mas_makeConstraints:^(MASConstraintMaker *make) {
-//            make.top.equalTo(self.label2.mas_bottom).with.offset(5);
-//            make.left.equalTo(self.iconView.mas_right).with.offset(20);
-//            make.right.equalTo(@20);
-//        }];
-//        [self.contentView addSubview:self.label4];
-//        [self.label4 mas_makeConstraints:^(MASConstraintMaker *make) {
-//            make.top.equalTo(self.label3.mas_bottom).with.offset(5);
-//            make.left.equalTo(self.iconView.mas_right).with.offset(20);
-//            make.right.equalTo(@20);
-//        }];
-//        _cellHeight = CGRectGetMaxY(self.btn1.frame) + 15;
-//        _clicked = YES;
-//    }
-    //[self layoutIfNeeded];
-    //_cellHeight = 200;
+    
     [self.delegate secondCellBtn1Click:self];
+    
+    [self.contentView addSubview:self.label3];
+    [self.label3 mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.label2.mas_bottom).with.offset(5);
+        make.left.equalTo(self.iconView.mas_right).with.offset(20);
+        make.right.equalTo(@20);
+    }];
+    [self.contentView addSubview:self.label4];
+    [self.label4 mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.label3.mas_bottom).with.offset(5);
+        make.left.equalTo(self.iconView.mas_right).with.offset(20);
+        make.right.equalTo(@20);
+    }];
+    if (!self.clicked) {
+        self.label3.hidden = NO;
+        self.label4.hidden = NO;
+        [_btn1 setTitle:@"隐藏信息" forState:UIControlStateNormal];
+        self.clicked = YES;
+    }else {
+        self.label3.hidden = YES;
+        self.label4.hidden = YES;
+        [_btn1 setTitle:@"更多信息" forState:UIControlStateNormal];
+
+        self.clicked = NO;
+    }
 }
 
 - (void)checkAction:(UIButton *)sender {
-    NSLog(@"测试");
     [self.delegate myTabVClick:self];
 }
 

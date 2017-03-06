@@ -44,7 +44,7 @@
 		3D0FF7421E61C5D5008DD77A /* LGHYPersonalInformationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D0FF7411E61C5D5008DD77A /* LGHYPersonalInformationController.m */; };
 		3D0FF74E1E61C78F008DD77A /* LGHYPersonalInformaticaView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D0FF74D1E61C78F008DD77A /* LGHYPersonalInformaticaView.m */; };
 		3D0FF7511E61C892008DD77A /* LGHYButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D0FF7501E61C892008DD77A /* LGHYButton.m */; };
-		3D0FF7541E61CB2C008DD77A /* LGHYScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D0FF7531E61CB2C008DD77A /* LGHYScrollViewController.m */; };
+		3D1044D51E6D71C500D66203 /* LGHYHDChangePasswordController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D1044D41E6D71C500D66203 /* LGHYHDChangePasswordController.m */; };
 		3D19C9B11E657D9700DD4CDD /* UITextField+LGHYHDMobileNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D19C9B01E657D9700DD4CDD /* UITextField+LGHYHDMobileNumber.m */; };
 		3D19C9B41E658D4A00DD4CDD /* LGHYHDScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D19C9B31E658D4A00DD4CDD /* LGHYHDScrollView.m */; };
 		3D19C9B71E65A4E900DD4CDD /* LGHYHDActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D19C9B61E65A4E900DD4CDD /* LGHYHDActivityViewController.m */; };
@@ -184,8 +184,8 @@
 		3D0FF74D1E61C78F008DD77A /* LGHYPersonalInformaticaView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGHYPersonalInformaticaView.m; sourceTree = "<group>"; };
 		3D0FF74F1E61C892008DD77A /* LGHYButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGHYButton.h; sourceTree = "<group>"; };
 		3D0FF7501E61C892008DD77A /* LGHYButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGHYButton.m; sourceTree = "<group>"; };
-		3D0FF7521E61CB2C008DD77A /* LGHYScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGHYScrollViewController.h; sourceTree = "<group>"; };
-		3D0FF7531E61CB2C008DD77A /* LGHYScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGHYScrollViewController.m; sourceTree = "<group>"; };
+		3D1044D31E6D71C500D66203 /* LGHYHDChangePasswordController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGHYHDChangePasswordController.h; sourceTree = "<group>"; };
+		3D1044D41E6D71C500D66203 /* LGHYHDChangePasswordController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGHYHDChangePasswordController.m; sourceTree = "<group>"; };
 		3D19C9AF1E657D9700DD4CDD /* UITextField+LGHYHDMobileNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+LGHYHDMobileNumber.h"; sourceTree = "<group>"; };
 		3D19C9B01E657D9700DD4CDD /* UITextField+LGHYHDMobileNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+LGHYHDMobileNumber.m"; sourceTree = "<group>"; };
 		3D19C9B21E658D4A00DD4CDD /* LGHYHDScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGHYHDScrollView.h; sourceTree = "<group>"; };
@@ -617,8 +617,6 @@
 		3D98E7251E5E77E300F2CDF9 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				3D0FF7521E61CB2C008DD77A /* LGHYScrollViewController.h */,
-				3D0FF7531E61CB2C008DD77A /* LGHYScrollViewController.m */,
 				3D0FF7401E61C5D5008DD77A /* LGHYPersonalInformationController.h */,
 				3D0FF7411E61C5D5008DD77A /* LGHYPersonalInformationController.m */,
 				3D0FF73A1E61C5A4008DD77A /* LGHYCarsViewController.h */,
@@ -633,6 +631,8 @@
 				3D0FF6A01E61275A008DD77A /* LGHYHDMainViewController.m */,
 				3D19C9B51E65A4E900DD4CDD /* LGHYHDActivityViewController.h */,
 				3D19C9B61E65A4E900DD4CDD /* LGHYHDActivityViewController.m */,
+				3D1044D31E6D71C500D66203 /* LGHYHDChangePasswordController.h */,
+				3D1044D41E6D71C500D66203 /* LGHYHDChangePasswordController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1140,7 +1140,6 @@
 				3D0FF7001E61BED6008DD77A /* LGHYHeaderCell.m in Sources */,
 				3D98E7491E5E7EE300F2CDF9 /* LGHYHDButton.m in Sources */,
 				3D0FF7391E61C56D008DD77A /* LGHYMessagesViewController.m in Sources */,
-				3D0FF7541E61CB2C008DD77A /* LGHYScrollViewController.m in Sources */,
 				3D0FF6A41E614EE1008DD77A /* LGHYHDRealNameTableView.m in Sources */,
 				3D0FF74E1E61C78F008DD77A /* LGHYPersonalInformaticaView.m in Sources */,
 				3DAB25F21E6BF3640010ADC0 /* LGHYHDViewForSection.m in Sources */,
@@ -1152,6 +1151,7 @@
 				3D0FF72A1E61C3E1008DD77A /* Industry.m in Sources */,
 				3D0FF7181E61C3B8008DD77A /* LGHYThird.m in Sources */,
 				3D0FF7261E61C3D4008DD77A /* LGHYMessageCell.m in Sources */,
+				3D1044D51E6D71C500D66203 /* LGHYHDChangePasswordController.m in Sources */,
 				3D98E7601E5EBE4100F2CDF9 /* LGHYHDLoginView.m in Sources */,
 				3D98E7631E5EC09D00F2CDF9 /* LGHYHDTextField.m in Sources */,
 				3D7D68011E682DC8004D2C10 /* LGHYHDGet.m in Sources */,

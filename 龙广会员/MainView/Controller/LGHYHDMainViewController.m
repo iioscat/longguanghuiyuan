@@ -133,45 +133,33 @@ static NSString * identifier = @"cellID";
     UITableViewCell *cell = [[UITableViewCell alloc] init];
     if (indexPath.section == 0) {
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        tableView.allowsSelection = NO;
         if (indexPath.row == 0) {
-            //LGHYHeaderCell *cellTest = [tableView dequeueReusableCellWithIdentifier:identifier];
             LGHYHeaderCell *cellTest = [[LGHYHeaderCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
             cellTest.headerCellBtn1Delegate = self;
             cellTest.headerCellBtn2Delegate = self;
             cellTest.headerCellBtn3Delegate = self;
             cell = cellTest;
-            tableView.rowHeight = cellTest.cellHeight;
-            //cell.contentView.backgroundColor = [UIColor colorWithRed:223/255.0 green:223/255.0 blue:223/255.0 alpha:1];
         }else if (indexPath.row == 1){
-            LGHYSecondCell *cellTest = [tableView dequeueReusableCellWithIdentifier:identifier];
-            cellTest = [[LGHYSecondCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+            LGHYSecondCell *cellTest = [[LGHYSecondCell alloc] init];
             cellTest.delegate = self;
             cellTest.secondCellBtn1Delegate = self;
             cell = cellTest;
             self.indexPathForSecondCell = indexPath;
-            NSLog(@"%@", self.indexPathForSecondCell);
-            tableView.rowHeight = cellTest.cellHeight;
-            //cell.contentView.backgroundColor = [UIColor colorWithRed:223/255.0 green:223/255.0 blue:223/255.0 alpha:1];
-            
         }else if (indexPath.row == 2) {
             LGHYThirdCell *cellTest = [tableView dequeueReusableCellWithIdentifier:identifier];
             cellTest = [[LGHYThirdCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
             cellTest.thirdCellBtnDelegate = self;
             cellTest.thirdCellClickDelegate = self;
             cell = cellTest;
-            tableView.rowHeight = cellTest.cellHeight;
         }else {
             LGHYForthCell *cellTest = [tableView dequeueReusableCellWithIdentifier:identifier];
             cellTest = [[LGHYForthCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
             cellTest.forthCellBtnDelegate = self;
             cell = cellTest;
-            tableView.rowHeight = cellTest.cellHeight;
-            //cell.contentView.backgroundColor = [UIColor colorWithRed:223/255.0 green:223/255.0 blue:223/255.0 alpha:1];
-            
         }
     }else {
         if(indexPath.row % 2 == 1) {
-            tableView.rowHeight = 10;
             cell.contentView.backgroundColor = [UIColor colorWithRed:223/255.0 green:223/255.0 blue:223/255.0 alpha:1];
             cell.selectionStyle = UITableViewCellSelectionStyleNone;
             tableView.allowsSelection = NO;
@@ -195,7 +183,6 @@ static NSString * identifier = @"cellID";
                 cell.textLabel.text = @"收听类活动";
                 cell.imageView.image = [UIImage imageNamed:@"barbuttonicon_Luckymoney"];
             }
-            tableView.rowHeight = 40;
             tableView.allowsSelection = YES;
         }
         
@@ -203,9 +190,51 @@ static NSString * identifier = @"cellID";
     return cell;
 }
 
-//- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath {
-//    return 200;
-//}
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (indexPath.section == 0) {
+        if (indexPath.row == 0) {
+            LGHYHeaderCell *cell = [[LGHYHeaderCell alloc] init];
+            return cell.cellHeight;
+        }else if (indexPath.row == 1) {
+            LGHYSecondCell *cell = [[LGHYSecondCell alloc] init];
+            if (self.clicked == NO) {
+                return cell.cellHeight;
+            }else {
+                return cell.cellHeight + 50;
+            }
+        }else if (indexPath.row == 2){
+            LGHYThirdCell *cell = [[LGHYThirdCell alloc] init];
+            return cell.cellHeight;
+        }else {
+            LGHYForthCell *cell = [[LGHYForthCell alloc] init];
+            return cell.cellHeight;
+        }
+    }else {
+        if (indexPath.row % 2 == 1) {
+            return 10;
+        }else {
+            return 40;
+        }
+    }
+
+}
+
+- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 200;
+}
+
+- (void)secondCellBtn1Click:(UITableViewCell *)cell {
+
+    if (self.clicked == NO) {
+        self.clicked = YES;
+    }else {
+        self.clicked = NO;
+    }
+    [self.tableView beginUpdates];
+    //[self.tableView reloadRowsAtIndexPaths:[NSArray arrayWithObject:self.indexPathForSecondCell] withRowAnimation:UITableViewRowAnimationNone];
+    [self.tableView endUpdates];
+
+}
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
@@ -216,6 +245,7 @@ static NSString * identifier = @"cellID";
         [self.navigationController pushViewController:vc animated:YES];
     }
 }
+
 
 //头标题
 
@@ -246,18 +276,6 @@ static NSString * identifier = @"cellID";
         kMagrin = 30;
     }
     return kMagrin;
-}
-
-
-
-- (void)secondCellBtn1Click:(UITableViewCell *)cell {
-    NSLog(@"secondcell button1");
-//    self.tableView.rowHeight = 200;
-    [self.tableView beginUpdates];
-    //[self.tableView reloadRowsAtIndexPaths:[NSArray arrayWithObject:self.indexPathForSecondCell] withRowAnimation:UITableViewRowAnimationNone];
-    [self.tableView reloadData];
-    [self.tableView endUpdates];
-    
 }
 
 //“编辑”button事件

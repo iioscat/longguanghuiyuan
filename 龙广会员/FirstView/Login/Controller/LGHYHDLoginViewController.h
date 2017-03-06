@@ -12,5 +12,6 @@
 @interface LGHYHDLoginViewController : UIViewController
 
 @property (nonatomic, strong) LGHYHDLoginView *loginView;
+@property (nonatomic, copy) NSString *labelName;
 
 @end

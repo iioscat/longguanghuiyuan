@@ -124,7 +124,7 @@ static NSInteger sms_token;
     NSDictionary *dict = @{
                            @"mobile":phoneNumberString,
                            @"capt":numberString,
-                           @"sms_capt_token":sms_capt_token
+                           @"sms_capt_token":@"1e77c6d6-8745-493b-9d5d-ff193679bdab"
                           };
     NSLog(@"%@", dict);
     LGHYHDPost *post = [[LGHYHDPost alloc] init];
