@@ -12,6 +12,14 @@
 
 @property (nonatomic,copy)ButtonBlock block;
 @property (nonatomic,copy)ButtonBlock settingBlock;
+@property (nonatomic,copy)ButtonBlock personInfoBlock;
+@property (nonatomic,copy)ButtonBlock managementBlock;
+@property (nonatomic,copy)ButtonBlock myScoreBlock;
+@property (nonatomic,copy)ButtonBlock exchangeScoreBlock;
+@property (nonatomic,copy)ButtonBlock myCardsBlock;
+@property (nonatomic,copy)ButtonBlock myMessageBlock;
+@property (nonatomic,copy)ButtonBlock collectBlock;
+@property (nonatomic,copy)ButtonBlock questionBlock;
 
 @end
 @implementation LGHYListView
@@ -139,15 +147,23 @@
 - (instancetype)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
         [self addSubview:self.btn1];
+        [self.btn1 addTarget:self action:@selector(personInfoAction:) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:self.btn2];
+        [self.btn2 addTarget:self action:@selector(managementAction:) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:self.btn3];
+        [self.btn3 addTarget:self action:@selector(myScoreAction:) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:self.btn4];
+        [self.btn4 addTarget:self action:@selector(exchangeScoreAction:) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:self.btn5];
+        [self.btn5 addTarget:self action:@selector(myCardsAction:) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:self.btn6];
         [self.btn6 addTarget:self action:@selector(qianDaoAction:) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:self.btn7];
+        [self.btn7 addTarget:self action:@selector(myMessageAction:) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:self.btn8];
+        [self.btn8 addTarget:self action:@selector(collectAction:) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:self.btn9];
+        [self.btn9 addTarget:self action:@selector(questionAction:) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:self.btn10];
         [self.btn10 addTarget:self action:@selector(settingAction:) forControlEvents:UIControlEventTouchUpInside];
     }
@@ -185,6 +201,80 @@
 - (void)settingAction:(UIButton*)button {
     if (self.settingBlock) {
         self.settingBlock(button);
+    }
+}
+
+- (void)addPersonInfoAction:(ButtonBlock)block {
+    self.personInfoBlock = block;
+}
+
+- (void)personInfoAction:(UIButton *)button {
+    if (self.personInfoBlock) {
+        self.personInfoBlock(button);
+    }
+}
+
+- (void)addManagementAction:(ButtonBlock)block {
+    self.managementBlock = block;
+}
+
+- (void)managementAction:(UIButton *)button {
+    if (self.managementBlock) {
+        self.managementBlock(button);
+    }
+}
+
+- (void)addMyScoreAction:(ButtonBlock)block {
+    self.myScoreBlock = block;
+}
+
+- (void)myScoreAction:(UIButton *)button {
+    if (self.myScoreBlock) {
+        self.myScoreBlock(button);
+    }
+}
+- (void)addExchangeScoreAction:(ButtonBlock)block {
+    self.exchangeScoreBlock = block;
+}
+- (void)exchangeScoreAction:(UIButton *)button {
+    if (self.exchangeScoreBlock) {
+        self.exchangeScoreBlock(button);
+    }
+}
+
+- (void)addMyCardsAction:(ButtonBlock)block {
+    self.myCardsBlock = block;
+}
+- (void)myCardsAction:(UIButton *)button {
+    if (self.myCardsBlock) {
+        self.myCardsBlock(button);
+    }
+}
+
+- (void)addMyMessageAction:(ButtonBlock)block {
+    self.myMessageBlock = block;
+}
+- (void)myMessageAction:(UIButton *)button {
+    if (self.myMessageBlock) {
+        self.myMessageBlock(button);
+    }
+}
+
+- (void)addCollectAction:(ButtonBlock)block {
+    self.collectBlock = block;
+}
+- (void)collectAction:(UIButton *)button {
+    if (self.collectBlock) {
+        self.collectBlock(button);
+    }
+}
+
+- (void)addQuestionAction:(ButtonBlock)block {
+    self.questionBlock = block;
+}
+- (void)questionAction:(UIButton *)button {
+    if (self.questionBlock) {
+        self.questionBlock(button);
     }
 }
 @end

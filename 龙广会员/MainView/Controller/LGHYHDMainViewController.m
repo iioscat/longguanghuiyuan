@@ -28,6 +28,14 @@
 #import "ZFSettingViewController.h"
 #import "LGHYSecond.h"
 #import "LGHYHDActivityViewController.h"
+#import "LGHYHDManagementController.h"
+#import "LGHYHDMyScoreController.h"
+#import "LGHYHDExchangeScoreController.h"
+#import "LGHYHDMyCardsController.h"
+#import "LGHYHDCollectController.h"
+#import "LGHYHDQuestionController.h"
+#import "CYLHomeViewController.h"
+#import "UIBarButtonItem+XMGExtension.h"
 
 static NSString * identifier = @"cellID";
 @interface LGHYHDMainViewController ()<UITableViewDataSource, UITableViewDelegate, myTabVdelegate, headerCellDelegate,thirdCellDelegate, forthCellDelegate>
@@ -99,6 +107,11 @@ static NSString * identifier = @"cellID";
     [super viewDidLoad];
     self.view.backgroundColor = backColor;
     self.title = @"龙广会员";
+    self.navigationItem.leftBarButtonItem.customView.hidden = YES;
+    self.navigationItem.rightBarButtonItems = @[
+                                                [UIBarButtonItem itemWithImage:@"mine-setting-icon" highImage:@"mine-setting-icon-click" target:self action:@selector(setting)]
+                                                ];
+
     self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(refresh)];
     //上拉加载
     //    self.tableView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMore)];
@@ -354,8 +367,43 @@ static NSString * identifier = @"cellID";
         ZFSettingViewController *vc = [[ZFSettingViewController alloc] init];
         [weakSelf.navigationController pushViewController:vc animated:YES];
     }];
+    [self.tab addPersonInfoAction:^(UIButton *button) {
+        LGHYPersonalInformationController *vc = [[LGHYPersonalInformationController alloc] init];
+        [weakSelf.navigationController pushViewController:vc animated:YES];
+    }];
+    [self.tab addManagementAction:^(UIButton *button) {
+        LGHYHDManagementController *vc = [[LGHYHDManagementController alloc] init];
+        [weakSelf.navigationController pushViewController:vc animated:YES];
+    }];
+    [self.tab addMyScoreAction:^(UIButton *button) {
+        LGHYHDMyScoreController *vc = [[LGHYHDMyScoreController alloc] init];
+        [weakSelf.navigationController pushViewController:vc animated:YES];
+    }];
+    [self.tab addExchangeScoreAction:^(UIButton *button) {
+        LGHYHDExchangeScoreController *vc = [[LGHYHDExchangeScoreController alloc] init];
+        [weakSelf.navigationController pushViewController:vc animated:YES];
+    }];
+    [self.tab addMyCardsAction:^(UIButton *button) {
+        LGHYHDMyCardsController *vc = [[LGHYHDMyCardsController alloc] init];
+        [weakSelf.navigationController pushViewController:vc animated:YES];
+    }];
+    [self.tab addCollectAction:^(UIButton *button) {
+        LGHYHDCollectController *vc = [[LGHYHDCollectController alloc] init];
+        [weakSelf.navigationController pushViewController:vc animated:YES];
+    }];
+    [self.tab addQuestionAction:^(UIButton *button) {
+        LGHYHDQuestionController *vc = [[LGHYHDQuestionController alloc] init];
+        [weakSelf.navigationController pushViewController:vc animated:YES];
+    }];
+    [self.tab addMyMessageAction:^(UIButton *button) {
+        LGHYMessagesViewController *vc = [[LGHYMessagesViewController alloc] init];
+        [weakSelf.navigationController pushViewController:vc animated:YES];
+    }];
 }
 
-
+- (void)setting {
+    ZFSettingViewController *vc = [[ZFSettingViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
 
 @end

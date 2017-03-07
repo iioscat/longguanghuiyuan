@@ -16,5 +16,13 @@ typedef void (^ButtonBlock)(UIButton *button);
 
 - (void)addQianDaoAction:(ButtonBlock)block;
 - (void)addSettingAction:(ButtonBlock)block;
+- (void)addPersonInfoAction:(ButtonBlock)block;
+- (void)addManagementAction:(ButtonBlock)block;
+- (void)addMyScoreAction:(ButtonBlock)block;
+- (void)addExchangeScoreAction:(ButtonBlock)block;
+- (void)addMyCardsAction:(ButtonBlock)block;
+- (void)addMyMessageAction:(ButtonBlock)block;
+- (void)addCollectAction:(ButtonBlock)block;
+- (void)addQuestionAction:(ButtonBlock)block;
 
 @end

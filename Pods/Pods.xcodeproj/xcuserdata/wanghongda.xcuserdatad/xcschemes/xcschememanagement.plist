@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>CYLTabBarController.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>JDStatusBarNotification.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -62,12 +67,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>169844F3E7BF49EC10F7B0E46DD292FA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>28EA3934AEB522FE409F1433470ABA96</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6243BD3C2F3E9FCA91CF5FF36218A629</key>
+		<key>8A1558C0578338C4AC938BB04F1C506C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>920E2D4477DF156F92B7A62CA4E31162</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>963BD07559D1ED28FBEF6F8F88937020</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -82,22 +102,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A17496CAA85B0CDB19ACD2AB2CC25581</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>A316B54C67E947D23CECD230FA5BFAEF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A43C04E08CFC684CFB200FDFF826FCF2</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>A477B321E87B605FDCA8CCB9B16116E4</key>
+		<key>BECB26A57948CE19A0A08C7B9CA9EF6C</key>
 		<dict>
 			<key>primary</key>
 			<true/>

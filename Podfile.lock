@@ -14,6 +14,7 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
+  - CYLTabBarController (1.10.0)
   - JDStatusBarNotification (1.5.5)
   - LGAlertView (2.1.1)
   - Masonry (1.0.2)
@@ -28,6 +29,7 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking
+  - CYLTabBarController
   - JDStatusBarNotification
   - LGAlertView
   - Masonry
@@ -39,6 +41,7 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  CYLTabBarController: 2de9a4c26f50d33574398becf8e7b0aaed794240
   JDStatusBarNotification: 2b4f29bd68a60d7aa2f190b5265f1ce59c18aaf8
   LGAlertView: e9bcdb5eff9eeabdafdb3d804994ac80188b6a1c
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
@@ -48,6 +51,6 @@ SPEC CHECKSUMS:
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
   SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
 
-PODFILE CHECKSUM: 01caf44dad26ec7abfdd3ee803b9f6d4e18ef79d
+PODFILE CHECKSUM: 498801ce9f509d6e2b2a8a03197dca8335a62f95
 
 COCOAPODS: 1.2.0

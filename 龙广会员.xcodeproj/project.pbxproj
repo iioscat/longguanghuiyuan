@@ -45,6 +45,23 @@
 		3D0FF74E1E61C78F008DD77A /* LGHYPersonalInformaticaView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D0FF74D1E61C78F008DD77A /* LGHYPersonalInformaticaView.m */; };
 		3D0FF7511E61C892008DD77A /* LGHYButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D0FF7501E61C892008DD77A /* LGHYButton.m */; };
 		3D1044D51E6D71C500D66203 /* LGHYHDChangePasswordController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D1044D41E6D71C500D66203 /* LGHYHDChangePasswordController.m */; };
+		3D1044D81E6E44AE00D66203 /* LGHYHDManagementController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D1044D71E6E44AE00D66203 /* LGHYHDManagementController.m */; };
+		3D1044DB1E6E44C100D66203 /* LGHYHDMyScoreController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D1044DA1E6E44C100D66203 /* LGHYHDMyScoreController.m */; };
+		3D1044DE1E6E44D200D66203 /* LGHYHDExchangeScoreController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D1044DD1E6E44D200D66203 /* LGHYHDExchangeScoreController.m */; };
+		3D1044E11E6E44E300D66203 /* LGHYHDMyCardsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D1044E01E6E44E300D66203 /* LGHYHDMyCardsController.m */; };
+		3D1044E41E6E450000D66203 /* LGHYHDCollectController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D1044E31E6E450000D66203 /* LGHYHDCollectController.m */; };
+		3D1044E71E6E450A00D66203 /* LGHYHDQuestionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D1044E61E6E450A00D66203 /* LGHYHDQuestionController.m */; };
+		3D1044EA1E6E526500D66203 /* LGHYHDYiWangViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D1044E91E6E526500D66203 /* LGHYHDYiWangViewController.m */; };
+		3D1044ED1E6E527300D66203 /* LGHYHDJijiangViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D1044EC1E6E527300D66203 /* LGHYHDJijiangViewController.m */; };
+		3D1044F01E6E527C00D66203 /* LGHYHDRemenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D1044EF1E6E527C00D66203 /* LGHYHDRemenViewController.m */; };
+		3D1044F31E6E528500D66203 /* LGHYHDLiebiaoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D1044F21E6E528500D66203 /* LGHYHDLiebiaoViewController.m */; };
+		3D1044F61E6E595600D66203 /* CYLTabBarControllerConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D1044F51E6E595600D66203 /* CYLTabBarControllerConfig.m */; };
+		3D10450A1E6E598000D66203 /* CYLHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D1044FB1E6E598000D66203 /* CYLHomeViewController.m */; };
+		3D10450B1E6E598000D66203 /* CYLMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D1044FE1E6E598000D66203 /* CYLMessageViewController.m */; };
+		3D10450C1E6E598000D66203 /* CYLMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D1045011E6E598000D66203 /* CYLMineViewController.m */; };
+		3D10450D1E6E598000D66203 /* CYLDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D1045041E6E598000D66203 /* CYLDetailsViewController.m */; };
+		3D10450E1E6E598000D66203 /* CYLSameCityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D1045061E6E598000D66203 /* CYLSameCityViewController.m */; };
+		3D10450F1E6E598000D66203 /* CYLPlusButtonSubclass.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D1045091E6E598000D66203 /* CYLPlusButtonSubclass.m */; };
 		3D19C9B11E657D9700DD4CDD /* UITextField+LGHYHDMobileNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D19C9B01E657D9700DD4CDD /* UITextField+LGHYHDMobileNumber.m */; };
 		3D19C9B41E658D4A00DD4CDD /* LGHYHDScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D19C9B31E658D4A00DD4CDD /* LGHYHDScrollView.m */; };
 		3D19C9B71E65A4E900DD4CDD /* LGHYHDActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D19C9B61E65A4E900DD4CDD /* LGHYHDActivityViewController.m */; };
@@ -82,6 +99,9 @@
 		3D98E7871E5F16F700F2CDF9 /* LGHYHDRealNameView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D98E7861E5F16F700F2CDF9 /* LGHYHDRealNameView.m */; };
 		3D98E78A1E5F18E200F2CDF9 /* LGHYHDForgetPasswordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D98E7891E5F18E200F2CDF9 /* LGHYHDForgetPasswordView.m */; };
 		3DAB25F21E6BF3640010ADC0 /* LGHYHDViewForSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DAB25F11E6BF3640010ADC0 /* LGHYHDViewForSection.m */; };
+		3DAD21941E6ECD9E000EF2AB /* UIBarButtonItem+XMGExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DAD21931E6ECD9E000EF2AB /* UIBarButtonItem+XMGExtension.m */; };
+		3DAD219A1E6EE947000EF2AB /* LGHYHDMangementCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DAD21991E6EE947000EF2AB /* LGHYHDMangementCellModel.m */; };
+		3DAD219D1E6EEA77000EF2AB /* LGHYHDManagementCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DAD219C1E6EEA77000EF2AB /* LGHYHDManagementCell.m */; };
 		3DCF3E291E63B312008B8900 /* LGHYHDRegisterModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DCF3E281E63B312008B8900 /* LGHYHDRegisterModel.m */; };
 		3DE28EDF1E6061DB00E3C8AF /* LGHYHDIdentifyingCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DE28EDE1E6061DB00E3C8AF /* LGHYHDIdentifyingCodeViewController.m */; };
 		3DF41B0D1E6051AE009B3099 /* AVAudioPlayer+PCM.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DF41AFF1E6051AE009B3099 /* AVAudioPlayer+PCM.m */; };
@@ -178,14 +198,48 @@
 		3D0FF73B1E61C5A4008DD77A /* LGHYCarsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGHYCarsViewController.m; sourceTree = "<group>"; };
 		3D0FF73C1E61C5A4008DD77A /* LGHYQianDaoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGHYQianDaoViewController.h; sourceTree = "<group>"; };
 		3D0FF73D1E61C5A4008DD77A /* LGHYQianDaoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGHYQianDaoViewController.m; sourceTree = "<group>"; };
-		3D0FF7401E61C5D5008DD77A /* LGHYPersonalInformationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGHYPersonalInformationController.h; sourceTree = "<group>"; };
-		3D0FF7411E61C5D5008DD77A /* LGHYPersonalInformationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGHYPersonalInformationController.m; sourceTree = "<group>"; };
+		3D0FF7401E61C5D5008DD77A /* LGHYPersonalInformationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LGHYPersonalInformationController.h; path = ../../MainView/Controller/LGHYPersonalInformationController.h; sourceTree = "<group>"; };
+		3D0FF7411E61C5D5008DD77A /* LGHYPersonalInformationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LGHYPersonalInformationController.m; path = ../../MainView/Controller/LGHYPersonalInformationController.m; sourceTree = "<group>"; };
 		3D0FF74C1E61C78F008DD77A /* LGHYPersonalInformaticaView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGHYPersonalInformaticaView.h; sourceTree = "<group>"; };
 		3D0FF74D1E61C78F008DD77A /* LGHYPersonalInformaticaView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGHYPersonalInformaticaView.m; sourceTree = "<group>"; };
 		3D0FF74F1E61C892008DD77A /* LGHYButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGHYButton.h; sourceTree = "<group>"; };
 		3D0FF7501E61C892008DD77A /* LGHYButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGHYButton.m; sourceTree = "<group>"; };
 		3D1044D31E6D71C500D66203 /* LGHYHDChangePasswordController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGHYHDChangePasswordController.h; sourceTree = "<group>"; };
 		3D1044D41E6D71C500D66203 /* LGHYHDChangePasswordController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGHYHDChangePasswordController.m; sourceTree = "<group>"; };
+		3D1044D61E6E44AE00D66203 /* LGHYHDManagementController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGHYHDManagementController.h; sourceTree = "<group>"; };
+		3D1044D71E6E44AE00D66203 /* LGHYHDManagementController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGHYHDManagementController.m; sourceTree = "<group>"; };
+		3D1044D91E6E44C100D66203 /* LGHYHDMyScoreController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGHYHDMyScoreController.h; sourceTree = "<group>"; };
+		3D1044DA1E6E44C100D66203 /* LGHYHDMyScoreController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGHYHDMyScoreController.m; sourceTree = "<group>"; };
+		3D1044DC1E6E44D200D66203 /* LGHYHDExchangeScoreController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGHYHDExchangeScoreController.h; sourceTree = "<group>"; };
+		3D1044DD1E6E44D200D66203 /* LGHYHDExchangeScoreController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGHYHDExchangeScoreController.m; sourceTree = "<group>"; };
+		3D1044DF1E6E44E300D66203 /* LGHYHDMyCardsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGHYHDMyCardsController.h; sourceTree = "<group>"; };
+		3D1044E01E6E44E300D66203 /* LGHYHDMyCardsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGHYHDMyCardsController.m; sourceTree = "<group>"; };
+		3D1044E21E6E450000D66203 /* LGHYHDCollectController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGHYHDCollectController.h; sourceTree = "<group>"; };
+		3D1044E31E6E450000D66203 /* LGHYHDCollectController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGHYHDCollectController.m; sourceTree = "<group>"; };
+		3D1044E51E6E450A00D66203 /* LGHYHDQuestionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGHYHDQuestionController.h; sourceTree = "<group>"; };
+		3D1044E61E6E450A00D66203 /* LGHYHDQuestionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGHYHDQuestionController.m; sourceTree = "<group>"; };
+		3D1044E81E6E526500D66203 /* LGHYHDYiWangViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGHYHDYiWangViewController.h; sourceTree = "<group>"; };
+		3D1044E91E6E526500D66203 /* LGHYHDYiWangViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGHYHDYiWangViewController.m; sourceTree = "<group>"; };
+		3D1044EB1E6E527300D66203 /* LGHYHDJijiangViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGHYHDJijiangViewController.h; sourceTree = "<group>"; };
+		3D1044EC1E6E527300D66203 /* LGHYHDJijiangViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGHYHDJijiangViewController.m; sourceTree = "<group>"; };
+		3D1044EE1E6E527C00D66203 /* LGHYHDRemenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGHYHDRemenViewController.h; sourceTree = "<group>"; };
+		3D1044EF1E6E527C00D66203 /* LGHYHDRemenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGHYHDRemenViewController.m; sourceTree = "<group>"; };
+		3D1044F11E6E528500D66203 /* LGHYHDLiebiaoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGHYHDLiebiaoViewController.h; sourceTree = "<group>"; };
+		3D1044F21E6E528500D66203 /* LGHYHDLiebiaoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGHYHDLiebiaoViewController.m; sourceTree = "<group>"; };
+		3D1044F41E6E595600D66203 /* CYLTabBarControllerConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLTabBarControllerConfig.h; sourceTree = "<group>"; };
+		3D1044F51E6E595600D66203 /* CYLTabBarControllerConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLTabBarControllerConfig.m; sourceTree = "<group>"; };
+		3D1044FA1E6E598000D66203 /* CYLHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLHomeViewController.h; sourceTree = "<group>"; };
+		3D1044FB1E6E598000D66203 /* CYLHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLHomeViewController.m; sourceTree = "<group>"; };
+		3D1044FD1E6E598000D66203 /* CYLMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLMessageViewController.h; sourceTree = "<group>"; };
+		3D1044FE1E6E598000D66203 /* CYLMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLMessageViewController.m; sourceTree = "<group>"; };
+		3D1045001E6E598000D66203 /* CYLMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLMineViewController.h; sourceTree = "<group>"; };
+		3D1045011E6E598000D66203 /* CYLMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLMineViewController.m; sourceTree = "<group>"; };
+		3D1045031E6E598000D66203 /* CYLDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLDetailsViewController.h; sourceTree = "<group>"; };
+		3D1045041E6E598000D66203 /* CYLDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLDetailsViewController.m; sourceTree = "<group>"; };
+		3D1045051E6E598000D66203 /* CYLSameCityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLSameCityViewController.h; sourceTree = "<group>"; };
+		3D1045061E6E598000D66203 /* CYLSameCityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLSameCityViewController.m; sourceTree = "<group>"; };
+		3D1045081E6E598000D66203 /* CYLPlusButtonSubclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLPlusButtonSubclass.h; sourceTree = "<group>"; };
+		3D1045091E6E598000D66203 /* CYLPlusButtonSubclass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLPlusButtonSubclass.m; sourceTree = "<group>"; };
 		3D19C9AF1E657D9700DD4CDD /* UITextField+LGHYHDMobileNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+LGHYHDMobileNumber.h"; sourceTree = "<group>"; };
 		3D19C9B01E657D9700DD4CDD /* UITextField+LGHYHDMobileNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+LGHYHDMobileNumber.m"; sourceTree = "<group>"; };
 		3D19C9B21E658D4A00DD4CDD /* LGHYHDScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGHYHDScrollView.h; sourceTree = "<group>"; };
@@ -261,6 +315,12 @@
 		3D98E7891E5F18E200F2CDF9 /* LGHYHDForgetPasswordView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGHYHDForgetPasswordView.m; sourceTree = "<group>"; };
 		3DAB25F01E6BF3640010ADC0 /* LGHYHDViewForSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGHYHDViewForSection.h; sourceTree = "<group>"; };
 		3DAB25F11E6BF3640010ADC0 /* LGHYHDViewForSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGHYHDViewForSection.m; sourceTree = "<group>"; };
+		3DAD21921E6ECD9E000EF2AB /* UIBarButtonItem+XMGExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIBarButtonItem+XMGExtension.h"; path = "Classes/UIBarButtonItem+XMGExtension.h"; sourceTree = "<group>"; };
+		3DAD21931E6ECD9E000EF2AB /* UIBarButtonItem+XMGExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIBarButtonItem+XMGExtension.m"; path = "Classes/UIBarButtonItem+XMGExtension.m"; sourceTree = "<group>"; };
+		3DAD21981E6EE947000EF2AB /* LGHYHDMangementCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGHYHDMangementCellModel.h; sourceTree = "<group>"; };
+		3DAD21991E6EE947000EF2AB /* LGHYHDMangementCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGHYHDMangementCellModel.m; sourceTree = "<group>"; };
+		3DAD219B1E6EEA77000EF2AB /* LGHYHDManagementCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGHYHDManagementCell.h; sourceTree = "<group>"; };
+		3DAD219C1E6EEA77000EF2AB /* LGHYHDManagementCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGHYHDManagementCell.m; sourceTree = "<group>"; };
 		3DCF3E271E63B312008B8900 /* LGHYHDRegisterModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGHYHDRegisterModel.h; sourceTree = "<group>"; };
 		3DCF3E281E63B312008B8900 /* LGHYHDRegisterModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGHYHDRegisterModel.m; sourceTree = "<group>"; };
 		3DE28EDD1E6061DB00E3C8AF /* LGHYHDIdentifyingCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGHYHDIdentifyingCodeViewController.h; sourceTree = "<group>"; };
@@ -312,6 +372,77 @@
 				0A4AD8A06C5EC385D8378B45 /* libPods-龙广会员.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3D1044F71E6E598000D66203 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				3D1044F81E6E598000D66203 /* Module */,
+				3D1045071E6E598000D66203 /* View */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		3D1044F81E6E598000D66203 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				3D1044F91E6E598000D66203 /* Home */,
+				3D1044FC1E6E598000D66203 /* Message */,
+				3D1044FF1E6E598000D66203 /* Mine */,
+				3D1045021E6E598000D66203 /* SameCity */,
+				3DAD21981E6EE947000EF2AB /* LGHYHDMangementCellModel.h */,
+				3DAD21991E6EE947000EF2AB /* LGHYHDMangementCellModel.m */,
+				3DAD219B1E6EEA77000EF2AB /* LGHYHDManagementCell.h */,
+				3DAD219C1E6EEA77000EF2AB /* LGHYHDManagementCell.m */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		3D1044F91E6E598000D66203 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				3D1044FA1E6E598000D66203 /* CYLHomeViewController.h */,
+				3D1044FB1E6E598000D66203 /* CYLHomeViewController.m */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		3D1044FC1E6E598000D66203 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				3D1044FD1E6E598000D66203 /* CYLMessageViewController.h */,
+				3D1044FE1E6E598000D66203 /* CYLMessageViewController.m */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		3D1044FF1E6E598000D66203 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				3D1045001E6E598000D66203 /* CYLMineViewController.h */,
+				3D1045011E6E598000D66203 /* CYLMineViewController.m */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		3D1045021E6E598000D66203 /* SameCity */ = {
+			isa = PBXGroup;
+			children = (
+				3D1045031E6E598000D66203 /* CYLDetailsViewController.h */,
+				3D1045041E6E598000D66203 /* CYLDetailsViewController.m */,
+				3D1045051E6E598000D66203 /* CYLSameCityViewController.h */,
+				3D1045061E6E598000D66203 /* CYLSameCityViewController.m */,
+			);
+			path = SameCity;
+			sourceTree = "<group>";
+		};
+		3D1045071E6E598000D66203 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3D1045081E6E598000D66203 /* CYLPlusButtonSubclass.h */,
+				3D1045091E6E598000D66203 /* CYLPlusButtonSubclass.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		3D31C7E41E5E6845005E97BF = {
@@ -617,8 +748,6 @@
 		3D98E7251E5E77E300F2CDF9 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				3D0FF7401E61C5D5008DD77A /* LGHYPersonalInformationController.h */,
-				3D0FF7411E61C5D5008DD77A /* LGHYPersonalInformationController.m */,
 				3D0FF73A1E61C5A4008DD77A /* LGHYCarsViewController.h */,
 				3D0FF73B1E61C5A4008DD77A /* LGHYCarsViewController.m */,
 				3D0FF73C1E61C5A4008DD77A /* LGHYQianDaoViewController.h */,
@@ -708,10 +837,32 @@
 		3D98E72A1E5E77E300F2CDF9 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				3D0FF7401E61C5D5008DD77A /* LGHYPersonalInformationController.h */,
+				3D0FF7411E61C5D5008DD77A /* LGHYPersonalInformationController.m */,
 				3D48CCB81E62703A005E9FB8 /* ZFSettingViewController.h */,
 				3D48CCB51E62703A005E9FB8 /* ZFSettingViewController.m */,
 				3D48CCB61E62703A005E9FB8 /* ZFPushNoticeViewController.h */,
 				3D48CCB71E62703A005E9FB8 /* ZFPushNoticeViewController.m */,
+				3D1044D61E6E44AE00D66203 /* LGHYHDManagementController.h */,
+				3D1044D71E6E44AE00D66203 /* LGHYHDManagementController.m */,
+				3D1044D91E6E44C100D66203 /* LGHYHDMyScoreController.h */,
+				3D1044DA1E6E44C100D66203 /* LGHYHDMyScoreController.m */,
+				3D1044DC1E6E44D200D66203 /* LGHYHDExchangeScoreController.h */,
+				3D1044DD1E6E44D200D66203 /* LGHYHDExchangeScoreController.m */,
+				3D1044DF1E6E44E300D66203 /* LGHYHDMyCardsController.h */,
+				3D1044E01E6E44E300D66203 /* LGHYHDMyCardsController.m */,
+				3D1044E21E6E450000D66203 /* LGHYHDCollectController.h */,
+				3D1044E31E6E450000D66203 /* LGHYHDCollectController.m */,
+				3D1044E51E6E450A00D66203 /* LGHYHDQuestionController.h */,
+				3D1044E61E6E450A00D66203 /* LGHYHDQuestionController.m */,
+				3D1044E81E6E526500D66203 /* LGHYHDYiWangViewController.h */,
+				3D1044E91E6E526500D66203 /* LGHYHDYiWangViewController.m */,
+				3D1044EB1E6E527300D66203 /* LGHYHDJijiangViewController.h */,
+				3D1044EC1E6E527300D66203 /* LGHYHDJijiangViewController.m */,
+				3D1044EE1E6E527C00D66203 /* LGHYHDRemenViewController.h */,
+				3D1044EF1E6E527C00D66203 /* LGHYHDRemenViewController.m */,
+				3D1044F11E6E528500D66203 /* LGHYHDLiebiaoViewController.h */,
+				3D1044F21E6E528500D66203 /* LGHYHDLiebiaoViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -783,6 +934,9 @@
 		3D98E7331E5E77E300F2CDF9 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				3D1044F71E6E598000D66203 /* Classes */,
+				3D1044F41E6E595600D66203 /* CYLTabBarControllerConfig.h */,
+				3D1044F51E6E595600D66203 /* CYLTabBarControllerConfig.m */,
 				3D0FF74F1E61C892008DD77A /* LGHYButton.h */,
 				3D0FF7501E61C892008DD77A /* LGHYButton.m */,
 				3D98E7611E5EC09D00F2CDF9 /* LGHYHDTextField.h */,
@@ -796,6 +950,8 @@
 				3D98E7561E5EB69200F2CDF9 /* LGHYHDNavigationViewController.m */,
 				3D19C9AF1E657D9700DD4CDD /* UITextField+LGHYHDMobileNumber.h */,
 				3D19C9B01E657D9700DD4CDD /* UITextField+LGHYHDMobileNumber.m */,
+				3DAD21921E6ECD9E000EF2AB /* UIBarButtonItem+XMGExtension.h */,
+				3DAD21931E6ECD9E000EF2AB /* UIBarButtonItem+XMGExtension.m */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -1115,33 +1271,45 @@
 				3D48CCBA1E62703A005E9FB8 /* ZFPushNoticeViewController.m in Sources */,
 				3D98E75A1E5EB90200F2CDF9 /* LGHYHDRegisterViewController.m in Sources */,
 				3DF41B111E6051AE009B3099 /* QRCodeReaderView.m in Sources */,
+				3D10450F1E6E598000D66203 /* CYLPlusButtonSubclass.m in Sources */,
+				3D1044F61E6E595600D66203 /* CYLTabBarControllerConfig.m in Sources */,
 				3D0FF6B51E61683F008DD77A /* LGHYHDSexOfRealViewController.m in Sources */,
 				3D31C7F21E5E6846005E97BF /* main.m in Sources */,
 				3DF41B0F1E6051AE009B3099 /* UIView+MJAlertView.m in Sources */,
+				3D1044EA1E6E526500D66203 /* LGHYHDYiWangViewController.m in Sources */,
 				3D0FF6BB1E618848008DD77A /* LGHYHDUpLoadingImage.m in Sources */,
 				3DF41B0D1E6051AE009B3099 /* AVAudioPlayer+PCM.m in Sources */,
 				3D0FF7271E61C3D4008DD77A /* LGHYSecondCell.m in Sources */,
 				3D98E7841E5F106500F2CDF9 /* LGHYHDRealNameViewController.m in Sources */,
 				3D98E74F1E5E8B5A00F2CDF9 /* LGHYHDFirstViewModel.m in Sources */,
 				3D0FF73F1E61C5A4008DD77A /* LGHYQianDaoViewController.m in Sources */,
+				3D1044DE1E6E44D200D66203 /* LGHYHDExchangeScoreController.m in Sources */,
 				3D0FF6AF1E616829008DD77A /* LGHYHDNumberOfRealViewController.m in Sources */,
 				3D0FF6B81E616855008DD77A /* LGHYHDUploadImageViewController.m in Sources */,
+				3D10450B1E6E598000D66203 /* CYLMessageViewController.m in Sources */,
+				3D1044F01E6E527C00D66203 /* LGHYHDRemenViewController.m in Sources */,
 				3D0FF7251E61C3D4008DD77A /* LGHYForthCell.m in Sources */,
 				3D0FF7091E61C204008DD77A /* LGHYMessage.m in Sources */,
 				3D48CCB41E627018005E9FB8 /* ZFSettingCell.m in Sources */,
 				3D0FF7141E61C3B8008DD77A /* LGHYFifth.m in Sources */,
 				3DF41B121E6051AE009B3099 /* QRCodeReaderViewController.m in Sources */,
 				3D0FF7161E61C3B8008DD77A /* LGHYHeader.m in Sources */,
+				3D10450C1E6E598000D66203 /* CYLMineViewController.m in Sources */,
+				3DAD219D1E6EEA77000EF2AB /* LGHYHDManagementCell.m in Sources */,
 				3D19C9B41E658D4A00DD4CDD /* LGHYHDScrollView.m in Sources */,
 				3D7D68041E6833CC004D2C10 /* LGHYHDShowAlert.m in Sources */,
 				3D0FF7241E61C3D4008DD77A /* LGHYFifthCell.m in Sources */,
 				3D0FF6AC1E616805008DD77A /* LGHYHDNameOfRealViewController.m in Sources */,
+				3D1044ED1E6E527300D66203 /* LGHYHDJijiangViewController.m in Sources */,
+				3D10450D1E6E598000D66203 /* CYLDetailsViewController.m in Sources */,
 				3DF41B0E1E6051AE009B3099 /* MCAudioInputQueue.m in Sources */,
 				3D0FF7001E61BED6008DD77A /* LGHYHeaderCell.m in Sources */,
 				3D98E7491E5E7EE300F2CDF9 /* LGHYHDButton.m in Sources */,
+				3DAD219A1E6EE947000EF2AB /* LGHYHDMangementCellModel.m in Sources */,
 				3D0FF7391E61C56D008DD77A /* LGHYMessagesViewController.m in Sources */,
 				3D0FF6A41E614EE1008DD77A /* LGHYHDRealNameTableView.m in Sources */,
 				3D0FF74E1E61C78F008DD77A /* LGHYPersonalInformaticaView.m in Sources */,
+				3D10450A1E6E598000D66203 /* CYLHomeViewController.m in Sources */,
 				3DAB25F21E6BF3640010ADC0 /* LGHYHDViewForSection.m in Sources */,
 				3D0FF7051E61C198008DD77A /* LGHYBackView.m in Sources */,
 				3D48CCB31E627018005E9FB8 /* ZFSettingItem.m in Sources */,
@@ -1159,6 +1327,7 @@
 				3DE28EDF1E6061DB00E3C8AF /* LGHYHDIdentifyingCodeViewController.m in Sources */,
 				3D98E74C1E5E8AA900F2CDF9 /* LGHYHDFirstView.m in Sources */,
 				3D48CCB21E627018005E9FB8 /* ZFSettingGroup.m in Sources */,
+				3D1044E71E6E450A00D66203 /* LGHYHDQuestionController.m in Sources */,
 				3D98E75D1E5EBAE100F2CDF9 /* LGHYHDVisitorsViewController.m in Sources */,
 				3DF41B101E6051AE009B3099 /* QRCameraSwitchButton.m in Sources */,
 				3D0FF6FD1E61B8A8008DD77A /* LGHYHDMainView.m in Sources */,
@@ -1167,23 +1336,30 @@
 				3D7D67BF1E67A82D004D2C10 /* LGHYHDReponseCode.m in Sources */,
 				3D48CCB91E62703A005E9FB8 /* ZFSettingViewController.m in Sources */,
 				3D48CCB11E627018005E9FB8 /* ZFBaseSettingViewController.m in Sources */,
+				3DAD21941E6ECD9E000EF2AB /* UIBarButtonItem+XMGExtension.m in Sources */,
 				3D0FF7151E61C3B8008DD77A /* LGHYForth.m in Sources */,
 				3D0FF7361E61C4FB008DD77A /* LGHYCompileViewController.m in Sources */,
+				3D1044E11E6E44E300D66203 /* LGHYHDMyCardsController.m in Sources */,
+				3D1044F31E6E528500D66203 /* LGHYHDLiebiaoViewController.m in Sources */,
 				3D19C9B71E65A4E900DD4CDD /* LGHYHDActivityViewController.m in Sources */,
 				3D98E7571E5EB69200F2CDF9 /* LGHYHDNavigationViewController.m in Sources */,
 				3D98E7811E5EF89F00F2CDF9 /* LGHYHDRegisterView.m in Sources */,
 				3D0FF72D1E61C3FA008DD77A /* WeChat.m in Sources */,
+				3D1044DB1E6E44C100D66203 /* LGHYHDMyScoreController.m in Sources */,
 				3D613AE91E6658B400453FB2 /* LGHYHDPost.m in Sources */,
 				3D0FF7061E61C198008DD77A /* LGHYListView.m in Sources */,
 				3D98E78A1E5F18E200F2CDF9 /* LGHYHDForgetPasswordView.m in Sources */,
 				3D0FF6B21E616837008DD77A /* LGHYHDCountryOfRealViewController.m in Sources */,
 				3D98E7541E5EB59D00F2CDF9 /* LGHYHDLoginViewController.m in Sources */,
+				3D1044E41E6E450000D66203 /* LGHYHDCollectController.m in Sources */,
 				3D98E73B1E5E77E300F2CDF9 /* AppDelegate.m in Sources */,
 				3D0FF7511E61C892008DD77A /* LGHYButton.m in Sources */,
+				3D1044D81E6E44AE00D66203 /* LGHYHDManagementController.m in Sources */,
 				3D98E7421E5E790A00F2CDF9 /* LGHYHDFirstViewController.m in Sources */,
 				3D19C9B11E657D9700DD4CDD /* UITextField+LGHYHDMobileNumber.m in Sources */,
 				3D98E7871E5F16F700F2CDF9 /* LGHYHDRealNameView.m in Sources */,
 				3D0FF7421E61C5D5008DD77A /* LGHYPersonalInformationController.m in Sources */,
+				3D10450E1E6E598000D66203 /* CYLSameCityViewController.m in Sources */,
 				3D0FF6A71E6159F9008DD77A /* LGHYHDRealName.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

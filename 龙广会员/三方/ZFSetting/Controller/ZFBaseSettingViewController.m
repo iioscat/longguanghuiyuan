@@ -8,6 +8,7 @@
 
 #import "ZFBaseSettingViewController.h"
 #import "ZFSettingCell.h"
+#import "LGHYHDLoginViewController.h"
 
 @interface ZFBaseSettingViewController ()
 
@@ -21,13 +22,25 @@
     tableView.delegate = self;
     tableView.dataSource = self;
     tableView.separatorInset = UIEdgeInsetsMake(0, 0, 0, 0);
+    tableView.scrollEnabled = NO;
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 100, 50)];
+    UIButton *btn = [LGHYHDButton buttonWithImage:@"BtnImage" title:@"退出登录" textFont:17];
+    [btn addTarget:self action:@selector(exitLogin) forControlEvents:UIControlEventTouchUpInside];
+    [view addSubview:btn];
+    [btn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.mas_equalTo(HDMargin);
+        make.top.mas_equalTo(10);
+        make.right.mas_equalTo(-HDMargin);
+        make.height.mas_equalTo(44);
+    }];
+    [tableView setTableFooterView:view];
     self.view = tableView;
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+    self.title = @"设置";
     _allGroups = [NSMutableArray array];
     
 }
@@ -84,12 +97,16 @@
     
     return group.header;
 }
-#pragma mark 返回每一组的footer标题
-- (NSString *)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section
-{
-    ZFSettingGroup *group = _allGroups[section];
-    
-    return group.footer;
+//#pragma mark 返回每一组的footer标题
+//- (NSString *)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section
+//{
+//    ZFSettingGroup *group = _allGroups[section];
+//    
+//    return group.footer;
+//}
+- (void)exitLogin {
+    LGHYHDLoginViewController *vc = [[LGHYHDLoginViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 @end
