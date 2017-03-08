@@ -102,6 +102,12 @@
 		3DAD21941E6ECD9E000EF2AB /* UIBarButtonItem+XMGExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DAD21931E6ECD9E000EF2AB /* UIBarButtonItem+XMGExtension.m */; };
 		3DAD219A1E6EE947000EF2AB /* LGHYHDMangementCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DAD21991E6EE947000EF2AB /* LGHYHDMangementCellModel.m */; };
 		3DAD219D1E6EEA77000EF2AB /* LGHYHDManagementCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DAD219C1E6EEA77000EF2AB /* LGHYHDManagementCell.m */; };
+		3DAD22921E701879000EF2AB /* LGHYHDVisitorTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DAD22911E701879000EF2AB /* LGHYHDVisitorTableViewController.m */; };
+		3DAD22981E70257B000EF2AB /* LGHYHDHolidaysViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DAD22971E70257B000EF2AB /* LGHYHDHolidaysViewController.m */; };
+		3DAD229B1E7025EE000EF2AB /* LGHYHDPerformViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DAD229A1E7025EE000EF2AB /* LGHYHDPerformViewController.m */; };
+		3DAD229E1E702632000EF2AB /* LGHYHDTravelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DAD229D1E702632000EF2AB /* LGHYHDTravelViewController.m */; };
+		3DAD22A11E702662000EF2AB /* LGHYHDListenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DAD22A01E702662000EF2AB /* LGHYHDListenViewController.m */; };
+		3DAD22A41E702BED000EF2AB /* LGHYHDScoreButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DAD22A31E702BED000EF2AB /* LGHYHDScoreButton.m */; };
 		3DCF3E291E63B312008B8900 /* LGHYHDRegisterModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DCF3E281E63B312008B8900 /* LGHYHDRegisterModel.m */; };
 		3DE28EDF1E6061DB00E3C8AF /* LGHYHDIdentifyingCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DE28EDE1E6061DB00E3C8AF /* LGHYHDIdentifyingCodeViewController.m */; };
 		3DF41B0D1E6051AE009B3099 /* AVAudioPlayer+PCM.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DF41AFF1E6051AE009B3099 /* AVAudioPlayer+PCM.m */; };
@@ -196,8 +202,8 @@
 		3D0FF7381E61C56D008DD77A /* LGHYMessagesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGHYMessagesViewController.m; sourceTree = "<group>"; };
 		3D0FF73A1E61C5A4008DD77A /* LGHYCarsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGHYCarsViewController.h; sourceTree = "<group>"; };
 		3D0FF73B1E61C5A4008DD77A /* LGHYCarsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGHYCarsViewController.m; sourceTree = "<group>"; };
-		3D0FF73C1E61C5A4008DD77A /* LGHYQianDaoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGHYQianDaoViewController.h; sourceTree = "<group>"; };
-		3D0FF73D1E61C5A4008DD77A /* LGHYQianDaoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGHYQianDaoViewController.m; sourceTree = "<group>"; };
+		3D0FF73C1E61C5A4008DD77A /* LGHYQianDaoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LGHYQianDaoViewController.h; path = ../../MainView/Controller/LGHYQianDaoViewController.h; sourceTree = "<group>"; };
+		3D0FF73D1E61C5A4008DD77A /* LGHYQianDaoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LGHYQianDaoViewController.m; path = ../../MainView/Controller/LGHYQianDaoViewController.m; sourceTree = "<group>"; };
 		3D0FF7401E61C5D5008DD77A /* LGHYPersonalInformationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LGHYPersonalInformationController.h; path = ../../MainView/Controller/LGHYPersonalInformationController.h; sourceTree = "<group>"; };
 		3D0FF7411E61C5D5008DD77A /* LGHYPersonalInformationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LGHYPersonalInformationController.m; path = ../../MainView/Controller/LGHYPersonalInformationController.m; sourceTree = "<group>"; };
 		3D0FF74C1E61C78F008DD77A /* LGHYPersonalInformaticaView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGHYPersonalInformaticaView.h; sourceTree = "<group>"; };
@@ -321,6 +327,18 @@
 		3DAD21991E6EE947000EF2AB /* LGHYHDMangementCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGHYHDMangementCellModel.m; sourceTree = "<group>"; };
 		3DAD219B1E6EEA77000EF2AB /* LGHYHDManagementCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGHYHDManagementCell.h; sourceTree = "<group>"; };
 		3DAD219C1E6EEA77000EF2AB /* LGHYHDManagementCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGHYHDManagementCell.m; sourceTree = "<group>"; };
+		3DAD22901E701879000EF2AB /* LGHYHDVisitorTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGHYHDVisitorTableViewController.h; sourceTree = "<group>"; };
+		3DAD22911E701879000EF2AB /* LGHYHDVisitorTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGHYHDVisitorTableViewController.m; sourceTree = "<group>"; };
+		3DAD22961E70257B000EF2AB /* LGHYHDHolidaysViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGHYHDHolidaysViewController.h; sourceTree = "<group>"; };
+		3DAD22971E70257B000EF2AB /* LGHYHDHolidaysViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGHYHDHolidaysViewController.m; sourceTree = "<group>"; };
+		3DAD22991E7025EE000EF2AB /* LGHYHDPerformViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGHYHDPerformViewController.h; sourceTree = "<group>"; };
+		3DAD229A1E7025EE000EF2AB /* LGHYHDPerformViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGHYHDPerformViewController.m; sourceTree = "<group>"; };
+		3DAD229C1E702632000EF2AB /* LGHYHDTravelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGHYHDTravelViewController.h; sourceTree = "<group>"; };
+		3DAD229D1E702632000EF2AB /* LGHYHDTravelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGHYHDTravelViewController.m; sourceTree = "<group>"; };
+		3DAD229F1E702662000EF2AB /* LGHYHDListenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGHYHDListenViewController.h; sourceTree = "<group>"; };
+		3DAD22A01E702662000EF2AB /* LGHYHDListenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGHYHDListenViewController.m; sourceTree = "<group>"; };
+		3DAD22A21E702BEC000EF2AB /* LGHYHDScoreButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGHYHDScoreButton.h; sourceTree = "<group>"; };
+		3DAD22A31E702BED000EF2AB /* LGHYHDScoreButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGHYHDScoreButton.m; sourceTree = "<group>"; };
 		3DCF3E271E63B312008B8900 /* LGHYHDRegisterModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGHYHDRegisterModel.h; sourceTree = "<group>"; };
 		3DCF3E281E63B312008B8900 /* LGHYHDRegisterModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGHYHDRegisterModel.m; sourceTree = "<group>"; };
 		3DE28EDD1E6061DB00E3C8AF /* LGHYHDIdentifyingCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGHYHDIdentifyingCodeViewController.h; sourceTree = "<group>"; };
@@ -750,8 +768,6 @@
 			children = (
 				3D0FF73A1E61C5A4008DD77A /* LGHYCarsViewController.h */,
 				3D0FF73B1E61C5A4008DD77A /* LGHYCarsViewController.m */,
-				3D0FF73C1E61C5A4008DD77A /* LGHYQianDaoViewController.h */,
-				3D0FF73D1E61C5A4008DD77A /* LGHYQianDaoViewController.m */,
 				3D0FF7371E61C56D008DD77A /* LGHYMessagesViewController.h */,
 				3D0FF7381E61C56D008DD77A /* LGHYMessagesViewController.m */,
 				3D0FF7341E61C4FB008DD77A /* LGHYCompileViewController.h */,
@@ -762,6 +778,16 @@
 				3D19C9B61E65A4E900DD4CDD /* LGHYHDActivityViewController.m */,
 				3D1044D31E6D71C500D66203 /* LGHYHDChangePasswordController.h */,
 				3D1044D41E6D71C500D66203 /* LGHYHDChangePasswordController.m */,
+				3DAD22901E701879000EF2AB /* LGHYHDVisitorTableViewController.h */,
+				3DAD22911E701879000EF2AB /* LGHYHDVisitorTableViewController.m */,
+				3DAD22961E70257B000EF2AB /* LGHYHDHolidaysViewController.h */,
+				3DAD22971E70257B000EF2AB /* LGHYHDHolidaysViewController.m */,
+				3DAD22991E7025EE000EF2AB /* LGHYHDPerformViewController.h */,
+				3DAD229A1E7025EE000EF2AB /* LGHYHDPerformViewController.m */,
+				3DAD229C1E702632000EF2AB /* LGHYHDTravelViewController.h */,
+				3DAD229D1E702632000EF2AB /* LGHYHDTravelViewController.m */,
+				3DAD229F1E702662000EF2AB /* LGHYHDListenViewController.h */,
+				3DAD22A01E702662000EF2AB /* LGHYHDListenViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -952,6 +978,8 @@
 				3D19C9B01E657D9700DD4CDD /* UITextField+LGHYHDMobileNumber.m */,
 				3DAD21921E6ECD9E000EF2AB /* UIBarButtonItem+XMGExtension.h */,
 				3DAD21931E6ECD9E000EF2AB /* UIBarButtonItem+XMGExtension.m */,
+				3DAD22A21E702BEC000EF2AB /* LGHYHDScoreButton.h */,
+				3DAD22A31E702BED000EF2AB /* LGHYHDScoreButton.m */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -984,6 +1012,8 @@
 		3D98E7391E5E77E300F2CDF9 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				3D0FF73C1E61C5A4008DD77A /* LGHYQianDaoViewController.h */,
+				3D0FF73D1E61C5A4008DD77A /* LGHYQianDaoViewController.m */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -1267,6 +1297,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DAD229B1E7025EE000EF2AB /* LGHYHDPerformViewController.m in Sources */,
 				3D7D68071E68381D004D2C10 /* LGHYHDNumberBtnFire.m in Sources */,
 				3D48CCBA1E62703A005E9FB8 /* ZFPushNoticeViewController.m in Sources */,
 				3D98E75A1E5EB90200F2CDF9 /* LGHYHDRegisterViewController.m in Sources */,
@@ -1288,6 +1319,7 @@
 				3D0FF6B81E616855008DD77A /* LGHYHDUploadImageViewController.m in Sources */,
 				3D10450B1E6E598000D66203 /* CYLMessageViewController.m in Sources */,
 				3D1044F01E6E527C00D66203 /* LGHYHDRemenViewController.m in Sources */,
+				3DAD22981E70257B000EF2AB /* LGHYHDHolidaysViewController.m in Sources */,
 				3D0FF7251E61C3D4008DD77A /* LGHYForthCell.m in Sources */,
 				3D0FF7091E61C204008DD77A /* LGHYMessage.m in Sources */,
 				3D48CCB41E627018005E9FB8 /* ZFSettingCell.m in Sources */,
@@ -1327,6 +1359,7 @@
 				3DE28EDF1E6061DB00E3C8AF /* LGHYHDIdentifyingCodeViewController.m in Sources */,
 				3D98E74C1E5E8AA900F2CDF9 /* LGHYHDFirstView.m in Sources */,
 				3D48CCB21E627018005E9FB8 /* ZFSettingGroup.m in Sources */,
+				3DAD22A41E702BED000EF2AB /* LGHYHDScoreButton.m in Sources */,
 				3D1044E71E6E450A00D66203 /* LGHYHDQuestionController.m in Sources */,
 				3D98E75D1E5EBAE100F2CDF9 /* LGHYHDVisitorsViewController.m in Sources */,
 				3DF41B101E6051AE009B3099 /* QRCameraSwitchButton.m in Sources */,
@@ -1351,8 +1384,11 @@
 				3D98E78A1E5F18E200F2CDF9 /* LGHYHDForgetPasswordView.m in Sources */,
 				3D0FF6B21E616837008DD77A /* LGHYHDCountryOfRealViewController.m in Sources */,
 				3D98E7541E5EB59D00F2CDF9 /* LGHYHDLoginViewController.m in Sources */,
+				3DAD229E1E702632000EF2AB /* LGHYHDTravelViewController.m in Sources */,
 				3D1044E41E6E450000D66203 /* LGHYHDCollectController.m in Sources */,
+				3DAD22A11E702662000EF2AB /* LGHYHDListenViewController.m in Sources */,
 				3D98E73B1E5E77E300F2CDF9 /* AppDelegate.m in Sources */,
+				3DAD22921E701879000EF2AB /* LGHYHDVisitorTableViewController.m in Sources */,
 				3D0FF7511E61C892008DD77A /* LGHYButton.m in Sources */,
 				3D1044D81E6E44AE00D66203 /* LGHYHDManagementController.m in Sources */,
 				3D98E7421E5E790A00F2CDF9 /* LGHYHDFirstViewController.m in Sources */,

@@ -65,18 +65,6 @@ static const NSTimeInterval bufferDuration = 0.2;
     return _btn1;
 }
 
-//- (UIScrollView *)scrollView {
-//    if(!_scrollView) {
-//        _scrollView = [[UIScrollView alloc] initWithFrame:self.view.bounds];
-//        _scrollView.contentSize = CGSizeMake(self.view.bounds.size.width * 2, self.view.bounds.size.height);
-//        _scrollView.backgroundColor = [UIColor orangeColor];
-//        _scrollView.pagingEnabled = YES;
-//        _scrollView.scrollEnabled = NO;
-//        _scrollView.scrollsToTop = NO;
-//    }
-//    return _scrollView;
-//}
-
 - (UIButton *)btn2 {
     if (!_btn2) {
         _btn2 = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -214,19 +202,7 @@ static const NSTimeInterval bufferDuration = 0.2;
     [self showBtn];
     [self showView2];
     [self showView1];
-//    [self showScrollView];
- 
-    
-    
-//    UILabel *btnChapter = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 40, 40)];//左边打开侧滑的按钮
-//    //        btnChapter.font = [UIFont fontWithName:@"tkappicon" size:20];
-//    [btnChapter setText:@"返回"];
-//    btnChapter.userInteractionEnabled = YES;
-//    UITapGestureRecognizer *chapterTapGestureRecognizer = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(leftTouchUpInside:)];
-//    [btnChapter addGestureRecognizer:chapterTapGestureRecognizer];
-//    btnChapter.textColor = [UIColor colorWithRed:255.0/255 green:255.0/255 blue:255.0/255 alpha:1];
-//    UIBarButtonItem* item=[[UIBarButtonItem alloc]initWithCustomView:btnChapter];
-//    self.navigationItem.leftBarButtonItem = item;
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -234,15 +210,6 @@ static const NSTimeInterval bufferDuration = 0.2;
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 - (void)doAction:(UIButton *)btn {
     NSLog(@"test");
 }
@@ -265,17 +232,6 @@ static const NSTimeInterval bufferDuration = 0.2;
     }];
     
 }
-
-//- (void)showScrollView {
-//    [self.view addSubview:self.scrollView];
-//    [self.scrollView mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.top.equalTo(self.btn1.mas_bottom);
-//        make.left.equalTo(@0);
-//        make.bottom.equalTo(@0);
-//        make.width.equalTo(wid * 2);
-//    }];
-//    
-//}
 
 - (void)showView1 {
     

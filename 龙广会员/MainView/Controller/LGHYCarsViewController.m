@@ -112,18 +112,12 @@
 
 #pragma mark - refresh
 - (void)refresh {
-    for (int i = 0; i<10000; i++) {
-        NSLog(@"下拉刷新");
-    }
     [self.tableView.mj_header endRefreshing];
 }
 
 #pragma mark - loadMore
 
 - (void)loadMore {
-    for (int i = 0; i<10000; i++) {
-        NSLog(@"上拉加载");
-    }
     [self.tableView.mj_footer endRefreshing];
 }
 

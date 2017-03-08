@@ -7,8 +7,25 @@
 //
 
 #import "CYLHomeViewController.h"
+#import "LGHYHDMangementCellModel.h"
+#import "LGHYHDManagementCell.h"
+
+@interface CYLHomeViewController ()
+
+@property (nonatomic, strong) NSArray *dataList;
+
+@end
+
 
 @implementation CYLHomeViewController
+
+- (NSArray *)dataList {
+    if (!_dataList) {
+        _dataList = [LGHYHDMangementCellModel loadData];
+    }
+    return _dataList;
+}
+
 
 #pragma mark - View lifecycle
 
@@ -21,13 +38,6 @@
     [self.navigationController.tabBarItem setBadgeValue:@"3"];
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation {
-    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
-        return YES;
-    }
-    return toInterfaceOrientation == UIInterfaceOrientationPortrait;
-}
-
 #pragma mark - Methods
 
 - (void)configureCell:(UITableViewCell *)cell forIndexPath:(NSIndexPath *)indexPath {
@@ -37,17 +47,22 @@
 #pragma mark - Table view
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    static NSString * CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
-    }
-    [self configureCell:cell forIndexPath:indexPath];
+    tableView.separatorInset = UIEdgeInsetsMake(0, 0, 0, 0);
+    LGHYHDManagementCell *cell = [LGHYHDManagementCell cellWithTableView:tableView];
+    cell.managementCellModel = self.dataList[indexPath.row];
     return cell;
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    LGHYHDMangementCellModel *model = self.dataList[indexPath.row];
+    return model.cellHeight;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 200;
+}
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 30;
+    return self.dataList.count;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {

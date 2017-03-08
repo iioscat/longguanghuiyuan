@@ -10,9 +10,9 @@
 
 @interface LGHYHDMangementCellModel : NSObject
 
-@property (nonatomic, copy) NSString *pictureViewName;
-@property (nonatomic, copy) NSString *titleLabelName;
-@property (nonatomic, copy) NSString *deslabelName;
+@property (nonatomic, copy) NSString *icon;
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, copy) NSString *state;
 @property (nonatomic, assign) CGFloat cellHeight;
 
 + (NSArray *)loadData;

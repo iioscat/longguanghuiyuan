@@ -36,6 +36,7 @@
 #import "LGHYHDQuestionController.h"
 #import "CYLHomeViewController.h"
 #import "UIBarButtonItem+XMGExtension.h"
+#import "LGHYHDVisitorTableViewController.h"
 
 static NSString * identifier = @"cellID";
 @interface LGHYHDMainViewController ()<UITableViewDataSource, UITableViewDelegate, myTabVdelegate, headerCellDelegate,thirdCellDelegate, forthCellDelegate>
@@ -116,6 +117,7 @@ static NSString * identifier = @"cellID";
     //上拉加载
     //    self.tableView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMore)];
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:identifier];
+    self.viewControllers = @[@"LGHYCarsViewController", @"", @"LGHYHDVisitorTableViewController", @"", @"LGHYHDHolidaysViewController", @"", @"LGHYHDPerformViewController", @"", @"LGHYHDTravelViewController", @"", @"LGHYHDListenViewController"];
     [self.view addSubview:self.tableView];
     [self hideTab];
     [self addButtonActionOfListView];
@@ -249,12 +251,14 @@ static NSString * identifier = @"cellID";
 
 }
 
+# pragma mark - didSelectRowAtIndexPath
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    if (indexPath.section == 2) {
-        NSString * vcName = self.viewControllers[2][indexPath.row];
+    if (indexPath.section == 1) {
+        NSString * vcName = self.viewControllers[indexPath.row];
         
-        UIViewController * vc = [[NSClassFromString(vcName) alloc] init];
+         UITableViewController * vc = [[NSClassFromString(vcName) alloc] init];
+        //vc.view.backgroundColor = [UIColor orangeColor];
         [self.navigationController pushViewController:vc animated:YES];
     }
 }

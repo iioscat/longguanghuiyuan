@@ -7,8 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+@class LGHYHDMangementCellModel;
 
 @interface LGHYHDManagementCell : UITableViewCell
 
+@property (nonatomic, strong) LGHYHDMangementCellModel *managementCellModel;
+
++ (instancetype)cellWithTableView:(UITableView *)tableView;
 
 @end

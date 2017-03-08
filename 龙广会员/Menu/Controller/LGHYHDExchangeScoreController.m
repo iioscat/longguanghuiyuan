@@ -7,8 +7,12 @@
 //
 
 #import "LGHYHDExchangeScoreController.h"
+#import "LGHYHDScoreButton.h"
+#import "LGHYHDLoginViewController.h"
 
 @interface LGHYHDExchangeScoreController ()
+
+@property (nonatomic, strong)LGHYHDScoreButton *button;
 
 @end
 
@@ -17,22 +21,29 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = backColor;
+    self.button = [LGHYHDScoreButton buttonWithImage:@"03" title:@"Baby" textFont:17];
+    self.button.backgroundColor = [UIColor grayColor];
+    //[self.button buttonWithImage:@"03" title:@"Baby" textFont:17];
+    [self.view addSubview:self.button];
+    [self.button mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_equalTo(100);
+        make.left.mas_equalTo(100);
+        make.width.mas_equalTo(100);
+        make.height.mas_equalTo(100);
+    }];
+    [self.button addTarget:self action:@selector(jumpMain) forControlEvents:UIControlEventTouchUpOutside];
     self.title = @"积分兑换";
 }
 
+- (void)jumpMain {
+    LGHYHDLoginViewController *vc = [[LGHYHDLoginViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

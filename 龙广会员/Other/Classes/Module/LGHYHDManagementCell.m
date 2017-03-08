@@ -7,6 +7,7 @@
 //
 
 #import "LGHYHDManagementCell.h"
+#import "LGHYHDMangementCellModel.h"
 
 @interface LGHYHDManagementCell ()
 
@@ -27,12 +28,17 @@
 - (UILabel *)titleLabel {
     if (!_titleLabel) {
         _titleLabel = [[UILabel alloc] init];
+        _titleLabel.backgroundColor = [UIColor orangeColor];
     }
     return _titleLabel;
 }
 - (UILabel *)desLabel {
     if (!_desLabel) {
         _desLabel = [[UILabel alloc] init];
+        _desLabel.numberOfLines = 0;
+        _desLabel.backgroundColor = [UIColor purpleColor];
+        _desLabel.font = [UIFont boldSystemFontOfSize:14];
+
     }
     return _desLabel;
 }
@@ -41,30 +47,50 @@
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
         [self addSubview:self.pictureView];
         [self.pictureView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.mas_equalTo(10);
+            make.top.mas_equalTo(20);
             make.left.mas_equalTo(10);
-            make.width.mas_equalTo(100);
-            make.height.mas_equalTo(80);
+            make.width.mas_equalTo(60);
+            make.height.mas_equalTo(40);
         }];
+        [self addSubview:self.titleLabel];
         [self.titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.mas_equalTo(10);
-            make.left.equalTo(self.imageView).width.offset(10);
+            make.left.equalTo(self.pictureView.mas_right).with.offset(10);
+            make.top.mas_equalTo(20);
             make.right.mas_equalTo(-10);
             make.height.mas_equalTo(20);
         }];
+        self.desLabel.preferredMaxLayoutWidth = [UIScreen mainScreen].bounds.size.width - 90;
+        [self addSubview:self.desLabel];
         [self.desLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.equalTo(self.desLabel.mas_bottom);
+            make.top.equalTo(self.titleLabel.mas_bottom);
             make.left.equalTo(self.pictureView.mas_right).with.offset(10);
-            make.right.mas_equalTo(-10);
         }];
-        
     }
     return self;
 }
 
++ (instancetype)cellWithTableView:(UITableView *)tableView {
+    NSString *identifier = @"cllID";
+    LGHYHDManagementCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+    if (cell == nil) {
+        cell = [[LGHYHDManagementCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+    }
+    return cell;
+}
+
+- (void)setManagementCellModel:(LGHYHDMangementCellModel *)managementCellModel {
+    _managementCellModel = managementCellModel;
+    self.pictureView.image = [UIImage imageNamed:managementCellModel.icon];
+    self.titleLabel.text = managementCellModel.name;
+    self.desLabel.text = managementCellModel.state;
+    [self layoutIfNeeded];
+    CGSize size = [self.desLabel sizeThatFits:CGSizeMake([UIScreen mainScreen].bounds.size.width - 80, MAXFLOAT)];
+    managementCellModel.cellHeight = CGRectGetMaxY(self.titleLabel.frame) + size.height + 20;
+
+}
+
 - (void)awakeFromNib {
     [super awakeFromNib];
-    // Initialization code
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
