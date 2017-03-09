@@ -70,6 +70,7 @@
 		3D31C8001E5E6848005E97BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D31C7FE1E5E6848005E97BF /* LaunchScreen.storyboard */; };
 		3D31C80B1E5E6849005E97BF /* ____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D31C80A1E5E6849005E97BF /* ____Tests.m */; };
 		3D31C8161E5E6849005E97BF /* ____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D31C8151E5E6849005E97BF /* ____UITests.m */; };
+		3D436BB11E718FA8005587E9 /* LGHYHDMyScore_Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D436BB01E718FA8005587E9 /* LGHYHDMyScore_Model.m */; };
 		3D48CCB11E627018005E9FB8 /* ZFBaseSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D48CCA81E627018005E9FB8 /* ZFBaseSettingViewController.m */; };
 		3D48CCB21E627018005E9FB8 /* ZFSettingGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D48CCAB1E627018005E9FB8 /* ZFSettingGroup.m */; };
 		3D48CCB31E627018005E9FB8 /* ZFSettingItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D48CCAD1E627018005E9FB8 /* ZFSettingItem.m */; };
@@ -107,7 +108,9 @@
 		3DAD229B1E7025EE000EF2AB /* LGHYHDPerformViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DAD229A1E7025EE000EF2AB /* LGHYHDPerformViewController.m */; };
 		3DAD229E1E702632000EF2AB /* LGHYHDTravelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DAD229D1E702632000EF2AB /* LGHYHDTravelViewController.m */; };
 		3DAD22A11E702662000EF2AB /* LGHYHDListenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DAD22A01E702662000EF2AB /* LGHYHDListenViewController.m */; };
-		3DAD22A41E702BED000EF2AB /* LGHYHDScoreButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DAD22A31E702BED000EF2AB /* LGHYHDScoreButton.m */; };
+		3DAD22E81E70F172000EF2AB /* LGHYHDScoreButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DAD22E71E70F172000EF2AB /* LGHYHDScoreButtonView.m */; };
+		3DAD22EE1E71308C000EF2AB /* LGHYHDMyScoreModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DAD22ED1E71308C000EF2AB /* LGHYHDMyScoreModel.m */; };
+		3DAD22F11E7138E5000EF2AB /* LGHYHDMyScoreTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DAD22F01E7138E5000EF2AB /* LGHYHDMyScoreTableViewCell.m */; };
 		3DCF3E291E63B312008B8900 /* LGHYHDRegisterModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DCF3E281E63B312008B8900 /* LGHYHDRegisterModel.m */; };
 		3DE28EDF1E6061DB00E3C8AF /* LGHYHDIdentifyingCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DE28EDE1E6061DB00E3C8AF /* LGHYHDIdentifyingCodeViewController.m */; };
 		3DF41B0D1E6051AE009B3099 /* AVAudioPlayer+PCM.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DF41AFF1E6051AE009B3099 /* AVAudioPlayer+PCM.m */; };
@@ -263,6 +266,8 @@
 		3D31C8111E5E6849005E97BF /* 龙广会员UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "龙广会员UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D31C8151E5E6849005E97BF /* ____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "____UITests.m"; sourceTree = "<group>"; };
 		3D31C8171E5E6849005E97BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D436BAF1E718FA8005587E9 /* LGHYHDMyScore_Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGHYHDMyScore_Model.h; sourceTree = "<group>"; };
+		3D436BB01E718FA8005587E9 /* LGHYHDMyScore_Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGHYHDMyScore_Model.m; sourceTree = "<group>"; };
 		3D48CCA71E627018005E9FB8 /* ZFBaseSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFBaseSettingViewController.h; sourceTree = "<group>"; };
 		3D48CCA81E627018005E9FB8 /* ZFBaseSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFBaseSettingViewController.m; sourceTree = "<group>"; };
 		3D48CCAA1E627018005E9FB8 /* ZFSettingGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFSettingGroup.h; sourceTree = "<group>"; };
@@ -337,8 +342,12 @@
 		3DAD229D1E702632000EF2AB /* LGHYHDTravelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGHYHDTravelViewController.m; sourceTree = "<group>"; };
 		3DAD229F1E702662000EF2AB /* LGHYHDListenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGHYHDListenViewController.h; sourceTree = "<group>"; };
 		3DAD22A01E702662000EF2AB /* LGHYHDListenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGHYHDListenViewController.m; sourceTree = "<group>"; };
-		3DAD22A21E702BEC000EF2AB /* LGHYHDScoreButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGHYHDScoreButton.h; sourceTree = "<group>"; };
-		3DAD22A31E702BED000EF2AB /* LGHYHDScoreButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGHYHDScoreButton.m; sourceTree = "<group>"; };
+		3DAD22E61E70F172000EF2AB /* LGHYHDScoreButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LGHYHDScoreButtonView.h; path = ../../Other/LGHYHDScoreButtonView.h; sourceTree = "<group>"; };
+		3DAD22E71E70F172000EF2AB /* LGHYHDScoreButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LGHYHDScoreButtonView.m; path = ../../Other/LGHYHDScoreButtonView.m; sourceTree = "<group>"; };
+		3DAD22EC1E71308C000EF2AB /* LGHYHDMyScoreModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGHYHDMyScoreModel.h; sourceTree = "<group>"; };
+		3DAD22ED1E71308C000EF2AB /* LGHYHDMyScoreModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGHYHDMyScoreModel.m; sourceTree = "<group>"; };
+		3DAD22EF1E7138E5000EF2AB /* LGHYHDMyScoreTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGHYHDMyScoreTableViewCell.h; sourceTree = "<group>"; };
+		3DAD22F01E7138E5000EF2AB /* LGHYHDMyScoreTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGHYHDMyScoreTableViewCell.m; sourceTree = "<group>"; };
 		3DCF3E271E63B312008B8900 /* LGHYHDRegisterModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGHYHDRegisterModel.h; sourceTree = "<group>"; };
 		3DCF3E281E63B312008B8900 /* LGHYHDRegisterModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGHYHDRegisterModel.m; sourceTree = "<group>"; };
 		3DE28EDD1E6061DB00E3C8AF /* LGHYHDIdentifyingCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGHYHDIdentifyingCodeViewController.h; sourceTree = "<group>"; };
@@ -896,6 +905,12 @@
 		3D98E72B1E5E77E300F2CDF9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3DAD22EC1E71308C000EF2AB /* LGHYHDMyScoreModel.h */,
+				3DAD22ED1E71308C000EF2AB /* LGHYHDMyScoreModel.m */,
+				3DAD22EF1E7138E5000EF2AB /* LGHYHDMyScoreTableViewCell.h */,
+				3DAD22F01E7138E5000EF2AB /* LGHYHDMyScoreTableViewCell.m */,
+				3D436BAF1E718FA8005587E9 /* LGHYHDMyScore_Model.h */,
+				3D436BB01E718FA8005587E9 /* LGHYHDMyScore_Model.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -910,6 +925,8 @@
 		3D98E72D1E5E77E300F2CDF9 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3DAD22E61E70F172000EF2AB /* LGHYHDScoreButtonView.h */,
+				3DAD22E71E70F172000EF2AB /* LGHYHDScoreButtonView.m */,
 				3D0FF7011E61C198008DD77A /* LGHYBackView.h */,
 				3D0FF7021E61C198008DD77A /* LGHYBackView.m */,
 				3D0FF7031E61C198008DD77A /* LGHYListView.h */,
@@ -978,8 +995,6 @@
 				3D19C9B01E657D9700DD4CDD /* UITextField+LGHYHDMobileNumber.m */,
 				3DAD21921E6ECD9E000EF2AB /* UIBarButtonItem+XMGExtension.h */,
 				3DAD21931E6ECD9E000EF2AB /* UIBarButtonItem+XMGExtension.m */,
-				3DAD22A21E702BEC000EF2AB /* LGHYHDScoreButton.h */,
-				3DAD22A31E702BED000EF2AB /* LGHYHDScoreButton.m */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -998,6 +1013,8 @@
 		3D98E7371E5E77E300F2CDF9 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				3D0FF73C1E61C5A4008DD77A /* LGHYQianDaoViewController.h */,
+				3D0FF73D1E61C5A4008DD77A /* LGHYQianDaoViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1012,8 +1029,6 @@
 		3D98E7391E5E77E300F2CDF9 /* Other */ = {
 			isa = PBXGroup;
 			children = (
-				3D0FF73C1E61C5A4008DD77A /* LGHYQianDaoViewController.h */,
-				3D0FF73D1E61C5A4008DD77A /* LGHYQianDaoViewController.m */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -1311,6 +1326,7 @@
 				3D0FF6BB1E618848008DD77A /* LGHYHDUpLoadingImage.m in Sources */,
 				3DF41B0D1E6051AE009B3099 /* AVAudioPlayer+PCM.m in Sources */,
 				3D0FF7271E61C3D4008DD77A /* LGHYSecondCell.m in Sources */,
+				3DAD22EE1E71308C000EF2AB /* LGHYHDMyScoreModel.m in Sources */,
 				3D98E7841E5F106500F2CDF9 /* LGHYHDRealNameViewController.m in Sources */,
 				3D98E74F1E5E8B5A00F2CDF9 /* LGHYHDFirstViewModel.m in Sources */,
 				3D0FF73F1E61C5A4008DD77A /* LGHYQianDaoViewController.m in Sources */,
@@ -1348,6 +1364,7 @@
 				3D0FF73E1E61C5A4008DD77A /* LGHYCarsViewController.m in Sources */,
 				3D0FF7171E61C3B8008DD77A /* LGHYSecond.m in Sources */,
 				3D0FF7281E61C3D4008DD77A /* LGHYThirdCell.m in Sources */,
+				3D436BB11E718FA8005587E9 /* LGHYHDMyScore_Model.m in Sources */,
 				3D0FF72A1E61C3E1008DD77A /* Industry.m in Sources */,
 				3D0FF7181E61C3B8008DD77A /* LGHYThird.m in Sources */,
 				3D0FF7261E61C3D4008DD77A /* LGHYMessageCell.m in Sources */,
@@ -1359,13 +1376,13 @@
 				3DE28EDF1E6061DB00E3C8AF /* LGHYHDIdentifyingCodeViewController.m in Sources */,
 				3D98E74C1E5E8AA900F2CDF9 /* LGHYHDFirstView.m in Sources */,
 				3D48CCB21E627018005E9FB8 /* ZFSettingGroup.m in Sources */,
-				3DAD22A41E702BED000EF2AB /* LGHYHDScoreButton.m in Sources */,
 				3D1044E71E6E450A00D66203 /* LGHYHDQuestionController.m in Sources */,
 				3D98E75D1E5EBAE100F2CDF9 /* LGHYHDVisitorsViewController.m in Sources */,
 				3DF41B101E6051AE009B3099 /* QRCameraSwitchButton.m in Sources */,
 				3D0FF6FD1E61B8A8008DD77A /* LGHYHDMainView.m in Sources */,
 				3DCF3E291E63B312008B8900 /* LGHYHDRegisterModel.m in Sources */,
 				3D0FF6A11E61275A008DD77A /* LGHYHDMainViewController.m in Sources */,
+				3DAD22F11E7138E5000EF2AB /* LGHYHDMyScoreTableViewCell.m in Sources */,
 				3D7D67BF1E67A82D004D2C10 /* LGHYHDReponseCode.m in Sources */,
 				3D48CCB91E62703A005E9FB8 /* ZFSettingViewController.m in Sources */,
 				3D48CCB11E627018005E9FB8 /* ZFBaseSettingViewController.m in Sources */,
@@ -1391,6 +1408,7 @@
 				3DAD22921E701879000EF2AB /* LGHYHDVisitorTableViewController.m in Sources */,
 				3D0FF7511E61C892008DD77A /* LGHYButton.m in Sources */,
 				3D1044D81E6E44AE00D66203 /* LGHYHDManagementController.m in Sources */,
+				3DAD22E81E70F172000EF2AB /* LGHYHDScoreButtonView.m in Sources */,
 				3D98E7421E5E790A00F2CDF9 /* LGHYHDFirstViewController.m in Sources */,
 				3D19C9B11E657D9700DD4CDD /* UITextField+LGHYHDMobileNumber.m in Sources */,
 				3D98E7871E5F16F700F2CDF9 /* LGHYHDRealNameView.m in Sources */,

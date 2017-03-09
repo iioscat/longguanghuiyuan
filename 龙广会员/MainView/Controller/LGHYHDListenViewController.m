@@ -7,6 +7,7 @@
 //
 
 #import "LGHYHDListenViewController.h"
+#import "LGHYQianDaoViewController.h"
 
 @interface LGHYHDListenViewController ()
 

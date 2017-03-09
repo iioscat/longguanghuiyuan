@@ -16,6 +16,7 @@
 
 - (void)postWithUrl:(NSString *)url andDictionary:(NSDictionary *)dict {
     __block NSString *string = [NSString string];
+    __block NSMutableDictionary *dataDict = [NSMutableDictionary dictionary];
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
     AFHTTPSessionManager *sesson = [AFHTTPSessionManager manager];
     sesson.requestSerializer = [AFJSONRequestSerializer serializer];
@@ -24,39 +25,22 @@
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         dispatch_async(dispatch_get_main_queue(), ^{
-            NSLog(@"%@", responseObject);
+            //NSLog(@"data = %@", responseObject);
             string = [[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding];
-            NSLog(@"string = %@", string);
-//            JSON = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingMutableContainers error:nil];
-//            NSLog(@"请求成功：%@", JSON);
+            dataDict = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingMutableContainers error:nil];
+            NSLog(@"数据转字典，dataDict = %@", dataDict);
+            //NSLog(@"数据转字符串，string = %@", string);
             if([_postDelegate respondsToSelector:@selector(postJsonWithString:)]){
                 [_postDelegate postJsonWithString:string];
+            }
+            if([_postDelegate respondsToSelector:@selector(postJsonWithDataDict:)]){
+                [_postDelegate postJsonWithDataDict:dataDict];
             }
         });
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         NSLog(@"请求失败：%@", error.description);
     }];
     });
-}
-
-+ (NSString *)cookieValueWithKey:(NSString *)key
-{
-    NSHTTPCookieStorage *sharedHTTPCookieStorage = [NSHTTPCookieStorage sharedHTTPCookieStorage];
-    
-    if ([sharedHTTPCookieStorage cookieAcceptPolicy] != NSHTTPCookieAcceptPolicyAlways) {
-        [[NSHTTPCookieStorage sharedHTTPCookieStorage] setCookieAcceptPolicy:NSHTTPCookieAcceptPolicyAlways];
-    }
-    
-    NSArray         *cookies = [sharedHTTPCookieStorage cookiesForURL:[NSURL URLWithString:@"http://192...."]];
-    NSEnumerator    *enumerator = [cookies objectEnumerator];
-    NSHTTPCookie    *cookie;
-    while (cookie = [enumerator nextObject]) {
-        if ([[cookie name] isEqualToString:key]) {
-            return [NSString stringWithString:[[cookie value] stringByRemovingPercentEncoding]];
-        }
-    }
-    
-    return nil;
 }
 
 @end

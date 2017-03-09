@@ -11,6 +11,7 @@
 @protocol postDelegate <NSObject>
 
 - (void)postJsonWithString:(NSString *)string;
+- (void)postJsonWithDataDict:(NSDictionary *)dict;
 
 @end
 
@@ -19,5 +20,6 @@
 @property (nonatomic, assign)id<postDelegate>postDelegate;
 
 - (void)postWithUrl:(NSString *)url andDictionary:(NSDictionary *)dict;
+
 
 @end
