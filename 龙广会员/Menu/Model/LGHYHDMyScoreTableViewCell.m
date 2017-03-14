@@ -111,6 +111,13 @@
 
 - (void)setMyScoreModel:(LGHYHDMyScoreModel *)myScoreModel {
     _myScoreModel = myScoreModel;
+    self.userNameLabel.text = myScoreModel.userName;
+    self.before_pointLabel.text = [NSString stringWithFormat:@"%li", myScoreModel.before_point];
+    self.after_pointLabel.text = [NSString stringWithFormat:@"%li", myScoreModel.after_point];
+    self.create_timeLabel.text = myScoreModel.create_time;
+    self.reasonLabel.text = myScoreModel.reason;
+    [self layoutIfNeeded];
+    myScoreModel.cellHeight = CGRectGetMaxY(self.reasonLabel.frame) + 20;
 }
 
 - (void)awakeFromNib {

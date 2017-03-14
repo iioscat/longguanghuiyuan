@@ -29,7 +29,4 @@
 @property (nonatomic, copy)NSString *userName;
 @property (nonatomic, assign)CGFloat cellHeight;
 
-+ (void)loadData;
-+ (NSArray *)loadDataList;
-
 @end

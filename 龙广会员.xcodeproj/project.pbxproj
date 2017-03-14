@@ -47,7 +47,6 @@
 		3D1044D51E6D71C500D66203 /* LGHYHDChangePasswordController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D1044D41E6D71C500D66203 /* LGHYHDChangePasswordController.m */; };
 		3D1044D81E6E44AE00D66203 /* LGHYHDManagementController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D1044D71E6E44AE00D66203 /* LGHYHDManagementController.m */; };
 		3D1044DB1E6E44C100D66203 /* LGHYHDMyScoreController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D1044DA1E6E44C100D66203 /* LGHYHDMyScoreController.m */; };
-		3D1044DE1E6E44D200D66203 /* LGHYHDExchangeScoreController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D1044DD1E6E44D200D66203 /* LGHYHDExchangeScoreController.m */; };
 		3D1044E11E6E44E300D66203 /* LGHYHDMyCardsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D1044E01E6E44E300D66203 /* LGHYHDMyCardsController.m */; };
 		3D1044E41E6E450000D66203 /* LGHYHDCollectController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D1044E31E6E450000D66203 /* LGHYHDCollectController.m */; };
 		3D1044E71E6E450A00D66203 /* LGHYHDQuestionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D1044E61E6E450A00D66203 /* LGHYHDQuestionController.m */; };
@@ -71,6 +70,20 @@
 		3D31C80B1E5E6849005E97BF /* ____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D31C80A1E5E6849005E97BF /* ____Tests.m */; };
 		3D31C8161E5E6849005E97BF /* ____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D31C8151E5E6849005E97BF /* ____UITests.m */; };
 		3D436BB11E718FA8005587E9 /* LGHYHDMyScore_Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D436BB01E718FA8005587E9 /* LGHYHDMyScore_Model.m */; };
+		3D436BF01E77974D005587E9 /* LGHYHDRuleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D436BEF1E77974D005587E9 /* LGHYHDRuleModel.m */; };
+		3D436BF31E77BEC7005587E9 /* LGHYHDRuleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D436BF21E77BEC7005587E9 /* LGHYHDRuleScrollView.m */; };
+		3D436BF61E77C3A4005587E9 /* LGHYHDRule_Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D436BF51E77C3A4005587E9 /* LGHYHDRule_Model.m */; };
+		3D436C151E78275D005587E9 /* LGHYHDExchangeScoreController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D436C141E78275D005587E9 /* LGHYHDExchangeScoreController.m */; };
+		3D436C281E782795005587E9 /* UIView+ZJFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D436C181E782795005587E9 /* UIView+ZJFrame.m */; };
+		3D436C291E782795005587E9 /* UIViewController+ZJScrollPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D436C1A1E782795005587E9 /* UIViewController+ZJScrollPageController.m */; };
+		3D436C2A1E782795005587E9 /* ZJCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D436C1C1E782795005587E9 /* ZJCollectionView.m */; };
+		3D436C2B1E782795005587E9 /* ZJContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D436C1E1E782795005587E9 /* ZJContentView.m */; };
+		3D436C2C1E782795005587E9 /* ZJScrollPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D436C201E782795005587E9 /* ZJScrollPageView.m */; };
+		3D436C2D1E782795005587E9 /* ZJScrollSegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D436C231E782795005587E9 /* ZJScrollSegmentView.m */; };
+		3D436C2E1E782795005587E9 /* ZJSegmentStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D436C251E782795005587E9 /* ZJSegmentStyle.m */; };
+		3D436C2F1E782795005587E9 /* ZJTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D436C271E782795005587E9 /* ZJTitleView.m */; };
+		3D436C341E7828A6005587E9 /* ZJTest1Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D436C311E7828A6005587E9 /* ZJTest1Controller.m */; };
+		3D436C351E7828A6005587E9 /* ZJTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D436C331E7828A6005587E9 /* ZJTestViewController.m */; };
 		3D48CCB11E627018005E9FB8 /* ZFBaseSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D48CCA81E627018005E9FB8 /* ZFBaseSettingViewController.m */; };
 		3D48CCB21E627018005E9FB8 /* ZFSettingGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D48CCAB1E627018005E9FB8 /* ZFSettingGroup.m */; };
 		3D48CCB31E627018005E9FB8 /* ZFSettingItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D48CCAD1E627018005E9FB8 /* ZFSettingItem.m */; };
@@ -219,8 +232,6 @@
 		3D1044D71E6E44AE00D66203 /* LGHYHDManagementController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGHYHDManagementController.m; sourceTree = "<group>"; };
 		3D1044D91E6E44C100D66203 /* LGHYHDMyScoreController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGHYHDMyScoreController.h; sourceTree = "<group>"; };
 		3D1044DA1E6E44C100D66203 /* LGHYHDMyScoreController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGHYHDMyScoreController.m; sourceTree = "<group>"; };
-		3D1044DC1E6E44D200D66203 /* LGHYHDExchangeScoreController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGHYHDExchangeScoreController.h; sourceTree = "<group>"; };
-		3D1044DD1E6E44D200D66203 /* LGHYHDExchangeScoreController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGHYHDExchangeScoreController.m; sourceTree = "<group>"; };
 		3D1044DF1E6E44E300D66203 /* LGHYHDMyCardsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGHYHDMyCardsController.h; sourceTree = "<group>"; };
 		3D1044E01E6E44E300D66203 /* LGHYHDMyCardsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGHYHDMyCardsController.m; sourceTree = "<group>"; };
 		3D1044E21E6E450000D66203 /* LGHYHDCollectController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGHYHDCollectController.h; sourceTree = "<group>"; };
@@ -268,6 +279,35 @@
 		3D31C8171E5E6849005E97BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D436BAF1E718FA8005587E9 /* LGHYHDMyScore_Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGHYHDMyScore_Model.h; sourceTree = "<group>"; };
 		3D436BB01E718FA8005587E9 /* LGHYHDMyScore_Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGHYHDMyScore_Model.m; sourceTree = "<group>"; };
+		3D436BEE1E77974D005587E9 /* LGHYHDRuleModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGHYHDRuleModel.h; sourceTree = "<group>"; };
+		3D436BEF1E77974D005587E9 /* LGHYHDRuleModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGHYHDRuleModel.m; sourceTree = "<group>"; };
+		3D436BF11E77BEC7005587E9 /* LGHYHDRuleScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGHYHDRuleScrollView.h; sourceTree = "<group>"; };
+		3D436BF21E77BEC7005587E9 /* LGHYHDRuleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGHYHDRuleScrollView.m; sourceTree = "<group>"; };
+		3D436BF41E77C3A4005587E9 /* LGHYHDRule_Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGHYHDRule_Model.h; sourceTree = "<group>"; };
+		3D436BF51E77C3A4005587E9 /* LGHYHDRule_Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGHYHDRule_Model.m; sourceTree = "<group>"; };
+		3D436C131E78275C005587E9 /* LGHYHDExchangeScoreController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGHYHDExchangeScoreController.h; sourceTree = "<group>"; };
+		3D436C141E78275D005587E9 /* LGHYHDExchangeScoreController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGHYHDExchangeScoreController.m; sourceTree = "<group>"; };
+		3D436C171E782795005587E9 /* UIView+ZJFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ZJFrame.h"; sourceTree = "<group>"; };
+		3D436C181E782795005587E9 /* UIView+ZJFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ZJFrame.m"; sourceTree = "<group>"; };
+		3D436C191E782795005587E9 /* UIViewController+ZJScrollPageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ZJScrollPageController.h"; sourceTree = "<group>"; };
+		3D436C1A1E782795005587E9 /* UIViewController+ZJScrollPageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ZJScrollPageController.m"; sourceTree = "<group>"; };
+		3D436C1B1E782795005587E9 /* ZJCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJCollectionView.h; sourceTree = "<group>"; };
+		3D436C1C1E782795005587E9 /* ZJCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJCollectionView.m; sourceTree = "<group>"; };
+		3D436C1D1E782795005587E9 /* ZJContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJContentView.h; sourceTree = "<group>"; };
+		3D436C1E1E782795005587E9 /* ZJContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJContentView.m; sourceTree = "<group>"; };
+		3D436C1F1E782795005587E9 /* ZJScrollPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJScrollPageView.h; sourceTree = "<group>"; };
+		3D436C201E782795005587E9 /* ZJScrollPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJScrollPageView.m; sourceTree = "<group>"; };
+		3D436C211E782795005587E9 /* ZJScrollPageViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJScrollPageViewDelegate.h; sourceTree = "<group>"; };
+		3D436C221E782795005587E9 /* ZJScrollSegmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJScrollSegmentView.h; sourceTree = "<group>"; };
+		3D436C231E782795005587E9 /* ZJScrollSegmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJScrollSegmentView.m; sourceTree = "<group>"; };
+		3D436C241E782795005587E9 /* ZJSegmentStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJSegmentStyle.h; sourceTree = "<group>"; };
+		3D436C251E782795005587E9 /* ZJSegmentStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJSegmentStyle.m; sourceTree = "<group>"; };
+		3D436C261E782795005587E9 /* ZJTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJTitleView.h; sourceTree = "<group>"; };
+		3D436C271E782795005587E9 /* ZJTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJTitleView.m; sourceTree = "<group>"; };
+		3D436C301E7828A6005587E9 /* ZJTest1Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJTest1Controller.h; sourceTree = "<group>"; };
+		3D436C311E7828A6005587E9 /* ZJTest1Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJTest1Controller.m; sourceTree = "<group>"; };
+		3D436C321E7828A6005587E9 /* ZJTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJTestViewController.h; sourceTree = "<group>"; };
+		3D436C331E7828A6005587E9 /* ZJTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJTestViewController.m; sourceTree = "<group>"; };
 		3D48CCA71E627018005E9FB8 /* ZFBaseSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFBaseSettingViewController.h; sourceTree = "<group>"; };
 		3D48CCA81E627018005E9FB8 /* ZFBaseSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFBaseSettingViewController.m; sourceTree = "<group>"; };
 		3D48CCAA1E627018005E9FB8 /* ZFSettingGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFSettingGroup.h; sourceTree = "<group>"; };
@@ -497,6 +537,7 @@
 		3D31C7EF1E5E6846005E97BF /* 龙广会员 */ = {
 			isa = PBXGroup;
 			children = (
+				3D436C161E782795005587E9 /* ZJScrollPageView */,
 				3DF41AFD1E6051AE009B3099 /* 三方 */,
 				3D98E7141E5E77E300F2CDF9 /* FirstView */,
 				3D98E7291E5E77E300F2CDF9 /* Menu */,
@@ -541,6 +582,34 @@
 				3D31C8171E5E6849005E97BF /* Info.plist */,
 			);
 			path = "龙广会员UITests";
+			sourceTree = "<group>";
+		};
+		3D436C161E782795005587E9 /* ZJScrollPageView */ = {
+			isa = PBXGroup;
+			children = (
+				3D436C301E7828A6005587E9 /* ZJTest1Controller.h */,
+				3D436C311E7828A6005587E9 /* ZJTest1Controller.m */,
+				3D436C321E7828A6005587E9 /* ZJTestViewController.h */,
+				3D436C331E7828A6005587E9 /* ZJTestViewController.m */,
+				3D436C171E782795005587E9 /* UIView+ZJFrame.h */,
+				3D436C181E782795005587E9 /* UIView+ZJFrame.m */,
+				3D436C191E782795005587E9 /* UIViewController+ZJScrollPageController.h */,
+				3D436C1A1E782795005587E9 /* UIViewController+ZJScrollPageController.m */,
+				3D436C1B1E782795005587E9 /* ZJCollectionView.h */,
+				3D436C1C1E782795005587E9 /* ZJCollectionView.m */,
+				3D436C1D1E782795005587E9 /* ZJContentView.h */,
+				3D436C1E1E782795005587E9 /* ZJContentView.m */,
+				3D436C1F1E782795005587E9 /* ZJScrollPageView.h */,
+				3D436C201E782795005587E9 /* ZJScrollPageView.m */,
+				3D436C211E782795005587E9 /* ZJScrollPageViewDelegate.h */,
+				3D436C221E782795005587E9 /* ZJScrollSegmentView.h */,
+				3D436C231E782795005587E9 /* ZJScrollSegmentView.m */,
+				3D436C241E782795005587E9 /* ZJSegmentStyle.h */,
+				3D436C251E782795005587E9 /* ZJSegmentStyle.m */,
+				3D436C261E782795005587E9 /* ZJTitleView.h */,
+				3D436C271E782795005587E9 /* ZJTitleView.m */,
+			);
+			path = ZJScrollPageView;
 			sourceTree = "<group>";
 		};
 		3D48CCA51E627018005E9FB8 /* ZFSetting */ = {
@@ -882,8 +951,6 @@
 				3D1044D71E6E44AE00D66203 /* LGHYHDManagementController.m */,
 				3D1044D91E6E44C100D66203 /* LGHYHDMyScoreController.h */,
 				3D1044DA1E6E44C100D66203 /* LGHYHDMyScoreController.m */,
-				3D1044DC1E6E44D200D66203 /* LGHYHDExchangeScoreController.h */,
-				3D1044DD1E6E44D200D66203 /* LGHYHDExchangeScoreController.m */,
 				3D1044DF1E6E44E300D66203 /* LGHYHDMyCardsController.h */,
 				3D1044E01E6E44E300D66203 /* LGHYHDMyCardsController.m */,
 				3D1044E21E6E450000D66203 /* LGHYHDCollectController.h */,
@@ -898,6 +965,8 @@
 				3D1044EF1E6E527C00D66203 /* LGHYHDRemenViewController.m */,
 				3D1044F11E6E528500D66203 /* LGHYHDLiebiaoViewController.h */,
 				3D1044F21E6E528500D66203 /* LGHYHDLiebiaoViewController.m */,
+				3D436C131E78275C005587E9 /* LGHYHDExchangeScoreController.h */,
+				3D436C141E78275D005587E9 /* LGHYHDExchangeScoreController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -911,6 +980,10 @@
 				3DAD22F01E7138E5000EF2AB /* LGHYHDMyScoreTableViewCell.m */,
 				3D436BAF1E718FA8005587E9 /* LGHYHDMyScore_Model.h */,
 				3D436BB01E718FA8005587E9 /* LGHYHDMyScore_Model.m */,
+				3D436BEE1E77974D005587E9 /* LGHYHDRuleModel.h */,
+				3D436BEF1E77974D005587E9 /* LGHYHDRuleModel.m */,
+				3D436BF41E77C3A4005587E9 /* LGHYHDRule_Model.h */,
+				3D436BF51E77C3A4005587E9 /* LGHYHDRule_Model.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -931,6 +1004,8 @@
 				3D0FF7021E61C198008DD77A /* LGHYBackView.m */,
 				3D0FF7031E61C198008DD77A /* LGHYListView.h */,
 				3D0FF7041E61C198008DD77A /* LGHYListView.m */,
+				3D436BF11E77BEC7005587E9 /* LGHYHDRuleScrollView.h */,
+				3D436BF21E77BEC7005587E9 /* LGHYHDRuleScrollView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1325,14 +1400,15 @@
 				3D1044EA1E6E526500D66203 /* LGHYHDYiWangViewController.m in Sources */,
 				3D0FF6BB1E618848008DD77A /* LGHYHDUpLoadingImage.m in Sources */,
 				3DF41B0D1E6051AE009B3099 /* AVAudioPlayer+PCM.m in Sources */,
+				3D436C151E78275D005587E9 /* LGHYHDExchangeScoreController.m in Sources */,
 				3D0FF7271E61C3D4008DD77A /* LGHYSecondCell.m in Sources */,
 				3DAD22EE1E71308C000EF2AB /* LGHYHDMyScoreModel.m in Sources */,
 				3D98E7841E5F106500F2CDF9 /* LGHYHDRealNameViewController.m in Sources */,
 				3D98E74F1E5E8B5A00F2CDF9 /* LGHYHDFirstViewModel.m in Sources */,
 				3D0FF73F1E61C5A4008DD77A /* LGHYQianDaoViewController.m in Sources */,
-				3D1044DE1E6E44D200D66203 /* LGHYHDExchangeScoreController.m in Sources */,
 				3D0FF6AF1E616829008DD77A /* LGHYHDNumberOfRealViewController.m in Sources */,
 				3D0FF6B81E616855008DD77A /* LGHYHDUploadImageViewController.m in Sources */,
+				3D436C281E782795005587E9 /* UIView+ZJFrame.m in Sources */,
 				3D10450B1E6E598000D66203 /* CYLMessageViewController.m in Sources */,
 				3D1044F01E6E527C00D66203 /* LGHYHDRemenViewController.m in Sources */,
 				3DAD22981E70257B000EF2AB /* LGHYHDHolidaysViewController.m in Sources */,
@@ -1349,15 +1425,18 @@
 				3D0FF7241E61C3D4008DD77A /* LGHYFifthCell.m in Sources */,
 				3D0FF6AC1E616805008DD77A /* LGHYHDNameOfRealViewController.m in Sources */,
 				3D1044ED1E6E527300D66203 /* LGHYHDJijiangViewController.m in Sources */,
+				3D436BF01E77974D005587E9 /* LGHYHDRuleModel.m in Sources */,
 				3D10450D1E6E598000D66203 /* CYLDetailsViewController.m in Sources */,
 				3DF41B0E1E6051AE009B3099 /* MCAudioInputQueue.m in Sources */,
 				3D0FF7001E61BED6008DD77A /* LGHYHeaderCell.m in Sources */,
 				3D98E7491E5E7EE300F2CDF9 /* LGHYHDButton.m in Sources */,
 				3DAD219A1E6EE947000EF2AB /* LGHYHDMangementCellModel.m in Sources */,
+				3D436C2A1E782795005587E9 /* ZJCollectionView.m in Sources */,
 				3D0FF7391E61C56D008DD77A /* LGHYMessagesViewController.m in Sources */,
 				3D0FF6A41E614EE1008DD77A /* LGHYHDRealNameTableView.m in Sources */,
 				3D0FF74E1E61C78F008DD77A /* LGHYPersonalInformaticaView.m in Sources */,
 				3D10450A1E6E598000D66203 /* CYLHomeViewController.m in Sources */,
+				3D436C341E7828A6005587E9 /* ZJTest1Controller.m in Sources */,
 				3DAB25F21E6BF3640010ADC0 /* LGHYHDViewForSection.m in Sources */,
 				3D0FF7051E61C198008DD77A /* LGHYBackView.m in Sources */,
 				3D48CCB31E627018005E9FB8 /* ZFSettingItem.m in Sources */,
@@ -1374,14 +1453,19 @@
 				3D7D68011E682DC8004D2C10 /* LGHYHDGet.m in Sources */,
 				3D98E77B1E5ED91C00F2CDF9 /* LGHYHDForgetPasswordViewController.m in Sources */,
 				3DE28EDF1E6061DB00E3C8AF /* LGHYHDIdentifyingCodeViewController.m in Sources */,
+				3D436C2D1E782795005587E9 /* ZJScrollSegmentView.m in Sources */,
+				3D436C291E782795005587E9 /* UIViewController+ZJScrollPageController.m in Sources */,
 				3D98E74C1E5E8AA900F2CDF9 /* LGHYHDFirstView.m in Sources */,
 				3D48CCB21E627018005E9FB8 /* ZFSettingGroup.m in Sources */,
+				3D436C2B1E782795005587E9 /* ZJContentView.m in Sources */,
 				3D1044E71E6E450A00D66203 /* LGHYHDQuestionController.m in Sources */,
 				3D98E75D1E5EBAE100F2CDF9 /* LGHYHDVisitorsViewController.m in Sources */,
 				3DF41B101E6051AE009B3099 /* QRCameraSwitchButton.m in Sources */,
 				3D0FF6FD1E61B8A8008DD77A /* LGHYHDMainView.m in Sources */,
 				3DCF3E291E63B312008B8900 /* LGHYHDRegisterModel.m in Sources */,
+				3D436C351E7828A6005587E9 /* ZJTestViewController.m in Sources */,
 				3D0FF6A11E61275A008DD77A /* LGHYHDMainViewController.m in Sources */,
+				3D436BF61E77C3A4005587E9 /* LGHYHDRule_Model.m in Sources */,
 				3DAD22F11E7138E5000EF2AB /* LGHYHDMyScoreTableViewCell.m in Sources */,
 				3D7D67BF1E67A82D004D2C10 /* LGHYHDReponseCode.m in Sources */,
 				3D48CCB91E62703A005E9FB8 /* ZFSettingViewController.m in Sources */,
@@ -1392,6 +1476,7 @@
 				3D1044E11E6E44E300D66203 /* LGHYHDMyCardsController.m in Sources */,
 				3D1044F31E6E528500D66203 /* LGHYHDLiebiaoViewController.m in Sources */,
 				3D19C9B71E65A4E900DD4CDD /* LGHYHDActivityViewController.m in Sources */,
+				3D436C2F1E782795005587E9 /* ZJTitleView.m in Sources */,
 				3D98E7571E5EB69200F2CDF9 /* LGHYHDNavigationViewController.m in Sources */,
 				3D98E7811E5EF89F00F2CDF9 /* LGHYHDRegisterView.m in Sources */,
 				3D0FF72D1E61C3FA008DD77A /* WeChat.m in Sources */,
@@ -1401,6 +1486,7 @@
 				3D98E78A1E5F18E200F2CDF9 /* LGHYHDForgetPasswordView.m in Sources */,
 				3D0FF6B21E616837008DD77A /* LGHYHDCountryOfRealViewController.m in Sources */,
 				3D98E7541E5EB59D00F2CDF9 /* LGHYHDLoginViewController.m in Sources */,
+				3D436BF31E77BEC7005587E9 /* LGHYHDRuleScrollView.m in Sources */,
 				3DAD229E1E702632000EF2AB /* LGHYHDTravelViewController.m in Sources */,
 				3D1044E41E6E450000D66203 /* LGHYHDCollectController.m in Sources */,
 				3DAD22A11E702662000EF2AB /* LGHYHDListenViewController.m in Sources */,
@@ -1410,8 +1496,10 @@
 				3D1044D81E6E44AE00D66203 /* LGHYHDManagementController.m in Sources */,
 				3DAD22E81E70F172000EF2AB /* LGHYHDScoreButtonView.m in Sources */,
 				3D98E7421E5E790A00F2CDF9 /* LGHYHDFirstViewController.m in Sources */,
+				3D436C2E1E782795005587E9 /* ZJSegmentStyle.m in Sources */,
 				3D19C9B11E657D9700DD4CDD /* UITextField+LGHYHDMobileNumber.m in Sources */,
 				3D98E7871E5F16F700F2CDF9 /* LGHYHDRealNameView.m in Sources */,
+				3D436C2C1E782795005587E9 /* ZJScrollPageView.m in Sources */,
 				3D0FF7421E61C5D5008DD77A /* LGHYPersonalInformationController.m in Sources */,
 				3D10450E1E6E598000D66203 /* CYLSameCityViewController.m in Sources */,
 				3D0FF6A71E6159F9008DD77A /* LGHYHDRealName.m in Sources */,

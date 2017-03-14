@@ -8,21 +8,6 @@
 
 #import "LGHYHDMyScoreModel.h"
 
-@interface LGHYHDMyScoreModel ()
-
-@end
-
 @implementation LGHYHDMyScoreModel
 
-+ (NSArray *)loadDataList {
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"industry" ofType:@"plist"];
-    NSArray *itemsArray = [NSArray arrayWithContentsOfFile:path];
-    NSMutableArray *dataArray = [NSMutableArray array];
-    for (NSDictionary *dict in itemsArray) {
-        LGHYHDMyScoreModel *model = [[LGHYHDMyScoreModel alloc] init];
-        [model setValuesForKeysWithDictionary:dict];
-        [dataArray addObject:model];
-    }
-    return dataArray;
-}
 @end

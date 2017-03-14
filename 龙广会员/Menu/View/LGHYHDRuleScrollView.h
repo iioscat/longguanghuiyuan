@@ -1,5 +1,5 @@
 //
-//  LGHYHDExchangeScoreController.h
+//  LGHYHDRuleScrollView.h
 //  龙广会员
 //
 //  Created by 王宏达 on 2017/3/14.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LGHYHDExchangeScoreController : UIViewController
+@interface LGHYHDRuleScrollView : UIScrollView
 
 @end

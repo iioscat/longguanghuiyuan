@@ -15,6 +15,7 @@
 #import "AVAudioPlayer+PCM.h"
 #import <AVFoundation/AVAudioSession.h>
 #import "LGHYHDNavigationViewController.h"
+#import "AFNetworking.h"
 
 #define wid [UIScreen mainScreen].bounds.size.width
 static const NSTimeInterval bufferDuration = 0.2;
@@ -291,13 +292,11 @@ static const NSTimeInterval bufferDuration = 0.2;
     [self.btn1 setBackgroundImage:[UIImage imageNamed:@"BtnImage.jpg"] forState:UIControlStateNormal];
     [self.btn2 setBackgroundImage:[UIImage imageNamed:@"FollowBtnBg"] forState:UIControlStateNormal];
 
-    NSLog(@"活动签到");
     self.view2.hidden = YES;
     self.view1.hidden = NO;
 }
 
 - (void)btn2DoAction:(UIButton *)btn {
-    NSLog(@"节目签到");
     [self.btn1 setBackgroundImage:[UIImage imageNamed:@"FollowBtnBg"] forState:UIControlStateNormal];
     [self.btn2 setBackgroundImage:[UIImage imageNamed:@"BtnImage.jpg"] forState:UIControlStateNormal];
     [self.view2 addSubview:self.labelOfView2];
@@ -380,7 +379,45 @@ static const NSTimeInterval bufferDuration = 0.2;
 #pragma mark - numberAction
 - (void)numberAction:(UIButton *)button {
     LGAlertView *alertView = [[LGAlertView alloc] initWithTextFieldsAndTitle:@"输入活动码" message:nil numberOfTextFields:1 textFieldsSetupHandler:nil buttonTitles:@[@"确认"] cancelButtonTitle:@"取消" destructiveButtonTitle:nil delegate:nil];
+    alertView.delegate = self;
     [alertView showAnimated];
+}
+
+- (void)alertView:(LGAlertView *)alertView buttonPressedWithTitle:(NSString *)title index:(NSUInteger)index {
+    if (index == 0) {
+        [self signInCode];
+    }
+}
+
+
+- (void)signInCode {
+    [SVProgressHUD show];
+    AFHTTPSessionManager *sesszion = [AFHTTPSessionManager manager];
+    sesszion.requestSerializer = [AFHTTPRequestSerializer serializer];
+    sesszion.responseSerializer = [AFHTTPResponseSerializer serializer];
+    NSString *url = @"http://221.212.177.245/project/sign-in?code=10000";
+    
+    [sesszion GET:url parameters:nil progress:^(NSProgress * _Nonnull downloadProgress) {
+        
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        
+        NSString *dataString = [[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding];
+        NSLog(@"%@", dataString);
+        [SVProgressHUD dismiss];
+        
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        // 如果是取消了任务，就不算请求失败，就直接返回
+        if (error.code == NSURLErrorCancelled) return;
+        
+        if (error.code == NSURLErrorTimedOut) {
+            // 关闭弹框
+            [SVProgressHUD showErrorWithStatus:@"加载标签数据超时，请稍后再试！"];
+        } else {
+            // 关闭弹框
+            [SVProgressHUD showErrorWithStatus:@"加载标签数据失败"];
+        }
+
+    }];
 }
 
 #pragma mark - init & dealloc

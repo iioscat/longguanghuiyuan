@@ -39,6 +39,16 @@
         });
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         NSLog(@"请求失败：%@", error.description);
+        if (error.code == NSURLErrorCancelled) return;
+        
+        if (error.code == NSURLErrorTimedOut) {
+            // 关闭弹框
+            [SVProgressHUD showErrorWithStatus:@"加载标签数据超时，请稍后再试！"];
+        } else {
+            // 关闭弹框
+            [SVProgressHUD showErrorWithStatus:@"加载标签数据失败"];
+        }
+
     }];
     });
 }
